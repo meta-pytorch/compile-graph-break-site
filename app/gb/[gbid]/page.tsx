@@ -23,10 +23,11 @@ function SectionHeader({
 export default async function GBPage({
   params,
 }: {
-  params: { gbid: string };
+  params: Promise<{ gbid: string }>;
 }) {
+  const {gbid} = await params;
   const registry = await getRegistry();
-  const id = params.gbid.toUpperCase();
+  const id = gbid.toUpperCase();
   const entry = registry[id]?.[0];
 
   if (!entry) {
