@@ -20,6 +20,7 @@ type Entry = {
   Context?: string;
   Explanation?: string;
   Hints: string[];
+  Additional_Info?: string[];
 };
 
 export async function getRegistry() {
