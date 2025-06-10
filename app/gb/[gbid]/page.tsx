@@ -85,6 +85,25 @@ export default async function GBPage({
       ) : (
         <p className="italic text-gray-500">No hints provided.</p>
       )}
+
+      <SectionHeader
+              label="Additional Information"
+              sub="Any other information that might be useful relating to the graph break given by the PyTorch developers"
+            />
+            {entry.Additional_Info?.length ? (
+              <ul>
+                {entry.Additional_Info.map((info) => (
+                  <li key={info}>
+                    <ReactMarkdown components={{ p: React.Fragment }}>
+                      {info}
+                    </ReactMarkdown>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="italic text-gray-500">No additional information provided.</p>
+            )}
+
     </main>
   );
 }
