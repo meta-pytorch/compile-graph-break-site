@@ -1,12 +1,13 @@
+'use client';
+
 import * as React from 'react';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import { getRegistry } from '@/app/lib/registry';
+import { useFuzzyRegistrySearch } from '@/app/components/SearchBox';
 
-export const revalidate = 0;
-
-export default async function Home() {
-  const reg = await getRegistry();
+export default function Home() {
+  const [query, setQuery] = React.useState('');
+  const results = useFuzzyRegistrySearch(query);
 
   return (
     <main className="prose mx-auto p-6">
@@ -15,27 +16,30 @@ export default async function Home() {
         Below are all known graph breaks detected by&nbsp;Dynamo.
       </p>
 
+      <input
+        type="text"
+        placeholder="Search Graph Breaks"
+        className="px-3 py-2 border border-gray-300 rounded w-full max-w-xl mb-4"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+
       <ul>
-        {Object.entries(reg).map(([id, versions]) => {
-          const type = versions[0].Gb_type;
-          return (
-            <li key={id}>
-              <Link href={`/gb/${id}`}>{id}</Link> —{' '}
-              <ReactMarkdown
-                components={{
-                  // strip the implicit <p> wrapper inside <li>
-                  p: ({ node, ...props }) => <>{props.children}</>,
-                  // open any inline links in a new tab
-                  a: ({ node, ...props }) => (
-                    <a target="_blank" rel="noopener noreferrer" {...props} />
-                  ),
-                }}
-              >
-                {type}
-              </ReactMarkdown>
-            </li>
-          );
-        })}
+        {results.map(({ id, Gb_type }) => (
+          <li key={id}>
+            <Link href={`/gb/${id}`}>{id}</Link> —{' '}
+            <ReactMarkdown
+              components={{
+                p: ({ node, ...props }) => <>{props.children}</>,
+                a: ({ node, ...props }) => (
+                  <a target="_blank" rel="noopener noreferrer" {...props} />
+                ),
+              }}
+            >
+              {Gb_type}
+            </ReactMarkdown>
+          </li>
+        ))}
       </ul>
     </main>
   );
