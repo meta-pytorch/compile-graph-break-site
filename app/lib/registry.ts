@@ -8,7 +8,7 @@
  */
 
 const FALLBACK_URL =
-  'https://raw.githubusercontent.com/pytorch/pytorch/main/tools/dynamo/graph_break_registry.json';
+  'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.json';
 
 export const REGISTRY_URL =
   process.env.NEXT_PUBLIC_REGISTRY_URL || FALLBACK_URL;
