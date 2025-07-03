@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBID GB0092</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; color: #333; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { margin-bottom: 10px; }
+        pre { background-color: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        ul { list-style: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .font-bold { font-weight: bold; }
+        .italic { font-style: italic; }
+        .text-sm { font-size: 0.875rem; }
+        .text-gray-500 { color: #6b7280; }
+        .section-header { margin-top: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GB0092</h1>
+
+        <p class="font-bold section-header">Graph-Break Type <span class="italic font-normal text-sm text-gray-500">— short name describing what triggered the graph break</span></p>
+        <p>Reconstruction failure</p>
+
+        <p class="font-bold section-header">Context <span class="italic font-normal text-sm text-gray-500">— values or code snippet captured at the break point</span></p>
+        <div><p>str(value)</p>
+</div>
+
+        <p class="font-bold section-header">Explanation <span class="italic font-normal text-sm text-gray-500">— why this specific graph break happened</span></p>
+        <div><p>Dynamo has no bytecode reconstruction implemented for sourceless variable {value}.</p>
+</div>
+
+        <p class="font-bold section-header">Hints <span class="italic font-normal text-sm text-gray-500">— suggestions for fixing or working around the break</span></p>
+        <div><p>If Dynamo is attempting to trace a return statement and your code is attempting to return a variable 
+that Dynamo cannot reconstruct, then remove it from the return statement.
+Report an issue to PyTorch if you need reconstrtuction support. Note that objects that don&#39;t have 
+reconstruction rules may be fundamentally unreconstructable.
+This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.</p>
+</div>
+
+        
+        
+        <a href="/index.html">Back to Registry</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBID GB0133</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; color: #333; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { margin-bottom: 10px; }
+        pre { background-color: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        ul { list-style: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .font-bold { font-weight: bold; }
+        .italic { font-style: italic; }
+        .text-sm { font-size: 0.875rem; }
+        .text-gray-500 { color: #6b7280; }
+        .section-header { margin-top: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GB0133</h1>
+
+        <p class="font-bold section-header">Graph-Break Type <span class="italic font-normal text-sm text-gray-500">— short name describing what triggered the graph break</span></p>
+        <p>Unsupported arguments for itertools.accumulate</p>
+
+        <p class="font-bold section-header">Context <span class="italic font-normal text-sm text-gray-500">— values or code snippet captured at the break point</span></p>
+        <div><p>call_function {self} {args} {kwargs}</p>
+</div>
+
+        <p class="font-bold section-header">Explanation <span class="italic font-normal text-sm text-gray-500">— why this specific graph break happened</span></p>
+        <div><p>Dynamo does not know how to trace itertools.accumulate with args: {args} and kwargs: {kwargs}. itertools.accumulate expects an iterable, an optional binary function for accumulation, and an optional initial value to set the starting state.</p>
+</div>
+
+        <p class="font-bold section-header">Hints <span class="italic font-normal text-sm text-gray-500">— suggestions for fixing or working around the break</span></p>
+        <div><p>Make sure the arguments to itertools.accumulate are correct.
+It may be possible to write Dynamo tracing rules for this code. Please report an issue to PyTorch if you encounter this graph break often and it is causing performance issues.</p>
+</div>
+
+        
+        
+        <a href="/index.html">Back to Registry</a>
+    </div>
+</body>
+</html>

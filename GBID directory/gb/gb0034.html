@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBID GB0034</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; color: #333; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { margin-bottom: 10px; }
+        pre { background-color: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        ul { list-style: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .font-bold { font-weight: bold; }
+        .italic { font-style: italic; }
+        .text-sm { font-size: 0.875rem; }
+        .text-gray-500 { color: #6b7280; }
+        .section-header { margin-top: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GB0034</h1>
+
+        <p class="font-bold section-header">Graph-Break Type <span class="italic font-normal text-sm text-gray-500">— short name describing what triggered the graph break</span></p>
+        <p>Data-dependent assertion failed (cannot compile partial graph)</p>
+
+        <p class="font-bold section-header">Context <span class="italic font-normal text-sm text-gray-500">— values or code snippet captured at the break point</span></p>
+        <div><p>value: {value}</p>
+</div>
+
+        <p class="font-bold section-header">Explanation <span class="italic font-normal text-sm text-gray-500">— why this specific graph break happened</span></p>
+        <div><p>Dynamo has determined when encountering a data-dependent assert failure that it should not compile the partial graph.</p>
+</div>
+
+        <p class="font-bold section-header">Hints <span class="italic font-normal text-sm text-gray-500">— suggestions for fixing or working around the break</span></p>
+        <div><p>Use <code>torch._assert()</code> to raise a hard AssertionError when the check fails. 
+This error will propagate back the user code 
+that called the compiled function (i.e. Dynamo will not trace any exception handling).
+Remove the assert statement.
+Move the assert statement outside of any context managers in order to graph break with 
+partial graph compilation (if fullgraph=False).
+This graph break is fundamental - it is unlikely that Dynamo will ever be able to trace through your code. Consider finding a workaround.</p>
+</div>
+
+        
+        
+        <a href="/index.html">Back to Registry</a>
+    </div>
+</body>
+</html>

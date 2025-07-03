@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBID GB0142</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; color: #333; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { margin-bottom: 10px; }
+        pre { background-color: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        ul { list-style: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .font-bold { font-weight: bold; }
+        .italic { font-style: italic; }
+        .text-sm { font-size: 0.875rem; }
+        .text-gray-500 { color: #6b7280; }
+        .section-header { margin-top: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GB0142</h1>
+
+        <p class="font-bold section-header">Graph-Break Type <span class="italic font-normal text-sm text-gray-500">— short name describing what triggered the graph break</span></p>
+        <p>Unsupported context manager</p>
+
+        <p class="font-bold section-header">Context <span class="italic font-normal text-sm text-gray-500">— values or code snippet captured at the break point</span></p>
+        <div><p>Attempted SETUP_WITH/BEFORE_WITH on {ctx}</p>
+</div>
+
+        <p class="font-bold section-header">Explanation <span class="italic font-normal text-sm text-gray-500">— why this specific graph break happened</span></p>
+        <div><p>Dynamo does not know how to enter a <code>{ctx.python_type_name()}</code> context manager.</p>
+</div>
+
+        <p class="font-bold section-header">Hints <span class="italic font-normal text-sm text-gray-500">— suggestions for fixing or working around the break</span></p>
+        <div><p>Avoid using the unsupported context manager.
+If the context manager seems like it should be supported (e.g. torch.set_grad_enabled), then 
+it may be the case that it was created outside the compiled region, which Dynamo does not support. 
+Supported context managers can cross graph break boundaries only if they are local non-closure 
+variables, or are intermediate values.
+File an issue to PyTorch. Simple context managers can potentially be supported, 
+but note that context managers can&#39;t be supported in general</p>
+</div>
+
+        
+        
+        <a href="/index.html">Back to Registry</a>
+    </div>
+</body>
+</html>
