@@ -20,7 +20,6 @@ async function getRegistryData() {
 async function generateSite() {
   const registry = await getRegistryData();
 
-  // Create the 'GBID directory' directory if it doesn't exist
   const outputDir = 'GBID directory';
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
@@ -34,7 +33,7 @@ description: A registry of PyTorch Dynamo graph breaks.
 
 # Base URL for the site
 # This is crucial for correct linking on GitHub Pages
-baseurl: "/docs/compile-graph-break" # Adjust this based on your actual GitHub Pages path
+baseurl: "/compile-graph-break-site" # Adjust this based on your actual GitHub Pages path
 
 # Build settings
 theme: jekyll-theme-minimal # Or any other Jekyll theme you prefer
