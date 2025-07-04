@@ -20,7 +20,7 @@ async function getRegistryData() {
 async function generateSite() {
   const registry = await getRegistryData();
 
-  const outputDir = 'GBID directory';
+  const outputDir = 'gbid_directory';
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
