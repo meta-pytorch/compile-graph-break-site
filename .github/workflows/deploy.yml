@@ -31,23 +31,26 @@ jobs:
         run: npm run build
         working-directory: compile-graph-break-site
 
-      - name: Checkout pytorch/docs repository
+      - name: Checkout pytorch/docs repository # This name is misleading for the test setup
         uses: actions/checkout@v3
         with:
-          repository: Sidharth123-cpu/test-docs-site # Changed to your test repo
+          repository: Sidharth123-cpu/test-docs-site # This is the *actual* repository being checked out
           ref: site # The target branch in your test repo
-          token: ${{ secrets.DOCS_REPO_TOKEN }} # Personal Access Token with repo scope
-          path: pytorch-docs
+          token: ${{ secrets.DOCS_REPO_TOKEN }}
+          path: pytorch-docs # THIS IS THE KEY! It's the local folder name
 
       - name: Prepare deployment directory
-        run: rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/
+        run: |
+          mkdir -p pytorch-docs/docs/repo/compile-graph-break
+          rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/repo/compile-graph-break/
         working-directory: ${{ github.workspace }}
 
       - name: Commit and Push to docs repo
         run: |
+          cd pytorch-docs
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy: Update compile-graph-break site (Test)" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/Sidharth123-cpu/test-docs-site.git site # Changed to your test repo
-        working-directory: pytorch-docs # Changed this line to ensure git commands run in the correct directory 
+          git commit -m "Deploy: Update compile-graph-break site" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/Sidharth123-cpu/test-docs-site.git site
+        working-directory: ${{ github.workspace }} 
