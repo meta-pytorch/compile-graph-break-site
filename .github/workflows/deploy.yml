@@ -1,0 +1,58 @@
+name: Deploy Graph Break Site
+
+on:
+  push:
+    branches:
+      - main # Adjust if your primary branch is named differently (e.g., master)
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout compile-graph-break-site
+        uses: actions/checkout@v3
+        with:
+          repository: pytorch-labs/compile-graph-break-site
+          path: compile-graph-break-site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Use a Node.js version compatible with your project
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: compile-graph-break-site
+
+      - name: Build site
+        run: npm run build
+        working-directory: compile-graph-break-site
+
+      - name: Checkout pytorch/docs repository
+        uses: actions/checkout@v3
+        with:
+          repository: pytorch/docs
+          ref: site # The target branch in the pytorch/docs repo
+          token: ${{ secrets.DOCS_REPO_TOKEN }} # Personal Access Token with repo scope
+          path: pytorch-docs
+
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p pytorch-docs/docs/repo/compile-graph-break
+          rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/repo/compile-graph-break/
+        working-directory: ${{ github.workspace }}
+
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: pytorch/docs
+          branch: site
+          commit_message: "Deploy: Update compile-graph-break site"
+          file_pattern: 'docs/repo/compile-graph-break/**'
+          commit_options: '--no-verify --signoff'
+          push_options: '--force'
+          token: ${{ secrets.DOCS_REPO_TOKEN }}
+          working_directory: pytorch-docs 

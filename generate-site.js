@@ -33,7 +33,7 @@ description: A registry of PyTorch Dynamo graph breaks.
 
 # Base URL for the site
 # This is crucial for correct linking on GitHub Pages
-baseurl: "/compile-graph-break-site" # Adjust this based on your actual GitHub Pages path
+baseurl: "/docs/repo/compile-graph-break" # Adjust this based on your actual GitHub Pages path
 
 # Build settings
 theme: jekyll-theme-minimal # Or any other Jekyll theme you prefer
