@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-// Removed 'marked' dependency as Jekyll will handle Markdown rendering
 
 const REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.json';
 

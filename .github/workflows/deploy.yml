@@ -45,14 +45,12 @@ jobs:
           rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/repo/compile-graph-break/
         working-directory: ${{ github.workspace }}
 
-      - name: Commit and Push
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          repository: pytorch/docs
-          branch: site
-          commit_message: "Deploy: Update compile-graph-break site"
-          file_pattern: 'docs/repo/compile-graph-break/**'
-          commit_options: '--no-verify --signoff'
-          push_options: '--force'
-          token: ${{ secrets.DOCS_REPO_TOKEN }}
-          working_directory: pytorch-docs 
+      - name: Commit and Push to docs repo
+        run: |
+          cd pytorch-docs
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy: Update compile-graph-break site" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/pytorch/docs.git site
+        working-directory: ${{ github.workspace }} 
