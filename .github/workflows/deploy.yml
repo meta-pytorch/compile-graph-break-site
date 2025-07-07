@@ -31,13 +31,13 @@ jobs:
         run: npm run build
         working-directory: compile-graph-break-site
 
-      - name: Checkout pytorch/docs repository # This name is misleading for the test setup
+      - name: Checkout test-docs-site repository
         uses: actions/checkout@v3
         with:
-          repository: Sidharth123-cpu/test-docs-site # This is the *actual* repository being checked out
+          repository: Sidharth123-cpu/test-docs-site
           ref: site # The target branch in your test repo
-          token: ${{ secrets.DOCS_REPO_TOKEN }}
-          path: pytorch-docs # THIS IS THE KEY! It's the local folder name
+          token: ${{ secrets.DOCS_REPO_TOKEN }} # Personal Access Token with repo scope
+          path: pytorch-docs # This is still the local directory name
 
       - name: Prepare deployment directory
         run: |
