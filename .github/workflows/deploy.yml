@@ -34,8 +34,8 @@ jobs:
       - name: Checkout pytorch/docs repository
         uses: actions/checkout@v3
         with:
-          repository: pytorch/docs
-          ref: site # The target branch in the pytorch/docs repo
+          repository: Sidharth123-cpu/test-docs-site
+          ref: site # The target branch in your test repo
           token: ${{ secrets.DOCS_REPO_TOKEN }} # Personal Access Token with repo scope
           path: pytorch-docs
 
@@ -52,5 +52,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Deploy: Update compile-graph-break site" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/pytorch/docs.git site
+          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/Sidharth123-cpu/test-docs-site.git site
         working-directory: ${{ github.workspace }} 
