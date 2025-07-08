@@ -27,8 +27,8 @@ async function generateSite() {
   // Generate _config.yml for Jekyll
   const jekyllConfig = `\
 # Site settings
-title: Graph-Break Registry
-description: A registry of PyTorch Dynamo graph breaks.
+title: ""
+description: ""
 
 # Base URL for the site
 # This is crucial for correct linking on GitHub Pages
@@ -87,18 +87,22 @@ Below are all known graph breaks detected by Dynamo.
 
 ## Graph-Break Type
 *Short name describing what triggered the graph break*
+
 ${entry.Gb_type}
 
 ## Context
 *Values or code snippet captured at the break point*
+
 ${entry.Context || '*No context provided.*'}
 
 ## Explanation
 *Why this specific graph break happened*
+
 ${entry.Explanation || '*No explanation provided.*'}
 
 ## Hints
 *Suggestions for fixing or working around the break*
+
 ${entry.Hints?.length ? entry.Hints.map(h => `- ${h}`).join('\n') : '*No hints provided.*'}
 
 ${entry.Additional_Info?.length ? `
@@ -106,7 +110,7 @@ ${entry.Additional_Info?.length ? `
 ${entry.Additional_Info.map(info => `- ${info}`).join('\n')}
 ` : ''}
 
-[Back to Registry](../index.md)
+[Back to Registry](../index.html)
 `;
     fs.writeFileSync(path.join(gbDir, `${id.toLowerCase()}.md`), detailMd);
   });
