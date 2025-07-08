@@ -24,6 +24,30 @@ async function generateSite() {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
+  // Create custom _layouts directory
+  const layoutsDir = path.join(outputDir, '_layouts');
+  if (!fs.existsSync(layoutsDir)) {
+    fs.mkdirSync(layoutsDir, { recursive: true });
+  }
+
+  // Create minimal default.html layout
+  const defaultLayoutContent = `\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"> <!-- Keep if you want theme styling -->
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
+`;
+  fs.writeFileSync(path.join(layoutsDir, 'default.html'), defaultLayoutContent);
+  console.log('Generated _layouts/default.html');
+
   // Generate _config.yml for Jekyll
   const jekyllConfig = `\
 # Site settings
@@ -54,7 +78,10 @@ exclude:
   console.log('Generated _config.yml');
 
   // Generate index.md
-  let indexMd = `
+  let indexMd = `\
+---
+layout: default
+---
 Below are all known graph breaks detected by Dynamo.
 
 <!-- Search input - This will require client-side JavaScript if desired.
@@ -83,7 +110,11 @@ Below are all known graph breaks detected by Dynamo.
   Object.entries(registry).forEach(([id, entries]) => {
     const entry = entries[0]; // Assuming first entry for the detail page
 
-    let detailMd = `# ${id}
+    let detailMd = `\
+---
+layout: default
+---
+# ${id}
 
 ## Graph-Break Type
 *Short name describing what triggered the graph break*
