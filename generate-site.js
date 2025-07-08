@@ -54,8 +54,7 @@ exclude:
   console.log('Generated _config.yml');
 
   // Generate index.md
-  let indexMd = `# Graph-Break Registry
-
+  let indexMd = `
 Below are all known graph breaks detected by Dynamo.
 
 <!-- Search input - This will require client-side JavaScript if desired.
@@ -68,7 +67,7 @@ Below are all known graph breaks detected by Dynamo.
   // Add registry items to index.md
   Object.entries(registry).forEach(([id, entries]) => {
     const entry = entries[0]; // Assuming first entry is sufficient for list view
-    indexMd += `- [${id}](gb/${id.toLowerCase()}.md) — ${entry.Gb_type}
+    indexMd += `- [${id}](gb/${id.toLowerCase()}.html) — ${entry.Gb_type}
 `;
   });
 
