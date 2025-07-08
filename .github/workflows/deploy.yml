@@ -41,8 +41,8 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
-          mkdir -p pytorch-docs/docs/repo/compile-graph-break
-          rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/repo/compile-graph-break/
+          mkdir -p pytorch-docs/docs
+          rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/
         working-directory: ${{ github.workspace }}
 
       - name: Commit and Push to docs repo
@@ -51,6 +51,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy: Update compile-graph-break site" || echo "No changes to commit"
+          git commit -m "Deploy: Update compile-graph-break site (Test)" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/Sidharth123-cpu/test-docs-site.git site
         working-directory: ${{ github.workspace }} 
