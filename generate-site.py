@@ -11,7 +11,7 @@ import requests
 import re
 from pathlib import Path
 
-REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.yaml'
+REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.yml'
 
 def get_registry_data():
     try:
