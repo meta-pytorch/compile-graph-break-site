@@ -3,9 +3,9 @@ name: Deploy Graph Break Site
 on:
   push:
     branches:
-      - main # Adjust if your primary branch is named differently (e.g., master)
+      - main
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight UTC
+    - cron: '0 0 * * *'
 
 jobs:
   build-and-deploy:
@@ -15,42 +15,31 @@ jobs:
       - name: Checkout compile-graph-break-site
         uses: actions/checkout@v3
         with:
-          repository: pytorch-labs/compile-graph-break-site
           path: compile-graph-break-site
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '18' # Use a Node.js version compatible with your project
+          python-version: '3.12'
 
       - name: Install dependencies
-        run: npm install
+        run: pip install pyyaml requests
         working-directory: compile-graph-break-site
 
       - name: Build site
-        run: npm run build
+        run: python generate-site.py
         working-directory: compile-graph-break-site
 
-      - name: Checkout test-docs-site repository
-        uses: actions/checkout@v3
-        with:
-          repository: Sidharth123-cpu/test-docs-site
-          ref: site # The target branch in your test repo
-          token: ${{ secrets.DOCS_REPO_TOKEN }} # Personal Access Token with repo scope
-          path: pytorch-docs # This is still the local directory name
-
-      - name: Prepare deployment directory
+      - name: Create docs directory
         run: |
-          mkdir -p pytorch-docs/docs
-          rsync -av --delete compile-graph-break-site/gbid_directory/ pytorch-docs/docs/
+          mkdir -p docs
+          cp -r compile-graph-break-site/gbid_directory/* docs/
         working-directory: ${{ github.workspace }}
 
-      - name: Commit and Push to docs repo
+      - name: Commit and Push
         run: |
-          cd pytorch-docs
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Deploy: Update compile-graph-break site (Test)" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.DOCS_REPO_TOKEN }}@github.com/Sidharth123-cpu/test-docs-site.git site
-        working-directory: ${{ github.workspace }} 
+          git add docs/
+          git commit -m "Deploy: Update graph break site" || echo "No changes to commit"
+          git push
