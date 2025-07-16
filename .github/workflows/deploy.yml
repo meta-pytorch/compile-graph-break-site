@@ -28,11 +28,6 @@ jobs:
       - name: Build site
         run: python generate-site.py
 
-      - name: Create docs directory
-        run: |
-          mkdir -p docs
-          cp -r gbid_directory/* docs/
-
       - name: Deploy with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
