@@ -1,0 +1,23 @@
+# Site settings
+title: ""
+description: ""
+
+# Base URL for the site
+# This is crucial for correct linking on GitHub Pages
+baseurl: "/test-docs-site/docs" # Adjust this based on your actual GitHub Pages path
+
+# Build settings
+theme: jekyll-theme-minimal # Or any other Jekyll theme you prefer
+remote_theme: pages-themes/minimal@v0.2.0 # For GitHub Pages remote theme
+plugins:
+  - jekyll-remote-theme
+
+# Exclude build-related files from Jekyll processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - generate-site.py
+  - README.md
+  - .gitignore
+  - .github

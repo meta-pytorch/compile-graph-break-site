@@ -1,0 +1,256 @@
+---
+layout: default
+---
+Below are all known graph breaks detected by Dynamo.
+
+- [GB0000](gb/gb0000.html) — All __torch_function__ overrides returned NotImplemented due to TypeError from user code
+- [GB0001](gb/gb0001.html) — Argument of `as_subclass` must be a non-dispatcher-style tensor subclass
+- [GB0002](gb/gb0002.html) — Assertion failed on symbolic shapes
+- [GB0003](gb/gb0003.html) — Attempt to trace generator
+- [GB0004](gb/gb0004.html) — Attempted super().__delattr__() on an object without mutation tracking
+- [GB0005](gb/gb0005.html) — Attempted to a str() method implemented in C/C++
+- [GB0006](gb/gb0006.html) — Attempted to call a super() attribute that is not a function or method
+- [GB0007](gb/gb0007.html) — Attempted to call function marked as skipped
+- [GB0008](gb/gb0008.html) — Attempted to inline function marked as skipped
+- [GB0009](gb/gb0009.html) — Attempted to inline function marked as skipped (SkipFunctionVariable)
+- [GB0010](gb/gb0010.html) — Attempted to read a deleted variable
+- [GB0011](gb/gb0011.html) — Attempted to read undefined local variable
+- [GB0012](gb/gb0012.html) — Attempted to read undefined local variable (implicit)
+- [GB0013](gb/gb0013.html) — Attempted to represent unregistered RemovableHandle
+- [GB0014](gb/gb0014.html) — Attempted to wrap RNN, GRU, or LSTM
+- [GB0015](gb/gb0015.html) — Attempted to wrap sparse Tensor
+- [GB0016](gb/gb0016.html) — Attempted to wrap strided NestedTensor
+- [GB0017](gb/gb0017.html) — Attempted to wrap torch._higher_order_ops.invoke_subgraph
+- [GB0018](gb/gb0018.html) — Attempted to wrap unbacked SymInt
+- [GB0019](gb/gb0019.html) — AutogradFunctionContextVariable escaped Dynamo-traced region
+- [GB0020](gb/gb0020.html) — BUILD_STRING key conflict
+- [GB0021](gb/gb0021.html) — BUILD_STRING type error
+- [GB0022](gb/gb0022.html) — Bad import result
+- [GB0023](gb/gb0023.html) — Builtin `operator.*` comparison with constant `self` failed
+- [GB0024](gb/gb0024.html) — CLEANUP_THROW with StopIteration
+- [GB0025](gb/gb0025.html) — Call to `torch._dynamo.graph_break()`
+- [GB0026](gb/gb0026.html) — Calling subclass default constructor with more than tensor argument
+- [GB0027](gb/gb0027.html) — Cannot check Tensor object identity without its fake value
+- [GB0028](gb/gb0028.html) — Caught non-Exception value
+- [GB0029](gb/gb0029.html) — Compilation of intermediate hooks requires compiled autograd
+- [GB0030](gb/gb0030.html) — ComptimeContext graph break
+- [GB0031](gb/gb0031.html) — Custom __getattribute__ in nn.Module attribute access
+- [GB0032](gb/gb0032.html) — Custom __getattribute__ in nn.Module dict key check
+- [GB0033](gb/gb0033.html) — Data dependent operator
+- [GB0034](gb/gb0034.html) — Data-dependent assertion failed (cannot compile partial graph)
+- [GB0035](gb/gb0035.html) — Data-dependent branching with non-constant __bool__
+- [GB0036](gb/gb0036.html) — Dynamic shape operator
+- [GB0037](gb/gb0037.html) — Dynamic shape operator (no meta kernel)
+- [GB0038](gb/gb0038.html) — Dynamic slicing with Tensor arguments
+- [GB0039](gb/gb0039.html) — Dynamo cache limit exceeded
+- [GB0040](gb/gb0040.html) — Encountered aliasing during higher order op tracing
+- [GB0041](gb/gb0041.html) — Encountered input mutation during higher order op tracing
+- [GB0042](gb/gb0042.html) — Encountered non user function variable during invoke_subgraph HOP tracing
+- [GB0043](gb/gb0043.html) — Encountered non-PT2-compliant op
+- [GB0044](gb/gb0044.html) — Encountered strided NestedTensor in automatic dynamic dim determination
+- [GB0045](gb/gb0045.html) — Encountered tensor.is_inference() during tracing
+- [GB0046](gb/gb0046.html) — Encountered torch.is_inference_mode_enabled during tracing
+- [GB0047](gb/gb0047.html) — Encountered unconverted argument when attempting to inline
+- [GB0048](gb/gb0048.html) — Error getting associated real value
+- [GB0049](gb/gb0049.html) — Error when attempting to resolve op packet
+- [GB0050](gb/gb0050.html) — Exception with bad expected type
+- [GB0051](gb/gb0051.html) — Exception with non-type expectation
+- [GB0052](gb/gb0052.html) — Excessive RestartAnalysis() calls
+- [GB0053](gb/gb0053.html) — FSDP with use_orig_params=False
+- [GB0054](gb/gb0054.html) — Failed to construct Enum variable
+- [GB0055](gb/gb0055.html) — Failed to convert args/kwargs to proxy
+- [GB0056](gb/gb0056.html) — Failed to mutate tensor data attribute
+- [GB0057](gb/gb0057.html) — Failed to raise exception
+- [GB0058](gb/gb0058.html) — Failed to set tensor attribute
+- [GB0059](gb/gb0059.html) — Failed to trace builtin operator
+- [GB0060](gb/gb0060.html) — Failed to trace unittest method
+- [GB0061](gb/gb0061.html) — Failed to unpack object for BUILD_LIST_UNPACK
+- [GB0062](gb/gb0062.html) — Failed to unpack object for UNPACK_EX
+- [GB0063](gb/gb0063.html) — Failed to unpack object for UNPACK_SEQUENCE
+- [GB0064](gb/gb0064.html) — Fake tensor propagation exception
+- [GB0065](gb/gb0065.html) — Graph break in inlined function
+- [GB0066](gb/gb0066.html) — Graph break under GenericContextWrappingVariable
+- [GB0067](gb/gb0067.html) — HigherOrderOperator: Mutating a variable not in the current scope (SideEffects)
+- [GB0068](gb/gb0068.html) — Illegal method invocation in strict mode
+- [GB0069](gb/gb0069.html) — Import failure
+- [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
+- [GB0071](gb/gb0071.html) — Inline attempt with __self__
+- [GB0072](gb/gb0072.html) — Inplace op on input tensor
+- [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
+- [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
+- [GB0075](gb/gb0075.html) — LOAD_BUILD_CLASS bytecode not supported
+- [GB0076](gb/gb0076.html) — LOAD_FAST_CHECK on uninitialized variable
+- [GB0077](gb/gb0077.html) — Length mismatch when unpacking object for UNPACK_SEQUENCE
+- [GB0078](gb/gb0078.html) — Limitation of `nonstrict_trace
+- [GB0079](gb/gb0079.html) — Missing CALL_INTRINSIC_1 handler
+- [GB0080](gb/gb0080.html) — Missing FakeTensor example value
+- [GB0081](gb/gb0081.html) — Missing attribute when running call_method node
+- [GB0082](gb/gb0082.html) — Missing bytecode handler
+- [GB0083](gb/gb0083.html) — Module-level backwards hooks require compiled autograd.
+- [GB0084](gb/gb0084.html) — Non-constant attribute given to `super().__delattr__()`
+- [GB0085](gb/gb0085.html) — Non-function or method in subclass of torch.autograd.Function
+- [GB0086](gb/gb0086.html) — Not a Python constant
+- [GB0087](gb/gb0087.html) — NotImplementedError/UnsupportedFakeTensorException when running FX node
+- [GB0088](gb/gb0088.html) — Observed exception
+- [GB0089](gb/gb0089.html) — Observed exception (EXCEPT_HANDLER)
+- [GB0090](gb/gb0090.html) — Operator does not support running with fake tensors
+- [GB0091](gb/gb0091.html) — Read uninitialized cell
+- [GB0092](gb/gb0092.html) — Reconstruction failure
+- [GB0093](gb/gb0093.html) — Reconstruction failure: source.reconstruct not implemented
+- [GB0094](gb/gb0094.html) — SEND with bad type
+- [GB0095](gb/gb0095.html) — Set Exception object `__traceback__` attribute to not-`None`
+- [GB0096](gb/gb0096.html) — Should not compile partial graph (STORE_ATTR)
+- [GB0097](gb/gb0097.html) — Side effect on existing deque with limited maxlen
+- [GB0098](gb/gb0098.html) — Skip calling `torch.compiler.disable()`d function
+- [GB0099](gb/gb0099.html) — Skip inlining `torch.compiler.disable()`d function
+- [GB0100](gb/gb0100.html) — Storing Tensor hook handle in globals
+- [GB0101](gb/gb0101.html) — Storing Tensor hook handle in globals (inline call)
+- [GB0102](gb/gb0102.html) — Strict mode banned op
+- [GB0103](gb/gb0103.html) — Tensor subclass overridden method call
+- [GB0104](gb/gb0104.html) — Tensor with grad_fn()
+- [GB0105](gb/gb0105.html) — Tensor.numpy() with trace_numpy=False
+- [GB0106](gb/gb0106.html) — Tensor.numpy() without NumPy installed
+- [GB0107](gb/gb0107.html) — Tensor.random_ op
+- [GB0108](gb/gb0108.html) — Tensor.retain_grad() with AOTDispatcher
+- [GB0109](gb/gb0109.html) — Tensor.tolist() with non-integer tensor
+- [GB0110](gb/gb0110.html) — Tensor.uniform_ op called with `from` keyword
+- [GB0111](gb/gb0111.html) — TypeError from user code
+- [GB0112](gb/gb0112.html) — TypeError when making fake tensor call
+- [GB0113](gb/gb0113.html) — Unable to resolve super getattr
+- [GB0114](gb/gb0114.html) — Unexpected failure during itertools.accumulate() iteration
+- [GB0115](gb/gb0115.html) — Unexpected failure during itertools.groupby() iteration
+- [GB0116](gb/gb0116.html) — Unexpected type in sourceless builder
+- [GB0117](gb/gb0117.html) — Unhandled args for method
+- [GB0118](gb/gb0118.html) — Unimplemented next() call
+- [GB0119](gb/gb0119.html) — Uninitialized nn.Module
+- [GB0120](gb/gb0120.html) — Unreachable sub-generator code
+- [GB0121](gb/gb0121.html) — UnspecializedNNModuleVariable missing method
+- [GB0122](gb/gb0122.html) — Unsupported SourceType
+- [GB0123](gb/gb0123.html) — Unsupported Tensor.backward() call
+- [GB0124](gb/gb0124.html) — Unsupported Tensor.item() call with capture_scalar_outputs=False
+- [GB0125](gb/gb0125.html) — Unsupported Tensor.requires_grad_() call
+- [GB0126](gb/gb0126.html) — Unsupported Tensor.resize_() call
+- [GB0127](gb/gb0127.html) — Unsupported Tensor.resize_as_() call
+- [GB0128](gb/gb0128.html) — Unsupported Tensor.set_() call
+- [GB0129](gb/gb0129.html) — Unsupported Tensor.sparse_resize_() call
+- [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
+- [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__ inline attempt
+- [GB0132](gb/gb0132.html) — Unsupported `func` in itertools.accumulate
+- [GB0133](gb/gb0133.html) — Unsupported arguments for itertools.accumulate
+- [GB0134](gb/gb0134.html) — Unsupported arguments for itertools.groupby
+- [GB0135](gb/gb0135.html) — Unsupported attribute assignment on Exception object
+- [GB0136](gb/gb0136.html) — Unsupported attribute for range() object
+- [GB0137](gb/gb0137.html) — Unsupported attribute for slice() object
+- [GB0138](gb/gb0138.html) — Unsupported autograd.Function context `save_for_backward`
+- [GB0139](gb/gb0139.html) — Unsupported autograd.Function context method
+- [GB0140](gb/gb0140.html) — Unsupported autograd.Function method
+- [GB0141](gb/gb0141.html) — Unsupported call_id() without source
+- [GB0142](gb/gb0142.html) — Unsupported context manager
+- [GB0143](gb/gb0143.html) — Unsupported conversion for slice assignment
+- [GB0144](gb/gb0144.html) — Unsupported custom jvp
+- [GB0145](gb/gb0145.html) — Unsupported custom vjp
+- [GB0146](gb/gb0146.html) — Unsupported event method
+- [GB0147](gb/gb0147.html) — Unsupported function call
+- [GB0148](gb/gb0148.html) — Unsupported function call (delayed)
+- [GB0149](gb/gb0149.html) — Unsupported functorch tracing attempt
+- [GB0150](gb/gb0150.html) — Unsupported hasattr call
+- [GB0151](gb/gb0151.html) — Unsupported inspect call
+- [GB0152](gb/gb0152.html) — Unsupported key type for itertools.groupby
+- [GB0153](gb/gb0153.html) — Unsupported key type for nn.Module.__getitem__
+- [GB0154](gb/gb0154.html) — Unsupported kwargs for itertools.accumulate
+- [GB0155](gb/gb0155.html) — Unsupported kwargs for itertools.groupby
+- [GB0156](gb/gb0156.html) — Unsupported method call
+- [GB0157](gb/gb0157.html) — Unsupported ndarray attribute access
+- [GB0158](gb/gb0158.html) — Unsupported ndarray method call
+- [GB0159](gb/gb0159.html) — Unsupported ndarray.__version__ access
+- [GB0160](gb/gb0160.html) — Unsupported next() call
+- [GB0161](gb/gb0161.html) — Unsupported nn.Module attribute type
+- [GB0162](gb/gb0162.html) — Unsupported super().__init__() call
+- [GB0163](gb/gb0163.html) — Unsupported tensor subclass attribute access
+- [GB0164](gb/gb0164.html) — Unsupported tensor subclass overridden attribute access
+- [GB0165](gb/gb0165.html) — Unsupported torch._C._ImperativeEngine method
+- [GB0166](gb/gb0166.html) — Unsupported torch._C._ImperativeEngine.queue_callback()
+- [GB0167](gb/gb0167.html) — Variadic function call with bad args/kwargs type
+- [GB0168](gb/gb0168.html) — Variadic function call with bad flags
+- [GB0169](gb/gb0169.html) — Write to immutable cell
+- [GB0170](gb/gb0170.html) — Data-dependent branching
+- [GB0171](gb/gb0171.html) — assert with non-string message
+- [GB0172](gb/gb0172.html) — async_op=True for distributed collectives
+- [GB0173](gb/gb0173.html) — backward_state does not support export
+- [GB0174](gb/gb0174.html) — bad args to builtin cast()
+- [GB0175](gb/gb0175.html) — builtin isinstance() cannot determine type of argument
+- [GB0176](gb/gb0176.html) — call_id() without associated real value
+- [GB0177](gb/gb0177.html) — can't handle functions not implemented in python 
+- [GB0178](gb/gb0178.html) — constant fold exception
+- [GB0179](gb/gb0179.html) — copy.deepcopy()
+- [GB0180](gb/gb0180.html) — dataclass fields failure
+- [GB0181](gb/gb0181.html) — dtype mismatch between tensor and its gradient
+- [GB0182](gb/gb0182.html) — failed to broadcast when attempting Tensor comparison op
+- [GB0183](gb/gb0183.html) — failed to call dict.fromkeys()
+- [GB0184](gb/gb0184.html) — failed to call str() on user defined object
+- [GB0185](gb/gb0185.html) — failed to convert numpy.ndarray to Tensor
+- [GB0186](gb/gb0186.html) — functools.partial() with non-literal keyword
+- [GB0187](gb/gb0187.html) — functools.wraps
+- [GB0188](gb/gb0188.html) — getattr with no source
+- [GB0189](gb/gb0189.html) — getattr() on nn.Module with pending mutation
+- [GB0190](gb/gb0190.html) — getattr() with non-constant name argument
+- [GB0191](gb/gb0191.html) — id() with unsupported args
+- [GB0192](gb/gb0192.html) — input iterator to itertools.cycle has too many items
+- [GB0193](gb/gb0193.html) — invalid call to builtin op handler
+- [GB0194](gb/gb0194.html) — isinstance() called on user defined object with C extensions
+- [GB0195](gb/gb0195.html) — issubclass() with non-constant arguments
+- [GB0196](gb/gb0196.html) — key not found in dict
+- [GB0197](gb/gb0197.html) — list elements are pointing to the list itself
+- [GB0198](gb/gb0198.html) — mapping proxy affected by dictionary mutation
+- [GB0199](gb/gb0199.html) — mapping proxy cannot be reconstructed
+- [GB0200](gb/gb0200.html) — missing BUILD_SET handler
+- [GB0201](gb/gb0201.html) — namedtuple construction
+- [GB0202](gb/gb0202.html) — non-const argument in nn.Module method
+- [GB0203](gb/gb0203.html) — non-const keys in dict_keys
+- [GB0204](gb/gb0204.html) — non-const keys in mappingproxy
+- [GB0205](gb/gb0205.html) — proxy not set
+- [GB0206](gb/gb0206.html) — setattr() on Tensor.requires_grad
+- [GB0207](gb/gb0207.html) — sort with non-constant keys
+- [GB0208](gb/gb0208.html) — torch.* op returned non-Tensor
+- [GB0209](gb/gb0209.html) — torch.autograd._unsafe_preserve_version_counter escaped from compiled region
+- [GB0210](gb/gb0210.html) — torch.distributed package is not available!
+- [GB0211](gb/gb0211.html) — torch.nn.Module with a non-function custom __getattr__
+- [GB0212](gb/gb0212.html) — torch.profiler object escaped from compiled region
+- [GB0213](gb/gb0213.html) — unimplemented builtin op on tensor arguments
+- [GB0214](gb/gb0214.html) — unsupported SymNode comparison op
+- [GB0215](gb/gb0215.html) — unsupported Tensor comparison op
+- [GB0216](gb/gb0216.html) — unsupported grid type for triton hop check_grid
+- [GB0217](gb/gb0217.html) — unsupported hasattr operation
+- [GB0218](gb/gb0218.html) — unsupported index(Tensor)
+- [GB0219](gb/gb0219.html) — Backend compiler exception
+- [GB0220](gb/gb0220.html) — Failed to mutate tensor data attribute to different dtype
+- [GB0221](gb/gb0221.html) — non-generator contextlib.contextmanager
+- [GB0222](gb/gb0222.html) — Attempted to wrap a set with tensors
+- [GB0223](gb/gb0223.html) — torch.compile call with > 1 args
+- [GB0224](gb/gb0224.html) — Attempted to call torch in-graph function on only torch.SymInt arguments
+- [GB0225](gb/gb0225.html) — Attempted to use tensor creation function with requires_grad=True
+- [GB0226](gb/gb0226.html) — `torch.nn.Parameter()` with unsupported data type
+- [GB0227](gb/gb0227.html) — Attempted to use torch.nn.Parameter constructor with tensor subclass
+- [GB0228](gb/gb0228.html) — `torch.nn.Parameter`: cannot convert to traceable tracable
+- [GB0229](gb/gb0229.html) — Unexpected type of data placeholder op for parameter construction
+- [GB0230](gb/gb0230.html) — Attempted to use torch.use_deterministic_algorithms(warn_only=True)
+- [GB0231](gb/gb0231.html) — call `torch.from_numpy` with `torch._dynamo.config.trace_numpy=False`
+- [GB0232](gb/gb0232.html) — `torch.from_numpy` with NumPy unavailable
+- [GB0233](gb/gb0233.html) — Attempted to use strided NestedTensor
+- [GB0234](gb/gb0234.html) — Attempted to pop from empty torch function mode stack
+- [GB0235](gb/gb0235.html) — `torch.nn.Parameter` with non-constant Tensor attributes
+- [GB0236](gb/gb0236.html) — Invalid input type for nonstrict_trace-ed function
+- [GB0237](gb/gb0237.html) — non-constant `requires_grad` argument to `torch.nn.Parameter`
+- [GB0238](gb/gb0238.html) — Input marked with `pytree.register_constant` constructed in the `torch.compile` region
+- [GB0239](gb/gb0239.html) — Invalid use of pytree_flatten with nonstrict_trace-ed function
+- [GB0240](gb/gb0240.html) — Shape mismatch with out= list of tensor variants
+- [GB0241](gb/gb0241.html) — Attempted to call op with non-contiguous `out=` list of tensors
+- [GB0242](gb/gb0242.html) — Attempted to call op with non-contiguous `out=` tensor
+- [GB0243](gb/gb0243.html) — Attempted to use `torch.nn.modules.utils._ntuple` with unsupported argument type
+- [GB0244](gb/gb0244.html) — Attempted to use `torch.nn.Parameter()` with export
+- [GB0245](gb/gb0245.html) — Attempted to use `nested_tensor` with non-list input
+- [GB0246](gb/gb0246.html) — Attempted to use `torch.nn.functional.one_hot` with data-dependent output shape
+- [GB0247](gb/gb0247.html) — Shape mismatch with out= tensor variant
+- [GB0248](gb/gb0248.html) — improper torch.get_device_module arguments
+- [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
+- [GB0250](gb/gb0250.html) — ndarray.astype(object)
