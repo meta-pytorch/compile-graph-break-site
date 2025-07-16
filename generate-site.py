@@ -1,23 +1,16 @@
-"""
-Copyright (c) Meta Platforms, Inc. and affiliates.
-
-This source code is licensed under the BSD license found in the
-LICENSE file in the root directory of this source tree.
-"""
-
 import os
-import yaml
+import json
 import requests
 import re
 from pathlib import Path
 
-REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.yml'
+REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.json'
 
 def get_registry_data():
     try:
         response = requests.get(REGISTRY_URL)
         response.raise_for_status()
-        return yaml.safe_load(response.text)
+        return json.loads(response.text)
     except Exception as error:
         print(f'Error fetching registry data: {error}')
         exit(1)
@@ -30,17 +23,17 @@ def extract_manual_content(file_path):
     with open(file_path, 'r') as f:
         content = f.read()
 
-    # Look for content between manual markers
-    match = re.search(r'<!-- MANUAL CONTENT START.*?-->(.*?)<!-- MANUAL CONTENT END', content, re.DOTALL)
+    # Look for content between additional information markers
+    match = re.search(r'<!-- ADDITIONAL INFORMATION START.*?-->(.*?)<!-- ADDITIONAL INFORMATION END', content, re.DOTALL)
     if match:
         return match.group(1).strip()
 
     # Fallback to old method if no markers found
     match = re.search(r'## Additional Information\s*(.*?)(?=\[Back to Registry\])', content, re.DOTALL)
     if match:
-        # Return only manually added content (not from YAML)
+        # Return only manually added content
         manual_content = match.group(1).strip()
-        # Filter out content that came from YAML (lines starting with "- ")
+        # Filter out content that came from JSON (lines starting with "- ")
         lines = manual_content.split('\n')
         manual_lines = [line for line in lines if not line.strip().startswith('- ')]
         return '\n'.join(manual_lines).strip()
@@ -138,18 +131,13 @@ Below are all known graph breaks detected by Dynamo.
         hints = entry.get('Hints', [])
         hints_content = '\n'.join([f"- {h}" for h in hints]) if hints else '*No hints provided.*'
 
-        # Process Additional_Info from YAML
-        additional_info = entry.get('Additional_Info', [])
-        yaml_additional_info = '\n'.join([f"- {info}" for info in additional_info]) if additional_info else ''
-
         # Create additional info section with manual content markers
         additional_info_section = f"""
 ## Additional Information
-{yaml_additional_info}
 
-<!-- MANUAL CONTENT START - Add custom information below this line -->
+<!-- ADDITIONAL INFORMATION START - Add custom information below this line -->
 {manual_content}
-<!-- MANUAL CONTENT END -->
+<!-- ADDITIONAL INFORMATION END -->
 """
 
         detail_md = f"""\
@@ -161,7 +149,7 @@ layout: default
 ## Graph-Break Type
 *Short name describing what triggered the graph break*
 
-{entry.get('Gb_type', '*No type provided.*')}
+{entry.get('Gb_type', '*No Gb_type provided.*')}
 
 ## Context
 *Values or code snippet captured at the break point*
@@ -169,22 +157,23 @@ layout: default
 {entry.get('Context', '*No context provided.*')}
 
 ## Explanation
-*Why this specific graph break happened*
+*Explanation of why the graph break was triggered*
 
 {entry.get('Explanation', '*No explanation provided.*')}
 
 ## Hints
-*Suggestions for fixing or working around the break*
+*Hints on how to resolve the graph break*
 
 {hints_content}
-{additional_info_section}
 
-[Back to Registry](../index.html)
+{additional_info_section}
 """
+
         with open(file_path, 'w') as f:
             f.write(detail_md)
+        print(f'Generated {file_path}')
 
-    print(f"Generated {len(registry)} individual GBID pages")
+    print('Site generation complete!')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     generate_site()
