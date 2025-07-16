@@ -43,7 +43,7 @@ def extract_manual_content(file_path):
 def generate_site():
     registry = get_registry_data()
 
-    output_dir = 'gbid_directory'
+    output_dir = 'docs'
     Path(output_dir).mkdir(exist_ok=True)
 
     # Create custom _layouts directory
@@ -91,7 +91,7 @@ description: ""
 
 # Base URL for the site
 # This is crucial for correct linking on GitHub Pages
-baseurl: "/test-docs-site/docs" # Adjust this based on your actual GitHub Pages path
+baseurl: "/compile-graph-break-site" # Adjust this based on your actual GitHub Pages path
 
 # Build settings
 theme: jekyll-theme-minimal # Or any other Jekyll theme you prefer
@@ -181,6 +181,7 @@ layout: default
 {hints_content}
 
 {additional_info_section}
+[Back to Registry](../index.html)
 """
 
         with open(file_path, 'w') as f:
