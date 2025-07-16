@@ -4,7 +4,7 @@ description: ""
 
 # Base URL for the site
 # This is crucial for correct linking on GitHub Pages
-baseurl: "/test-docs-site/docs" # Adjust this based on your actual GitHub Pages path
+baseurl: "/compile-graph-break-site" # Adjust this based on your actual GitHub Pages path
 
 # Build settings
 theme: jekyll-theme-minimal # Or any other Jekyll theme you prefer
