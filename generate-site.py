@@ -50,6 +50,20 @@ def generate_site():
     layouts_dir = os.path.join(output_dir, '_layouts')
     Path(layouts_dir).mkdir(exist_ok=True)
 
+    # Create assets/css directory and style.scss file
+    css_dir = os.path.join(output_dir, 'assets', 'css')
+    Path(css_dir).mkdir(parents=True, exist_ok=True)
+
+    style_scss = """---
+---
+
+@import "{{ site.theme }}";
+"""
+
+    with open(os.path.join(css_dir, 'style.scss'), 'w') as f:
+        f.write(style_scss)
+    print('Generated assets/css/style.scss')
+
     # Create minimal default.html layout
     default_layout_content = """\
 <!DOCTYPE html>
@@ -174,6 +188,7 @@ layout: default
         print(f'Generated {file_path}')
 
     print('Site generation complete!')
+
 
 if __name__ == '__main__':
     generate_site()
