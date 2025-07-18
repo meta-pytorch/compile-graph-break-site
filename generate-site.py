@@ -65,20 +65,21 @@ def generate_site():
     print('Generated assets/css/style.scss')
 
     # Create minimal default.html layout
-    default_layout_content = """\
+    default_layout_content = '''\
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ \"/assets/css/style.css\" | relative_url }}">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
 </head>
 <body>
     {{ content }}
 </body>
 </html>
-"""
+'''
     with open(os.path.join(layouts_dir, 'default.html'), 'w') as f:
         f.write(default_layout_content)
     print('Generated _layouts/default.html')
