@@ -3,6 +3,9 @@ layout: default
 ---
 Below are all known graph breaks detected by Dynamo.
 
+<input type="text" id="search-input" placeholder="Search graph breaks...">
+<div id="search-results"></div>
+
 - [GB0000](gb/gb0000.html) — All __torch_function__ overrides returned NotImplemented due to TypeError from user code
 - [GB0001](gb/gb0001.html) — Argument of `as_subclass` must be a non-dispatcher-style tensor subclass
 - [GB0002](gb/gb0002.html) — Assertion failed on symbolic shapes
@@ -254,3 +257,50 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0248](gb/gb0248.html) — improper torch.get_device_module arguments
 - [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
+
+<script>
+(function() {
+  var idx;
+  var docs = {};
+
+  // Fetch the search index and documents
+  fetch('{{ site.baseurl }}/search.json')
+    .then(response => response.json())
+    .then(data => {
+      idx = lunr(function () {
+        this.ref('id');
+        this.field('title', { boost: 10 });
+        this.field('content');
+
+        data.forEach(function (doc) {
+          this.add(doc);
+          docs[doc.id] = doc;
+        }, this);
+      });
+
+      var searchInput = document.getElementById('search-input');
+      var searchResults = document.getElementById('search-results');
+
+      searchInput.addEventListener('keyup', function () {
+        var query = this.value;
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        var results = idx.search(query);
+        var html = '<ul>';
+        if (results.length === 0) {
+          html += '<li>No results found.</li>';
+        } else {
+          results.forEach(function (result) {
+            var doc = docs[result.ref];
+            html += '<li><a href="' + doc.url + '">' + doc.title + '</a><br/>' + doc.content.substring(0, 150) + '...</li>';
+          });
+        }
+        html += '</ul>';
+        searchResults.innerHTML = html;
+      });
+    });
+})();
+</script>
