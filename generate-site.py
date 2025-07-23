@@ -114,6 +114,11 @@ exclude:
         f.write(jekyll_config)
     print('Generated _config.yml')
 
+    # Initialize metrics for dashboard
+    graph_breaks_with_additional_info = 0
+    graph_breaks_with_missing_content = 0
+    total_graph_breaks = 0
+
     # Generate index.md
     index_md = """\
 ---
@@ -137,11 +142,26 @@ Below are all known graph breaks detected by Dynamo.
     Path(gb_dir).mkdir(exist_ok=True)
 
     for gbid, entries in registry.items():
+        total_graph_breaks += 1
         entry = entries[0]  # Using first entry for the detail page
         file_path = os.path.join(gb_dir, f"{gbid.lower()}.md")
 
         # Extract any manually added content from existing file
         manual_content = extract_manual_content(file_path)
+
+        if manual_content:
+            graph_breaks_with_additional_info += 1
+
+        # Check for missing content
+        missing_content = False
+        if entry.get('Gb_type', '*No Gb_type provided.*') == '*No Gb_type provided.*' or \
+           entry.get('Context', '*No context provided.*') == '*No context provided.*' or \
+           entry.get('Explanation', '*No explanation provided.*') == '*No explanation provided.*' or \
+           not entry.get('Hints', []):
+            missing_content = True
+
+        if missing_content:
+            graph_breaks_with_missing_content += 1
 
         hints = entry.get('Hints', [])
         hints_content = '\n'.join([f"- {h}" for h in hints]) if hints else '*No hints provided.*'
@@ -191,6 +211,24 @@ layout: default
         with open(file_path, 'w') as f:
             f.write(detail_md)
         print(f'Generated {file_path}')
+
+    # Generate dashboard.md
+    dashboard_md = f"""\
+---
+layout: default
+title: Graph Break Dashboard
+---
+
+# Graph Break Metrics Dashboard
+
+- Total Graph Breaks: {total_graph_breaks}
+- Graph Breaks with Additional Info: {graph_breaks_with_additional_info}
+- Graph Breaks with Missing Content: {graph_breaks_with_missing_content}
+
+"""
+    with open(os.path.join(output_dir, 'dashboard.md'), 'w') as f:
+        f.write(dashboard_md)
+    print('Generated dashboard.md')
 
     print('Site generation complete!')
 
