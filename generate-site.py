@@ -58,6 +58,74 @@ def generate_site():
 ---
 
 @import "{{ site.theme }}";
+
+/* Custom styles for header and navigation */
+body {
+    padding-top: 60px; /* Space for fixed header */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.metric-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.metric-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.metric-box h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.metric-box p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0;
+}
 """
 
     with open(os.path.join(css_dir, 'style.scss'), 'w') as f:
@@ -227,9 +295,20 @@ title: Graph Break Dashboard
 
 # Graph Break Metrics Dashboard
 
-- Total Graph Breaks: {total_graph_breaks}
-- Graph Breaks with Additional Info: {graph_breaks_with_additional_info}
-- Graph Breaks with Missing Content: {graph_breaks_with_missing_content}
+<div class="metric-container">
+    <div class="metric-box">
+        <h3>Total Graph Breaks</h3>
+        <p>{total_graph_breaks}</p>
+    </div>
+    <div class="metric-box">
+        <h3>Graph Breaks with Additional Info</h3>
+        <p>{graph_breaks_with_additional_info}</p>
+    </div>
+    <div class="metric-box">
+        <h3>Graph Breaks with Missing Content</h3>
+        <p>{graph_breaks_with_missing_content}</p>
+    </div>
+</div>
 
 """
     with open(os.path.join(output_dir, 'dashboard.md'), 'w') as f:
