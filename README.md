@@ -1,6 +1,6 @@
 # PyTorch Compile Graph Break Registry Site
 
-This website serves as a comprehensive and automatically updated registry of graph breaks encountered when using PyTorch Dynamo. Its primary purpose is to provide developers with detailed information, context, and potential hints for resolving these graph breaks, facilitating smoother development with PyTorch's `torch.compile` feature.
+This website serves as a comprehensive and automatically updated registry of graph breaks encountered when using PyTorch Dynamo. Its primary purpose is to provide `torch.compile` users and developers with detailed information, context, and potential hints for resolving these graph breaks, facilitating smoother development with PyTorch's `torch.compile` feature.
 
 ## For Developers
 
@@ -8,13 +8,13 @@ This site is a living document that evolves with the PyTorch Dynamo development.
 
 ### Browsing the Registry
 
-You can browse the list of known graph breaks on the [Home](/) page. Each graph break entry provides:
+You can browse the list of known graph breaks on the [Home](https://pytorch-labs.github.io/compile-graph-break-site/) page. Each graph break entry provides:
 *   **Graph-Break Type**: A short description of what triggered the break.
 *   **Context**: Values or code snippets captured at the breakpoint.
 *   **Explanation**: A detailed explanation of why the graph break was triggered.
 *   **Hints**: Suggestions on how to resolve the graph break.
 
-You can also visit the [Dashboard](/dashboard.html) for an overview of metrics such as total graph breaks, those with additional info, and those with missing content.
+You can also visit the [Dashboard](https://pytorch-labs.github.io/compile-graph-break-site/dashboard.html) for an overview of metrics such as total graph breaks, those with additional info, and those with missing content.
 
 ### Contributing Additional Information
 
