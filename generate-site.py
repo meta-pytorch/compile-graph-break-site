@@ -50,15 +50,17 @@ def generate_site():
     layouts_dir = os.path.join(output_dir, '_layouts')
     Path(layouts_dir).mkdir(exist_ok=True)
 
-    # Create assets/css directory and style.scss file
-    css_dir = os.path.join(output_dir, 'assets', 'css')
-    Path(css_dir).mkdir(parents=True, exist_ok=True)
+    # Create assets directory for style.css and other assets
+    assets_dir = os.path.join(output_dir, 'assets')
+    Path(assets_dir).mkdir(parents=True, exist_ok=True)
 
-    style_scss = """---
----
+    # Re-create assets/css directory for pytorch-logo.png
+    css_assets_dir = os.path.join(output_dir, 'assets', 'css')
+    Path(css_assets_dir).mkdir(parents=True, exist_ok=True)
 
-@import "{{ site.theme }}";
+    # The pytorch-logo.png will remain in assets/css/ as per user request
 
+    style_css_content = """
 /* Custom styles for header and navigation */
 body {
     padding-top: 60px; /* Space for fixed header */
@@ -128,9 +130,9 @@ nav a:hover {
 }
 """
 
-    with open(os.path.join(css_dir, 'style.scss'), 'w') as f:
-        f.write(style_scss)
-    print('Generated assets/css/style.scss')
+    with open(os.path.join(assets_dir, 'style.css'), 'w') as f:
+        f.write(style_css_content)
+    print('Generated assets/style.css')
 
     # Create minimal default.html layout
     default_layout_content = '''\
@@ -140,7 +142,7 @@ nav a:hover {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="{{ \"/assets/css/style.css\" | relative_url }}">
+    <link rel="stylesheet" href="{{ \"/assets/style.css\" | relative_url }}">
     <link rel="icon" type="image/png" href="{{ \"/assets/css/pytorch-logo.png\" | relative_url }}">
 </head>
 <body>
