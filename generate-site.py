@@ -76,6 +76,12 @@ def generate_site():
     <link rel="icon" type="image/png" href="{{ \"/assets/css/pytorch-logo.png\" | relative_url }}">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="{{ \"/\" | relative_url }}">Home</a>
+            <a href="{{ \"/dashboard.html\" | relative_url }}">Dashboard</a>
+        </nav>
+    </header>
     {{ content }}
 </body>
 </html>
