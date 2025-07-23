@@ -182,9 +182,10 @@ layout: default
 {hints_content}
 
 {additional_info_section}
-[Back to Registry](../index.html)
 
 [Click here to add Additional Info](https://github.com/pytorch-labs/compile-graph-break-site/edit/main/docs/gb/{gbid.lower()}.md)
+
+[Back to Registry](../index.html)
 """
 
         with open(file_path, 'w') as f:
