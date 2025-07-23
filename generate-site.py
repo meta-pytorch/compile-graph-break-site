@@ -74,7 +74,6 @@ def generate_site():
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ \"/assets/css/style.css\" | relative_url }}">
     <link rel="icon" type="image/png" href="{{ \"/assets/css/pytorch-logo.png\" | relative_url }}">
-    <script src="{{ \"/assets/js/search.js\" | relative_url }}"></script>
 </head>
 <body>
     {{ content }}
@@ -115,17 +114,12 @@ exclude:
         f.write(jekyll_config)
     print('Generated _config.yml')
 
-    search_index_data = []
-
     # Generate index.md
     index_md = """\
 ---
 layout: default
 ---
 Below are all known graph breaks detected by Dynamo.
-
-<input type="text" id="search-input" placeholder="Search graph breaks...">
-<div id="search-results"></div>
 
 """
 
@@ -137,57 +131,6 @@ Below are all known graph breaks detected by Dynamo.
     with open(os.path.join(output_dir, 'index.md'), 'w') as f:
         f.write(index_md)
     print('Generated index.md')
-
-    # Add JavaScript for search
-    search_js = '''
-(function() {
-  var idx;
-  var docs = {};
-
-  // Fetch the search data
-  fetch('{{ site.baseurl }}/search_data.json')
-    .then(response => response.json())
-    .then(data => {
-      idx = lunr(function () {
-        this.ref('id');
-        this.field('title', { boost: 10 });
-        this.field('search_content');
-
-        data.forEach(function (doc) {
-          this.add(doc);
-          docs[doc.id] = doc;
-        }, this);
-      });
-
-      var searchInput = document.getElementById('search-input');
-      var searchResults = document.getElementById('search-results');
-
-      searchInput.addEventListener('keyup', function () {
-        var query = this.value;
-        if (query.length < 2) {
-          searchResults.innerHTML = '';
-          return;
-        }
-
-        var results = idx.search(query);
-        var html = '<ul>';
-        if (results.length === 0) {
-          html += '<li>No results found.</li>';
-        } else {
-          results.forEach(function (result) {
-            var doc = docs[result.ref];
-            html += '<li><a href="' + doc.url + '">' + doc.title + '</a> — ' + doc.gb_type + '</li>';
-          });
-        }
-        html += '</ul>';
-        searchResults.innerHTML = html;
-      });
-    });
-})();
-'''
-    with open(os.path.join(output_dir, 'index.md'), 'a') as f:
-        f.write(search_js)
-    print('Appended search JavaScript to index.md')
 
     # Generate individual GBID pages
     gb_dir = os.path.join(output_dir, 'gb')
@@ -247,22 +190,6 @@ layout: default
         with open(file_path, 'w') as f:
             f.write(detail_md)
         print(f'Generated {file_path}')
-
-        # Add data to search index
-        search_content = f"{entry.get('Gb_type', '')} {entry.get('Context', '')} {entry.get('Explanation', '')} {hints_content} {manual_content}"
-        search_index_data.append({
-            'id': gbid.lower(),
-            'title': gbid,
-            'url': f'gb/{gbid.lower()}.html',
-            'gb_type': entry.get('Gb_type', '*No Gb_type provided.*'),
-            'search_content': search_content.replace('\n', ' ').replace('\r', ' ').strip()
-        })
-
-    # Write search index to JSON file
-    search_data_path = os.path.join(output_dir, 'search_data.json')
-    with open(search_data_path, 'w') as f:
-        json.dump(search_index_data, f, indent=2)
-    print(f'Generated {search_data_path}')
 
     print('Site generation complete!')
 
