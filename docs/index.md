@@ -255,4 +255,3 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
 - [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
-- [GB0252](gb/gb0252.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
