@@ -20,7 +20,7 @@ You can also visit the [Dashboard](https://pytorch-labs.github.io/compile-graph-
 
 Each graph break page includes a "Click here to add Additional Info" link. This link takes you directly to the GitHub editor for that specific markdown file (`docs/gb/GBXXXX.md`). You can use this to add further insights, workarounds, or examples that are not part of the automated registry data.
 
-Please ensure your additions are placed between the `<!-- ADDITIONAL INFORMATION START -->` and `<!-- ADDITIONAL INFORMATION END -->` comments to be preserved across automated updates.
+Please ensure your additions are placed between the `<!-- ADDITIONAL INFORMATION START -->` and `<!-- ADDITIONAL INFORMATION END -->` comments to be preserved across automated updates. Note: There may be a ~5 minute delay from when you upload the additional information to when it shows up on the site, since it takes some time for the website to re-build.
 
 ## Local Setup and Development
 
