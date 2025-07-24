@@ -21,7 +21,3 @@ exclude:
   - README.md
   - .gitignore
   - .github
-
-markdown: kramdown
-kramdown:
-  input: GFM
