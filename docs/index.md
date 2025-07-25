@@ -255,3 +255,15 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
 - [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
+- [GB0252](gb/gb0252.html) — could not find name in object's mro
+- [GB0253](gb/gb0253.html) — call_method on generator
+- [GB0254](gb/gb0254.html) — non-const setattr name on user-defined object
+- [GB0255](gb/gb0255.html) — attempted to call sourceless user-defined object as a method
+- [GB0256](gb/gb0256.html) — User-defined object with non-function __getattr__
+- [GB0257](gb/gb0257.html) — TypedDict with optional keys
+- [GB0258](gb/gb0258.html) — collections.deque() with bad arguments
+- [GB0259](gb/gb0259.html) — collections.deque() with bad iterable argument
+- [GB0260](gb/gb0260.html) — missing args to functools.partial
+- [GB0261](gb/gb0261.html) — User-defined object method with non-function __func__
+- [GB0262](gb/gb0262.html) — unsupported contextlib.* API
+- [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
