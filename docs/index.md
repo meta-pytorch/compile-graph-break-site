@@ -267,3 +267,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0261](gb/gb0261.html) — User-defined object method with non-function __func__
 - [GB0262](gb/gb0262.html) — unsupported contextlib.* API
 - [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
+- [GB0264](gb/gb0264.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
