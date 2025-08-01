@@ -268,3 +268,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0262](gb/gb0262.html) — unsupported contextlib.* API
 - [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
 - [GB0264](gb/gb0264.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
+- [GB0265](gb/gb0265.html) — FakeScriptObject missing method implementation
+- [GB0266](gb/gb0266.html) — Weird method call on TorchScript object
+- [GB0267](gb/gb0267.html) — Attempted to access non-callable attribute of TorchScript object
