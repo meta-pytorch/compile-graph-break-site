@@ -279,7 +279,7 @@ layout: default
 
 {additional_info_section}
 
-[Click here to add Additional Info](https://github.com/pytorch-labs/compile-graph-break-site/edit/main/docs/gb/{gbid.lower()}.md)
+[Click here to add Additional Info](https://github.com/meta-pytorch/compile-graph-break-site/edit/main/docs/gb/{gbid.lower()}.md)
 
 [Back to Registry](../index.html)
 """
