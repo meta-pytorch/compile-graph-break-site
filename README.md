@@ -8,13 +8,13 @@ This site is a living document that evolves with the PyTorch Dynamo development.
 
 ### Browsing the Registry
 
-You can browse the list of known graph breaks on the [Home](https://pytorch-labs.github.io/compile-graph-break-site/) page. Each graph break entry provides:
+You can browse the list of known graph breaks on the [Home](https://meta-pytorch.github.io/compile-graph-break-site/) page. Each graph break entry provides:
 *   **Graph-Break Type**: A short description of what triggered the break.
 *   **Context**: Values or code snippets captured at the breakpoint.
 *   **Explanation**: A detailed explanation of why the graph break was triggered.
 *   **Hints**: Suggestions on how to resolve the graph break.
 
-You can also visit the [Dashboard](https://pytorch-labs.github.io/compile-graph-break-site/dashboard.html) for an overview of metrics such as total graph breaks, those with additional info, and those with missing content.
+You can also visit the [Dashboard](https://meta-pytorch.github.io/compile-graph-break-site/dashboard.html) for an overview of metrics such as total graph breaks, those with additional info, and those with missing content.
 
 ### Contributing Additional Information
 
@@ -35,7 +35,7 @@ To run and develop this site locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/pytorch-labs/compile-graph-break-site.git
+    git clone https://github.com/meta-pytorch/compile-graph-break-site.git
     cd compile-graph-break-site
     ```
 
@@ -68,4 +68,4 @@ To run and develop this site locally, follow these steps:
 This site is automatically updated every 3 minutes via a GitHub Actions cron job. The `generate-site.py` script fetches the latest graph break registry data, regenerates the site content, and pushes the updates to the `main` branch, ensuring the site always reflects the most current information.
 
 ## License
-This repository uses the BSD License, as found in the [LICENSE](https://github.com/pytorch-labs/compile-graph-break-site/blob/main/LICENSE) file.
+This repository uses the BSD License, as found in the [LICENSE](https://github.com/meta-pytorch/compile-graph-break-site/blob/main/LICENSE) file.
