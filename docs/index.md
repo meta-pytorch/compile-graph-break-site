@@ -173,7 +173,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0167](gb/gb0167.html) — Variadic function call with bad args/kwargs type
 - [GB0168](gb/gb0168.html) — Variadic function call with bad flags
 - [GB0169](gb/gb0169.html) — Write to immutable cell
-- [GB0170](gb/gb0170.html) — _gb_type
+- [GB0170](gb/gb0170.html) — Data-dependent branching
 - [GB0171](gb/gb0171.html) — assert with non-string message
 - [GB0172](gb/gb0172.html) — async_op=True for distributed collectives
 - [GB0173](gb/gb0173.html) — backward_state does not support export
@@ -222,3 +222,52 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0216](gb/gb0216.html) — unsupported grid type for triton hop check_grid
 - [GB0217](gb/gb0217.html) — unsupported hasattr operation
 - [GB0218](gb/gb0218.html) — unsupported index(Tensor)
+- [GB0219](gb/gb0219.html) — Backend compiler exception
+- [GB0220](gb/gb0220.html) — Failed to mutate tensor data attribute to different dtype
+- [GB0221](gb/gb0221.html) — non-generator contextlib.contextmanager
+- [GB0222](gb/gb0222.html) — Attempted to wrap a set with tensors
+- [GB0223](gb/gb0223.html) — torch.compile call with > 1 args
+- [GB0224](gb/gb0224.html) — Attempted to call torch in-graph function on only torch.SymInt arguments
+- [GB0225](gb/gb0225.html) — Attempted to use tensor creation function with requires_grad=True
+- [GB0226](gb/gb0226.html) — `torch.nn.Parameter()` with unsupported data type
+- [GB0227](gb/gb0227.html) — Attempted to use torch.nn.Parameter constructor with tensor subclass
+- [GB0228](gb/gb0228.html) — `torch.nn.Parameter`: cannot convert to traceable tracable
+- [GB0229](gb/gb0229.html) — Unexpected type of data placeholder op for parameter construction
+- [GB0230](gb/gb0230.html) — Attempted to use torch.use_deterministic_algorithms(warn_only=True)
+- [GB0231](gb/gb0231.html) — call `torch.from_numpy` with `torch._dynamo.config.trace_numpy=False`
+- [GB0232](gb/gb0232.html) — `torch.from_numpy` with NumPy unavailable
+- [GB0233](gb/gb0233.html) — Attempted to use strided NestedTensor
+- [GB0234](gb/gb0234.html) — Attempted to pop from empty torch function mode stack
+- [GB0235](gb/gb0235.html) — `torch.nn.Parameter` with non-constant Tensor attributes
+- [GB0236](gb/gb0236.html) — Invalid input type for nonstrict_trace-ed function
+- [GB0237](gb/gb0237.html) — non-constant `requires_grad` argument to `torch.nn.Parameter`
+- [GB0238](gb/gb0238.html) — Input marked with `pytree.register_constant` constructed in the `torch.compile` region
+- [GB0239](gb/gb0239.html) — Invalid use of pytree_flatten with nonstrict_trace-ed function
+- [GB0240](gb/gb0240.html) — Shape mismatch with out= list of tensor variants
+- [GB0241](gb/gb0241.html) — Attempted to call op with non-contiguous `out=` list of tensors
+- [GB0242](gb/gb0242.html) — Attempted to call op with non-contiguous `out=` tensor
+- [GB0243](gb/gb0243.html) — Attempted to use `torch.nn.modules.utils._ntuple` with unsupported argument type
+- [GB0244](gb/gb0244.html) — Attempted to use `torch.nn.Parameter()` with export
+- [GB0245](gb/gb0245.html) — Attempted to use `nested_tensor` with non-list input
+- [GB0246](gb/gb0246.html) — Attempted to use `torch.nn.functional.one_hot` with data-dependent output shape
+- [GB0247](gb/gb0247.html) — Shape mismatch with out= tensor variant
+- [GB0248](gb/gb0248.html) — improper torch.get_device_module arguments
+- [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
+- [GB0250](gb/gb0250.html) — ndarray.astype(object)
+- [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
+- [GB0252](gb/gb0252.html) — could not find name in object's mro
+- [GB0253](gb/gb0253.html) — call_method on generator
+- [GB0254](gb/gb0254.html) — non-const setattr name on user-defined object
+- [GB0255](gb/gb0255.html) — attempted to call sourceless user-defined object as a method
+- [GB0256](gb/gb0256.html) — User-defined object with non-function __getattr__
+- [GB0257](gb/gb0257.html) — TypedDict with optional keys
+- [GB0258](gb/gb0258.html) — collections.deque() with bad arguments
+- [GB0259](gb/gb0259.html) — collections.deque() with bad iterable argument
+- [GB0260](gb/gb0260.html) — missing args to functools.partial
+- [GB0261](gb/gb0261.html) — User-defined object method with non-function __func__
+- [GB0262](gb/gb0262.html) — unsupported contextlib.* API
+- [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
+- [GB0264](gb/gb0264.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
+- [GB0265](gb/gb0265.html) — FakeScriptObject missing method implementation
+- [GB0266](gb/gb0266.html) — Weird method call on TorchScript object
+- [GB0267](gb/gb0267.html) — Attempted to access non-callable attribute of TorchScript object
