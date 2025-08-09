@@ -271,3 +271,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0265](gb/gb0265.html) — FakeScriptObject missing method implementation
 - [GB0266](gb/gb0266.html) — Weird method call on TorchScript object
 - [GB0267](gb/gb0267.html) — Attempted to access non-callable attribute of TorchScript object
+- [GB0268](gb/gb0268.html) — Unsupported kwargs for itertools.product
