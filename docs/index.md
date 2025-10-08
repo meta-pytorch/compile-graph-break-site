@@ -278,3 +278,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0272](gb/gb0272.html) — Failed to make weakref to User Object
 - [GB0273](gb/gb0273.html) — Keyword args passed to exception constructor
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
+- [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
