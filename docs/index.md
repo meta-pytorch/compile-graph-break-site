@@ -275,7 +275,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0269](gb/gb0269.html) — Forced graph break on leaf function
 - [GB0270](gb/gb0270.html) — unimplemented builtin op vars() with no arguments
 - [GB0271](gb/gb0271.html) — Class attribute mutation when the __dict__ was already materialized
-- [GB0272](gb/gb0272.html) — Failed to make weakref to User Object
+- [GB0272](gb/gb0272.html) — Failed to make weakref to User Object when storing by ID
 - [GB0273](gb/gb0273.html) — Keyword args passed to exception constructor
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
 - [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
+- [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
