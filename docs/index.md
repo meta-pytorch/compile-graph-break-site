@@ -280,3 +280,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
 - [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
 - [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
+- [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
