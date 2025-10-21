@@ -282,3 +282,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
+- [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
