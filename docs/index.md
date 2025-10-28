@@ -283,3 +283,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
 - [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
+- [GB0280](gb/gb0280.html) — 1-arg super not implemented
+- [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
+- [GB0282](gb/gb0282.html) — Placement with custom __getattr__ not supported
