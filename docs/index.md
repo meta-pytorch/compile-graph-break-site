@@ -286,4 +286,3 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
 - [GB0282](gb/gb0282.html) — Placement with custom __getattr__ not supported
-- [GB0283](gb/gb0283.html) — Failed to make weakref to graph-created external object
