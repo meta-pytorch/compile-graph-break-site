@@ -252,7 +252,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0246](gb/gb0246.html) — Attempted to use `torch.nn.functional.one_hot` with data-dependent output shape
 - [GB0247](gb/gb0247.html) — Shape mismatch with out= tensor variant
 - [GB0248](gb/gb0248.html) — improper torch.get_device_module arguments
-- [GB0249](gb/gb0249.html) — bad device argument to torch.get_device_module
+- [GB0249](gb/gb0249.html) — bad device argument to torch.accelerator.current_stream
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
 - [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
 - [GB0252](gb/gb0252.html) — could not find name in object's mro
@@ -286,4 +286,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
 - [GB0282](gb/gb0282.html) — Placement with custom __getattr__ not supported
-- [GB0283](gb/gb0283.html) — cannot resume from torch._dynamo.step_unsupported()
+- [GB0283](gb/gb0283.html) — Failed to make weakref to graph-created external object
+- [GB0284](gb/gb0284.html) — cannot resume from torch._dynamo.step_unsupported()
+- [GB0285](gb/gb0285.html) — unsupported arguments to torch.accelerator.current_stream
+- [GB0286](gb/gb0286.html) — bad device argument to torch.get_device_module
