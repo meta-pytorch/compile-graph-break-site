@@ -290,3 +290,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0284](gb/gb0284.html) — cannot resume from torch._dynamo.step_unsupported()
 - [GB0285](gb/gb0285.html) — unsupported arguments to torch.accelerator.current_stream
 - [GB0286](gb/gb0286.html) — bad device argument to torch.get_device_module
+- [GB0287](gb/gb0287.html) — unsupported type.__dict__['__annotations__'].__get__ call
