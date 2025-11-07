@@ -292,3 +292,67 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0286](gb/gb0286.html) — bad device argument to torch.get_device_module
 - [GB0287](gb/gb0287.html) — unsupported type.__dict__['__annotations__'].__get__ call
 - [GB0288](gb/gb0288.html) — Can't extract message from torch._check()
+- [GB0289](gb/gb0289.html) — unsupported method call on `typing` variable
+- [GB0290](gb/gb0290.html) — attempted to trace numpy.* function as a method
+- [GB0291](gb/gb0291.html) — logging.Logger method not supported for non-export cases
+- [GB0292](gb/gb0292.html) — constant-like method call with unsupported return type
+- [GB0293](gb/gb0293.html) — attempted to trace numpy function with config.trace_numpy=False
+- [GB0294](gb/gb0294.html) — attempted to trace numpy function unsupported by PyTorch
+- [GB0295](gb/gb0295.html) — cannot reconstruct NullVariable in Python < 3.11
+- [GB0296](gb/gb0296.html) — attempted to reorder a debugging function that can't actually be reordered
+- [GB0297](gb/gb0297.html) — random.Random() with improper arguments
+- [GB0298](gb/gb0298.html) — attempted to trace torch._numpy.random function with config.use_numpy_random_stream=True
+- [GB0299](gb/gb0299.html) — constant-like method call with non-constant args
+- [GB0300](gb/gb0300.html) — numpy function that produces a const collection type encountered non-const arguments
+- [GB0301](gb/gb0301.html) — HOP: non torch.Tensor leaf
+- [GB0302](gb/gb0302.html) — HOP: non-callable variable
+- [GB0303](gb/gb0303.html) — torch.while_loop: improper args/kwargs
+- [GB0304](gb/gb0304.html) — torch.while_loop: improper additional_inputs
+- [GB0305](gb/gb0305.html) — invalid set_subgraph_inputs and sub_kwargs settings
+- [GB0306](gb/gb0306.html) — unsupported HigherOrderOperator
+- [GB0307](gb/gb0307.html) — unsupported HigherOrderOperator function call
+- [GB0308](gb/gb0308.html) — torch.while_loop: unsupported cond_fn return type
+- [GB0309](gb/gb0309.html) — torch.cond: improper args/kwargs
+- [GB0310](gb/gb0310.html) — torch.cond: improper predicate
+- [GB0311](gb/gb0311.html) — torch.cond: improper operands
+- [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
+- [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
+- [GB0314](gb/gb0314.html) — HOP body output unsupported
+- [GB0315](gb/gb0315.html) — torch.associative_scan: improper xs
+- [GB0316](gb/gb0316.html) — torch.associative_scan: improper additional_inputs
+- [GB0317](gb/gb0317.html) — torch.associative_scan: zero-sized tensor
+- [GB0318](gb/gb0318.html) — torch.associative_scan: combine_fn improper number of leaves
+- [GB0319](gb/gb0319.html) — torch.associative_scan: mismatched input/output tree structure
+- [GB0320](gb/gb0320.html) — torch.scan: improper xs
+- [GB0321](gb/gb0321.html) — torch.scan: improper init
+- [GB0322](gb/gb0322.html) — torch.scan: no init leaves
+- [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
+- [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
+- [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
+- [GB0326](gb/gb0326.html) — torch.map: improper inputs
+- [GB0327](gb/gb0327.html) — executorch_call_delegate: kwargs not supported
+- [GB0328](gb/gb0328.html) — torch.func.functional_call capture is disabled
+- [GB0329](gb/gb0329.html) — WrapHigherOrderVariable: kwargs unexpected
+- [GB0330](gb/gb0330.html) — wrap_with_set_grad_enabled: unexpected kwargs
+- [GB0331](gb/gb0331.html) — wrap_with_set_grad_enabled: non-constant grad_enabled
+- [GB0332](gb/gb0332.html) — wrap_with_set_grad_enabled: unexpected freevars
+- [GB0333](gb/gb0333.html) — wrap_with_autocast: unexpected kwargs
+- [GB0334](gb/gb0334.html) — wrap_with_autocast: unexpected freevars
+- [GB0335](gb/gb0335.html) — hints_wrapper: improper args/kwargs
+- [GB0336](gb/gb0336.html) — out_dtype: unexpected kwargs
+- [GB0337](gb/gb0337.html) — strict_mode: unexpected kwargs
+- [GB0338](gb/gb0338.html) — invoke_subgraph: kwargs unexpected
+- [GB0339](gb/gb0339.html) — torch.while_loop: infinite loop detected
+- [GB0340](gb/gb0340.html) — torch.cond: unsupported branch return type
+- [GB0341](gb/gb0341.html) — torch.associative_scan: improper args
+- [GB0342](gb/gb0342.html) — torch.scan: improper combine_fn
+- [GB0343](gb/gb0343.html) — torch.scan: improper combine_fn number of returns
+- [GB0344](gb/gb0344.html) — wrap_with_autocast: expected constant arg
+- [GB0345](gb/gb0345.html) — strict_mode: improper args
+- [GB0346](gb/gb0346.html) — autograd.Function.apply: non-function or method forward
+- [GB0347](gb/gb0347.html) — autograd.Function.apply: _materialize_non_diff_grads mutation
+- [GB0348](gb/gb0348.html) — autograd.Function.apply: non-function or method backward
+- [GB0349](gb/gb0349.html) — cannot unwrap variable for check_meta_consistency
+- [GB0350](gb/gb0350.html) — torch.cond: unsupported branch return type (constant non-int)
+- [GB0351](gb/gb0351.html) — HOP body taking non-Tensor as input
+- [GB0352](gb/gb0352.html) — autograd.Function.apply: non-function or method backward (2)
