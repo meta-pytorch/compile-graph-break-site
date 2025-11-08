@@ -356,3 +356,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0350](gb/gb0350.html) — torch.cond: unsupported branch return type (constant non-int)
 - [GB0351](gb/gb0351.html) — HOP body taking non-Tensor as input
 - [GB0352](gb/gb0352.html) — autograd.Function.apply: non-function or method backward (2)
+- [GB0353](gb/gb0353.html) — rewrite_signature: cannot trace optional function input
+- [GB0354](gb/gb0354.html) — failed to find name in frame builtins
+- [GB0355](gb/gb0355.html) — non-single Tensor return unsupported
+- [GB0356](gb/gb0356.html) — failed to handle argument for FlexAttentionBackward HOP
+- [GB0357](gb/gb0357.html) — UnspecializedNNModuleVariable wrapped around ScriptModules unsupported
+- [GB0358](gb/gb0358.html) — optimizer: pending mutation on parameter
+- [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
+- [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
+- [GB0361](gb/gb0361.html) — triton kernel unsupported feature
