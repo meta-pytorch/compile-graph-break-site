@@ -365,3 +365,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
 - [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
 - [GB0361](gb/gb0361.html) — triton kernel unsupported feature
+- [GB0362](gb/gb0362.html) — Attempted to access attributes/methods on an OpaqueObject
