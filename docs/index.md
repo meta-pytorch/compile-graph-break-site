@@ -366,8 +366,3 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
 - [GB0361](gb/gb0361.html) — triton kernel unsupported feature
 - [GB0362](gb/gb0362.html) — Attempted to access attributes/methods on an OpaqueObject
-- [GB0363](gb/gb0363.html) — User-defined object with overridden __hash__
-- [GB0364](gb/gb0364.html) — Dynamo cannot determine whether the underlying object is hashable
-- [GB0365](gb/gb0365.html) — Dynamo cannot determine the hash of an object
-- [GB0366](gb/gb0366.html) — Dynamo cannot determine the equality comparison of an object
-- [GB0367](gb/gb0367.html) — Opaque object were created in the middle of the program and passed to a custom op.
