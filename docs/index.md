@@ -70,7 +70,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0064](gb/gb0064.html) — Fake tensor propagation exception
 - [GB0065](gb/gb0065.html) — Graph break in inlined function
 - [GB0066](gb/gb0066.html) — Graph break under GenericContextWrappingVariable
-- [GB0067](gb/gb0067.html) — HigherOrderOperator: Mutating a variable not in the current scope (SideEffects)
+- [GB0067](gb/gb0067.html) — HOP: Unsafe side effect
 - [GB0068](gb/gb0068.html) — Illegal method invocation in strict mode
 - [GB0069](gb/gb0069.html) — Import failure
 - [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
