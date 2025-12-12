@@ -375,4 +375,3 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0367](gb/gb0367.html) — Dynamo cannot determine the equality comparison of an object
 - [GB0368](gb/gb0368.html) — Frozen dataclass with __post_init__
 - [GB0369](gb/gb0369.html) — Frozen dataclass with missing field
-- [GB0370](gb/gb0370.html) — record_function escaped from compiled region
