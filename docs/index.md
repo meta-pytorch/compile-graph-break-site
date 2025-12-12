@@ -119,6 +119,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0113](gb/gb0113.html) — Unable to resolve super getattr
 - [GB0114](gb/gb0114.html) — Unexpected failure during itertools.accumulate() iteration
 - [GB0115](gb/gb0115.html) — Unexpected failure during itertools.groupby() iteration
+- [GB4778](gb/gb4778.html) — nested function with closure in output
 - [GB0116](gb/gb0116.html) — Unexpected type in sourceless builder
 - [GB0117](gb/gb0117.html) — Unhandled args for method
 - [GB0118](gb/gb0118.html) — Unimplemented next() call
@@ -130,6 +131,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0124](gb/gb0124.html) — Unsupported Tensor.item() call with capture_scalar_outputs=False
 - [GB0125](gb/gb0125.html) — Unsupported Tensor.requires_grad_() call
 - [GB0126](gb/gb0126.html) — Unsupported Tensor.resize_() call
+- [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB0127](gb/gb0127.html) — Unsupported Tensor.resize_as_() call
 - [GB0128](gb/gb0128.html) — Unsupported Tensor.set_() call
 - [GB0129](gb/gb0129.html) — Unsupported Tensor.sparse_resize_() call
@@ -373,3 +375,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0367](gb/gb0367.html) — Dynamo cannot determine the equality comparison of an object
 - [GB0368](gb/gb0368.html) — Frozen dataclass with __post_init__
 - [GB0369](gb/gb0369.html) — Frozen dataclass with missing field
+- [GB0370](gb/gb0370.html) — record_function escaped from compiled region
