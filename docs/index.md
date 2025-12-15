@@ -274,6 +274,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0266](gb/gb0266.html) — Weird method call on TorchScript object
 - [GB0267](gb/gb0267.html) — Attempted to access non-callable attribute of TorchScript object
 - [GB0268](gb/gb0268.html) — Unsupported kwargs for itertools.product
+- [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB0269](gb/gb0269.html) — Forced graph break on leaf function
 - [GB0270](gb/gb0270.html) — unimplemented builtin op vars() with no arguments
 - [GB0271](gb/gb0271.html) — Class attribute mutation when the __dict__ was already materialized
