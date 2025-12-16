@@ -68,6 +68,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0062](gb/gb0062.html) — Failed to unpack object for UNPACK_EX
 - [GB0063](gb/gb0063.html) — Failed to unpack object for UNPACK_SEQUENCE
 - [GB0064](gb/gb0064.html) — Fake tensor propagation exception
+- [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB0065](gb/gb0065.html) — Graph break in inlined function
 - [GB0066](gb/gb0066.html) — Graph break under GenericContextWrappingVariable
 - [GB0067](gb/gb0067.html) — HOP: Unsafe side effect
