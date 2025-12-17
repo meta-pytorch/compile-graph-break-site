@@ -323,6 +323,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
 - [GB0314](gb/gb0314.html) — HOP body output unsupported
 - [GB0315](gb/gb0315.html) — torch.associative_scan: improper xs
+- [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB0316](gb/gb0316.html) — torch.associative_scan: improper additional_inputs
 - [GB0317](gb/gb0317.html) — torch.associative_scan: zero-sized tensor
 - [GB0318](gb/gb0318.html) — torch.associative_scan: combine_fn improper number of leaves
