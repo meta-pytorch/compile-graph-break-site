@@ -84,6 +84,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0077](gb/gb0077.html) — Length mismatch when unpacking object for UNPACK_SEQUENCE
 - [GB0078](gb/gb0078.html) — Limitation of `nonstrict_trace
 - [GB0079](gb/gb0079.html) — Missing CALL_INTRINSIC_1 handler
+- [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
 - [GB0080](gb/gb0080.html) — Missing FakeTensor example value
 - [GB0081](gb/gb0081.html) — Missing attribute when running call_method node
 - [GB0082](gb/gb0082.html) — Missing bytecode handler
