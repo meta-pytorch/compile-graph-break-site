@@ -120,7 +120,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0113](gb/gb0113.html) — Unable to resolve super getattr
 - [GB0114](gb/gb0114.html) — Unexpected failure during itertools.accumulate() iteration
 - [GB0115](gb/gb0115.html) — Unexpected failure during itertools.groupby() iteration
-- [GB4778](gb/gb4778.html) — nested function with closure in output
+- [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
 - [GB0116](gb/gb0116.html) — Unexpected type in sourceless builder
 - [GB0117](gb/gb0117.html) — Unhandled args for method
 - [GB0118](gb/gb0118.html) — Unimplemented next() call
