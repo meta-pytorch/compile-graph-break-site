@@ -54,6 +54,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0048](gb/gb0048.html) — Error getting associated real value
 - [GB0049](gb/gb0049.html) — Error when attempting to resolve op packet
 - [GB0050](gb/gb0050.html) — Exception with bad expected type
+- [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
+- [GB7000](gb/gb7000.html) — graph break in loop
+- [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
+- [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
 - [GB0051](gb/gb0051.html) — Exception with non-type expectation
 - [GB0052](gb/gb0052.html) — Excessive RestartAnalysis() calls
 - [GB0053](gb/gb0053.html) — FSDP with use_orig_params=False
