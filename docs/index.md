@@ -175,6 +175,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0160](gb/gb0160.html) — Unsupported next() call
 - [GB0161](gb/gb0161.html) — Unsupported nn.Module attribute type
 - [GB0162](gb/gb0162.html) — Unsupported super().__init__() call
+- [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
+- [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
+- [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
+- [GB2549](gb/gb2549.html) — infinite generator detected
+- [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB0163](gb/gb0163.html) — Unsupported tensor subclass attribute access
 - [GB0164](gb/gb0164.html) — Unsupported tensor subclass overridden attribute access
 - [GB0165](gb/gb0165.html) — Unsupported torch._C._ImperativeEngine method
