@@ -69,6 +69,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0059](gb/gb0059.html) — Failed to trace builtin operator
 - [GB0060](gb/gb0060.html) — Failed to trace unittest method
 - [GB0061](gb/gb0061.html) — Failed to unpack object for BUILD_LIST_UNPACK
+- [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB0062](gb/gb0062.html) — Failed to unpack object for UNPACK_EX
 - [GB0063](gb/gb0063.html) — Failed to unpack object for UNPACK_SEQUENCE
 - [GB0064](gb/gb0064.html) — Fake tensor propagation exception
