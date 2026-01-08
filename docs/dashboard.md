@@ -12,7 +12,7 @@ title: Graph Break Dashboard
     </div>
     <div class="metric-box">
         <h3>Graph Breaks with Additional Info</h3>
-        <p>11</p>
+        <p>12</p>
     </div>
     <div class="metric-box">
         <h3>Graph Breaks with Missing Content</h3>
