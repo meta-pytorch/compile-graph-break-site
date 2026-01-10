@@ -68,6 +68,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0058](gb/gb0058.html) — Failed to set tensor attribute
 - [GB0059](gb/gb0059.html) — Failed to trace builtin operator
 - [GB0060](gb/gb0060.html) — Failed to trace unittest method
+- [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB0061](gb/gb0061.html) — Failed to unpack object for BUILD_LIST_UNPACK
 - [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB0062](gb/gb0062.html) — Failed to unpack object for UNPACK_EX
@@ -218,6 +219,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0198](gb/gb0198.html) — mapping proxy affected by dictionary mutation
 - [GB0199](gb/gb0199.html) — mapping proxy cannot be reconstructed
 - [GB0200](gb/gb0200.html) — missing BUILD_SET handler
+- [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB0201](gb/gb0201.html) — namedtuple construction
 - [GB0202](gb/gb0202.html) — non-const argument in nn.Module method
 - [GB0203](gb/gb0203.html) — non-const keys in dict_keys
@@ -328,6 +330,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0307](gb/gb0307.html) — unsupported HigherOrderOperator function call
 - [GB0308](gb/gb0308.html) — torch.while_loop: unsupported cond_fn return type
 - [GB0309](gb/gb0309.html) — torch.cond: improper args/kwargs
+- [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB0310](gb/gb0310.html) — torch.cond: improper predicate
 - [GB0311](gb/gb0311.html) — torch.cond: improper operands
 - [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
