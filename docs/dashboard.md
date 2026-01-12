@@ -16,7 +16,7 @@ title: Graph Break Dashboard
     </div>
     <div class="metric-box">
         <h3>Graph Breaks with Missing Content</h3>
-        <p>86</p>
+        <p>85</p>
     </div>
 </div>
 
