@@ -29,6 +29,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0023](gb/gb0023.html) — Builtin `operator.*` comparison with constant `self` failed
 - [GB0024](gb/gb0024.html) — CLEANUP_THROW with StopIteration
 - [GB0025](gb/gb0025.html) — Call to `torch._dynamo.graph_break()`
+- [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB0026](gb/gb0026.html) — Calling subclass default constructor with more than tensor argument
 - [GB0027](gb/gb0027.html) — Cannot check Tensor object identity without its fake value
 - [GB0028](gb/gb0028.html) — Caught non-Exception value
@@ -108,6 +109,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0094](gb/gb0094.html) — SEND with bad type
 - [GB0095](gb/gb0095.html) — Set Exception object `__traceback__` attribute to not-`None`
 - [GB0096](gb/gb0096.html) — Should not compile partial graph (STORE_ATTR)
+- [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB0097](gb/gb0097.html) — Side effect on existing deque with limited maxlen
 - [GB0098](gb/gb0098.html) — Skip calling `torch.compiler.disable()`d function
 - [GB0099](gb/gb0099.html) — Skip inlining `torch.compiler.disable()`d function
@@ -141,6 +143,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0126](gb/gb0126.html) — Unsupported Tensor.resize_() call
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB0127](gb/gb0127.html) — Unsupported Tensor.resize_as_() call
+- [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB0128](gb/gb0128.html) — Unsupported Tensor.set_() call
 - [GB0129](gb/gb0129.html) — Unsupported Tensor.sparse_resize_() call
 - [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
@@ -210,6 +213,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0189](gb/gb0189.html) — getattr() on nn.Module with pending mutation
 - [GB0190](gb/gb0190.html) — getattr() with non-constant name argument
 - [GB0191](gb/gb0191.html) — id() with unsupported args
+- [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB0192](gb/gb0192.html) — input iterator to itertools.cycle has too many items
 - [GB0193](gb/gb0193.html) — invalid call to builtin op handler
 - [GB0194](gb/gb0194.html) — isinstance() called on user defined object with C extensions
@@ -281,6 +285,9 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0259](gb/gb0259.html) — collections.deque() with bad iterable argument
 - [GB0260](gb/gb0260.html) — missing args to functools.partial
 - [GB0261](gb/gb0261.html) — User-defined object method with non-function __func__
+- [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
+- [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
+- [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB0262](gb/gb0262.html) — unsupported contextlib.* API
 - [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
 - [GB0264](gb/gb0264.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
@@ -346,6 +353,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0320](gb/gb0320.html) — torch.scan: improper xs
 - [GB0321](gb/gb0321.html) — torch.scan: improper init
 - [GB0322](gb/gb0322.html) — torch.scan: no init leaves
+- [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
 - [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
 - [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
@@ -390,7 +398,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0364](gb/gb0364.html) — User-defined object with overridden __hash__
 - [GB0365](gb/gb0365.html) — Dynamo cannot determine whether the underlying object is hashable
 - [GB0366](gb/gb0366.html) — Dynamo cannot determine the hash of an object
+- [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0367](gb/gb0367.html) — Dynamo cannot determine the equality comparison of an object
 - [GB0368](gb/gb0368.html) — Frozen dataclass with __post_init__
 - [GB0369](gb/gb0369.html) — Frozen dataclass with missing field
 - [GB0370](gb/gb0370.html) — record_function escaped from compiled region
+- [GB0371](gb/gb0371.html) — autograd.grad with output that requires grad
+- [GB0372](gb/gb0372.html) — autograd.grad with external grad_fn
+- [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
