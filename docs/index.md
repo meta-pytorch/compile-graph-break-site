@@ -229,6 +229,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0203](gb/gb0203.html) — non-const keys in dict_keys
 - [GB0204](gb/gb0204.html) — non-const keys in mappingproxy
 - [GB0205](gb/gb0205.html) — proxy not set
+- [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB0206](gb/gb0206.html) — setattr() on Tensor.requires_grad
 - [GB0207](gb/gb0207.html) — sort with non-constant keys
 - [GB0208](gb/gb0208.html) — torch.* op returned non-Tensor
