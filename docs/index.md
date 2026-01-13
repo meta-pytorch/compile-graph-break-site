@@ -29,6 +29,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0023](gb/gb0023.html) — Builtin `operator.*` comparison with constant `self` failed
 - [GB0024](gb/gb0024.html) — CLEANUP_THROW with StopIteration
 - [GB0025](gb/gb0025.html) — Call to `torch._dynamo.graph_break()`
+- [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB0026](gb/gb0026.html) — Calling subclass default constructor with more than tensor argument
 - [GB0027](gb/gb0027.html) — Cannot check Tensor object identity without its fake value
 - [GB0028](gb/gb0028.html) — Caught non-Exception value
@@ -212,6 +213,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0189](gb/gb0189.html) — getattr() on nn.Module with pending mutation
 - [GB0190](gb/gb0190.html) — getattr() with non-constant name argument
 - [GB0191](gb/gb0191.html) — id() with unsupported args
+- [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB0192](gb/gb0192.html) — input iterator to itertools.cycle has too many items
 - [GB0193](gb/gb0193.html) — invalid call to builtin op handler
 - [GB0194](gb/gb0194.html) — isinstance() called on user defined object with C extensions
@@ -351,6 +353,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0320](gb/gb0320.html) — torch.scan: improper xs
 - [GB0321](gb/gb0321.html) — torch.scan: improper init
 - [GB0322](gb/gb0322.html) — torch.scan: no init leaves
+- [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
 - [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
 - [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
@@ -369,7 +372,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0338](gb/gb0338.html) — invoke_subgraph: kwargs unexpected
 - [GB0339](gb/gb0339.html) — torch.while_loop: infinite loop detected
 - [GB0340](gb/gb0340.html) — torch.cond: unsupported branch return type
-- [GB2750](gb/gb2750.html) — sparse_grad_accumulate_grad
 - [GB0341](gb/gb0341.html) — torch.associative_scan: improper args
 - [GB0342](gb/gb0342.html) — torch.scan: improper combine_fn
 - [GB0343](gb/gb0343.html) — torch.scan: improper combine_fn number of returns
@@ -396,6 +398,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0364](gb/gb0364.html) — User-defined object with overridden __hash__
 - [GB0365](gb/gb0365.html) — Dynamo cannot determine whether the underlying object is hashable
 - [GB0366](gb/gb0366.html) — Dynamo cannot determine the hash of an object
+- [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0367](gb/gb0367.html) — Dynamo cannot determine the equality comparison of an object
 - [GB0368](gb/gb0368.html) — Frozen dataclass with __post_init__
 - [GB0369](gb/gb0369.html) — Frozen dataclass with missing field
