@@ -310,6 +310,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
+- [GB7685](gb/gb7685.html) — Attribute not found on opaque class
+- [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB0282](gb/gb0282.html) — Placement with custom __getattr__ not supported
 - [GB0283](gb/gb0283.html) — Failed to make weakref to graph-created external object
 - [GB0284](gb/gb0284.html) — cannot resume from torch._dynamo.step_unsupported()
