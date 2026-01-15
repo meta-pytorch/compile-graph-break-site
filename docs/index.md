@@ -409,3 +409,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0371](gb/gb0371.html) — autograd.grad with output that requires grad
 - [GB0372](gb/gb0372.html) — autograd.grad with external grad_fn
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
+- [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
