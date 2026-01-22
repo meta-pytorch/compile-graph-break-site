@@ -219,6 +219,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0194](gb/gb0194.html) — isinstance() called on user defined object with C extensions
 - [GB0195](gb/gb0195.html) — issubclass() with non-constant arguments
 - [GB0196](gb/gb0196.html) — key not found in dict
+- [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB0197](gb/gb0197.html) — list elements are pointing to the list itself
 - [GB0198](gb/gb0198.html) — mapping proxy affected by dictionary mutation
 - [GB0199](gb/gb0199.html) — mapping proxy cannot be reconstructed
