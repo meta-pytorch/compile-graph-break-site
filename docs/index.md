@@ -185,6 +185,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
+- [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB0163](gb/gb0163.html) — Unsupported tensor subclass attribute access
 - [GB0164](gb/gb0164.html) — Unsupported tensor subclass overridden attribute access
 - [GB0165](gb/gb0165.html) — Unsupported torch._C._ImperativeEngine method
@@ -206,6 +207,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0181](gb/gb0181.html) — dtype mismatch between tensor and its gradient
 - [GB0182](gb/gb0182.html) — failed to broadcast when attempting Tensor comparison op
 - [GB0183](gb/gb0183.html) — failed to call dict.fromkeys()
+- [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB0184](gb/gb0184.html) — failed to call str() on user defined object
 - [GB0185](gb/gb0185.html) — failed to convert numpy.ndarray to Tensor
 - [GB0186](gb/gb0186.html) — functools.partial() with non-literal keyword
