@@ -165,6 +165,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0146](gb/gb0146.html) — Unsupported event method
 - [GB0147](gb/gb0147.html) — Unsupported function call
 - [GB0148](gb/gb0148.html) — Unsupported function call (delayed)
+- [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB0149](gb/gb0149.html) — Unsupported functorch tracing attempt
 - [GB0150](gb/gb0150.html) — Unsupported hasattr call
 - [GB0151](gb/gb0151.html) — Unsupported inspect call
