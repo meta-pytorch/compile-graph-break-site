@@ -52,6 +52,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0045](gb/gb0045.html) — Encountered tensor.is_inference() during tracing
 - [GB0046](gb/gb0046.html) — Encountered torch.is_inference_mode_enabled during tracing
 - [GB0047](gb/gb0047.html) — Encountered unconverted argument when attempting to inline
+- [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB0048](gb/gb0048.html) — Error getting associated real value
 - [GB0049](gb/gb0049.html) — Error when attempting to resolve op packet
 - [GB0050](gb/gb0050.html) — Exception with bad expected type
@@ -189,6 +190,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0163](gb/gb0163.html) — Unsupported tensor subclass attribute access
 - [GB0164](gb/gb0164.html) — Unsupported tensor subclass overridden attribute access
 - [GB0165](gb/gb0165.html) — Unsupported torch._C._ImperativeEngine method
+- [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
+- [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
 - [GB0166](gb/gb0166.html) — Unsupported torch._C._ImperativeEngine.queue_callback()
 - [GB0167](gb/gb0167.html) — Variadic function call with bad args/kwargs type
 - [GB0168](gb/gb0168.html) — Variadic function call with bad flags
@@ -251,6 +254,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0220](gb/gb0220.html) — Failed to mutate tensor data attribute to different dtype
 - [GB0221](gb/gb0221.html) — non-generator contextlib.contextmanager
 - [GB0222](gb/gb0222.html) — Attempted to wrap a set with tensors
+- [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB0223](gb/gb0223.html) — torch.compile call with > 1 args
 - [GB0224](gb/gb0224.html) — Attempted to call torch in-graph function on only torch.SymInt arguments
 - [GB0225](gb/gb0225.html) — Attempted to use tensor creation function with requires_grad=True
@@ -397,6 +401,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0354](gb/gb0354.html) — failed to find name in frame builtins
 - [GB0355](gb/gb0355.html) — non-single Tensor return unsupported
 - [GB0356](gb/gb0356.html) — failed to handle argument for FlexAttentionBackward HOP
+- [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
 - [GB0357](gb/gb0357.html) — UnspecializedNNModuleVariable wrapped around ScriptModules unsupported
 - [GB0358](gb/gb0358.html) — optimizer: pending mutation on parameter
 - [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
