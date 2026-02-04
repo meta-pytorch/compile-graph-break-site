@@ -350,6 +350,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
 - [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
 - [GB0314](gb/gb0314.html) — HOP body output unsupported
+- [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
+- [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB0315](gb/gb0315.html) — torch.associative_scan: improper xs
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
