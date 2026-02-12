@@ -252,6 +252,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0218](gb/gb0218.html) — unsupported index(Tensor)
 - [GB0219](gb/gb0219.html) — Backend compiler exception
 - [GB0220](gb/gb0220.html) — Failed to mutate tensor data attribute to different dtype
+- [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
 - [GB0221](gb/gb0221.html) — non-generator contextlib.contextmanager
 - [GB0222](gb/gb0222.html) — Attempted to wrap a set with tensors
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
