@@ -150,7 +150,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
 - [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__ inline attempt
 - [GB0132](gb/gb0132.html) — Unsupported `func` in itertools.accumulate
-- [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB0133](gb/gb0133.html) — Unsupported arguments for itertools.accumulate
 - [GB0134](gb/gb0134.html) — Unsupported arguments for itertools.groupby
 - [GB0135](gb/gb0135.html) — Unsupported attribute assignment on Exception object
@@ -314,7 +313,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0273](gb/gb0273.html) — Keyword args passed to exception constructor
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
 - [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
-- [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
