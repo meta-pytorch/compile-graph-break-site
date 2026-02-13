@@ -150,6 +150,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
 - [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__ inline attempt
 - [GB0132](gb/gb0132.html) — Unsupported `func` in itertools.accumulate
+- [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB0133](gb/gb0133.html) — Unsupported arguments for itertools.accumulate
 - [GB0134](gb/gb0134.html) — Unsupported arguments for itertools.groupby
 - [GB0135](gb/gb0135.html) — Unsupported attribute assignment on Exception object
