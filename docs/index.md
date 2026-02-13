@@ -367,6 +367,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0320](gb/gb0320.html) — torch.scan: improper xs
 - [GB0321](gb/gb0321.html) — torch.scan: improper init
 - [GB0322](gb/gb0322.html) — torch.scan: no init leaves
+- [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
 - [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
