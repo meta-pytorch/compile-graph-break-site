@@ -354,6 +354,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0310](gb/gb0310.html) — torch.cond: improper predicate
 - [GB0311](gb/gb0311.html) — torch.cond: improper operands
 - [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
+- [GB5799](gb/gb5799.html) — unsupported function.__get__ call
 - [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
 - [GB0314](gb/gb0314.html) — HOP body output unsupported
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
