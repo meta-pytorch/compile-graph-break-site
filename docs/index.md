@@ -314,6 +314,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0273](gb/gb0273.html) — Keyword args passed to exception constructor
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
 - [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
+- [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
