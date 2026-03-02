@@ -241,6 +241,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0206](gb/gb0206.html) — setattr() on Tensor.requires_grad
 - [GB0207](gb/gb0207.html) — sort with non-constant keys
 - [GB0208](gb/gb0208.html) — torch.* op returned non-Tensor
+- [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB0209](gb/gb0209.html) — torch.autograd._unsafe_preserve_version_counter escaped from compiled region
 - [GB0210](gb/gb0210.html) — torch.distributed package is not available!
 - [GB0211](gb/gb0211.html) — torch.nn.Module with a non-function custom __getattr__
