@@ -139,6 +139,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0121](gb/gb0121.html) — UnspecializedNNModuleVariable missing method
 - [GB0122](gb/gb0122.html) — Unsupported SourceType
 - [GB0123](gb/gb0123.html) — Unsupported Tensor.backward() call
+- [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB0124](gb/gb0124.html) — Unsupported Tensor.item() call with capture_scalar_outputs=False
 - [GB0125](gb/gb0125.html) — Unsupported Tensor.requires_grad_() call
 - [GB0126](gb/gb0126.html) — Unsupported Tensor.resize_() call
