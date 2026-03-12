@@ -245,6 +245,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB0209](gb/gb0209.html) — torch.autograd._unsafe_preserve_version_counter escaped from compiled region
 - [GB0210](gb/gb0210.html) — torch.distributed package is not available!
+- [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB0211](gb/gb0211.html) — torch.nn.Module with a non-function custom __getattr__
 - [GB0212](gb/gb0212.html) — torch.profiler object escaped from compiled region
 - [GB0213](gb/gb0213.html) — unimplemented builtin op on tensor arguments
