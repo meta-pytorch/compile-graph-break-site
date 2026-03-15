@@ -97,7 +97,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0081](gb/gb0081.html) — Missing attribute when running call_method node
 - [GB0082](gb/gb0082.html) — Missing bytecode handler
 - [GB0083](gb/gb0083.html) — Module-level backwards hooks require compiled autograd.
-- [GB3341](gb/gb3341.html) — enum __contains__ TypeError
 - [GB0084](gb/gb0084.html) — Non-constant attribute given to `super().__delattr__()`
 - [GB0085](gb/gb0085.html) — Non-function or method in subclass of torch.autograd.Function
 - [GB0086](gb/gb0086.html) — Not a Python constant
