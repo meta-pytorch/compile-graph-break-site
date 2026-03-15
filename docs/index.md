@@ -290,6 +290,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
 - [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
 - [GB0252](gb/gb0252.html) — could not find name in object's mro
+- [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB0253](gb/gb0253.html) — call_method on generator
 - [GB0254](gb/gb0254.html) — non-const setattr name on user-defined object
 - [GB0255](gb/gb0255.html) — attempted to call sourceless user-defined object as a method
@@ -345,6 +346,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0298](gb/gb0298.html) — attempted to trace torch._numpy.random function with config.use_numpy_random_stream=True
 - [GB0299](gb/gb0299.html) — constant-like method call with non-constant args
 - [GB0300](gb/gb0300.html) — numpy function that produces a const collection type encountered non-const arguments
+- [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
+- [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB9277](gb/gb9277.html) — unsupported function.__get__ call
+- [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
+- [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
 - [GB0301](gb/gb0301.html) — HOP: non torch.Tensor leaf
 - [GB0302](gb/gb0302.html) — HOP: non-callable variable
 - [GB0303](gb/gb0303.html) — torch.while_loop: improper args/kwargs
@@ -358,7 +364,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0310](gb/gb0310.html) — torch.cond: improper predicate
 - [GB0311](gb/gb0311.html) — torch.cond: improper operands
 - [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
-- [GB5799](gb/gb5799.html) — unsupported function.__get__ call
 - [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
 - [GB0314](gb/gb0314.html) — HOP body output unsupported
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
