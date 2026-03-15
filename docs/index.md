@@ -84,6 +84,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0069](gb/gb0069.html) — Import failure
 - [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
 - [GB0071](gb/gb0071.html) — Inline attempt with __self__
+- [GB0719](gb/gb0719.html) — Reconstruction of FakeIdVariable
 - [GB0072](gb/gb0072.html) — Inplace op on input tensor
 - [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
 - [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
