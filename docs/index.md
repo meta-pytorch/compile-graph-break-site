@@ -84,7 +84,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0069](gb/gb0069.html) — Import failure
 - [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
 - [GB0071](gb/gb0071.html) — Inline attempt with __self__
-- [GB0719](gb/gb0719.html) — Reconstruction of FakeIdVariable
 - [GB0072](gb/gb0072.html) — Inplace op on input tensor
 - [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
 - [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
@@ -99,7 +98,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0082](gb/gb0082.html) — Missing bytecode handler
 - [GB0083](gb/gb0083.html) — Module-level backwards hooks require compiled autograd.
 - [GB0084](gb/gb0084.html) — Non-constant attribute given to `super().__delattr__()`
-- [GB7581](gb/gb7581.html) — copy.deepcopy(tensor)
 - [GB0085](gb/gb0085.html) — Non-function or method in subclass of torch.autograd.Function
 - [GB0086](gb/gb0086.html) — Not a Python constant
 - [GB0087](gb/gb0087.html) — NotImplementedError/UnsupportedFakeTensorException when running FX node
