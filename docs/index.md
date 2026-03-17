@@ -323,6 +323,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
 - [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
+- [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
@@ -416,6 +417,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0356](gb/gb0356.html) — failed to handle argument for FlexAttentionBackward HOP
 - [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
 - [GB0357](gb/gb0357.html) — UnspecializedNNModuleVariable wrapped around ScriptModules unsupported
+- [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
 - [GB0358](gb/gb0358.html) — optimizer: pending mutation on parameter
 - [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
 - [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
