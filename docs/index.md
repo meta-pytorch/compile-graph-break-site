@@ -402,6 +402,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0341](gb/gb0341.html) — torch.associative_scan: improper args
 - [GB0342](gb/gb0342.html) — torch.scan: improper combine_fn
 - [GB0343](gb/gb0343.html) — torch.scan: improper combine_fn number of returns
+- [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
+- [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
 - [GB0344](gb/gb0344.html) — wrap_with_autocast: expected constant arg
 - [GB0345](gb/gb0345.html) — strict_mode: improper args
 - [GB0346](gb/gb0346.html) — autograd.Function.apply: non-function or method forward
