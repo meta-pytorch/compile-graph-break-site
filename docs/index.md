@@ -69,6 +69,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0057](gb/gb0057.html) — Failed to raise exception
 - [GB0058](gb/gb0058.html) — Failed to set tensor attribute
 - [GB0059](gb/gb0059.html) — Failed to trace builtin operator
+- [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB0060](gb/gb0060.html) — Failed to trace unittest method
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB0061](gb/gb0061.html) — Failed to unpack object for BUILD_LIST_UNPACK
