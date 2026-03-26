@@ -86,7 +86,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
 - [GB0071](gb/gb0071.html) — Inline attempt with __self__
 - [GB0072](gb/gb0072.html) — Inplace op on input tensor
-- [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
 - [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
 - [GB0075](gb/gb0075.html) — LOAD_BUILD_CLASS bytecode not supported
