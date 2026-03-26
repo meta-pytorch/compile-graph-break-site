@@ -326,6 +326,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
 - [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
+- [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
