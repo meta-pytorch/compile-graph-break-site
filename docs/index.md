@@ -41,6 +41,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0034](gb/gb0034.html) — Data-dependent assertion failed (cannot compile partial graph)
 - [GB0035](gb/gb0035.html) — Data-dependent branching with non-constant __bool__
 - [GB0036](gb/gb0036.html) — Dynamic shape operator
+- [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB0037](gb/gb0037.html) — Dynamic shape operator (no meta kernel)
 - [GB0038](gb/gb0038.html) — Dynamic slicing with Tensor arguments
 - [GB0039](gb/gb0039.html) — Dynamo recompile limit exceeded
