@@ -135,6 +135,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
 - [GB0116](gb/gb0116.html) — Unexpected type in sourceless builder
 - [GB0117](gb/gb0117.html) — Unhandled args for method
+- [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB0118](gb/gb0118.html) — Unimplemented next() call
 - [GB0119](gb/gb0119.html) — Uninitialized nn.Module
 - [GB0120](gb/gb0120.html) — Unreachable sub-generator code
