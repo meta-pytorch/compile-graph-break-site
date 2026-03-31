@@ -341,6 +341,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0288](gb/gb0288.html) — Can't extract message from torch._check()
 - [GB0289](gb/gb0289.html) — unsupported method call on `typing` variable
 - [GB0290](gb/gb0290.html) — attempted to trace numpy.* function as a method
+- [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB0291](gb/gb0291.html) — logging.Logger method not supported for non-export cases
 - [GB0292](gb/gb0292.html) — constant-like method call with unsupported return type
 - [GB0293](gb/gb0293.html) — attempted to trace numpy function with config.trace_numpy=False
