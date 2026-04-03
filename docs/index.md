@@ -90,7 +90,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
 - [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
-- [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
 - [GB0075](gb/gb0075.html) — LOAD_BUILD_CLASS bytecode not supported
 - [GB0076](gb/gb0076.html) — LOAD_FAST_CHECK on uninitialized variable
 - [GB0077](gb/gb0077.html) — Length mismatch when unpacking object for UNPACK_SEQUENCE
@@ -190,7 +189,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0162](gb/gb0162.html) — Unsupported super().__init__() call
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
-- [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
@@ -344,7 +342,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0288](gb/gb0288.html) — Can't extract message from torch._check()
 - [GB0289](gb/gb0289.html) — unsupported method call on `typing` variable
 - [GB0290](gb/gb0290.html) — attempted to trace numpy.* function as a method
-- [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB0291](gb/gb0291.html) — logging.Logger method not supported for non-export cases
 - [GB0292](gb/gb0292.html) — constant-like method call with unsupported return type
 - [GB0293](gb/gb0293.html) — attempted to trace numpy function with config.trace_numpy=False
