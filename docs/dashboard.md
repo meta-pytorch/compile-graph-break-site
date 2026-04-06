@@ -8,7 +8,7 @@ title: Graph Break Dashboard
 <div class="metric-container">
     <div class="metric-box">
         <h3>Total Graph Breaks</h3>
-        <p>444</p>
+        <p>445</p>
     </div>
     <div class="metric-box">
         <h3>Graph Breaks with Additional Info</h3>
@@ -16,7 +16,7 @@ title: Graph Break Dashboard
     </div>
     <div class="metric-box">
         <h3>Graph Breaks with Missing Content</h3>
-        <p>93</p>
+        <p>94</p>
     </div>
 </div>
 

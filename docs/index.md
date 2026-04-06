@@ -418,6 +418,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0346](gb/gb0346.html) — autograd.Function.apply: non-function or method forward
 - [GB0347](gb/gb0347.html) — autograd.Function.apply: _materialize_non_diff_grads mutation
 - [GB0348](gb/gb0348.html) — autograd.Function.apply: non-function or method backward
+- [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB0349](gb/gb0349.html) — cannot unwrap variable for check_meta_consistency
 - [GB0350](gb/gb0350.html) — torch.cond: unsupported branch return type (constant non-int)
 - [GB0351](gb/gb0351.html) — HOP body taking non-Tensor as input
