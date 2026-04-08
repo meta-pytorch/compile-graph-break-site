@@ -64,6 +64,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0051](gb/gb0051.html) — Exception with non-type expectation
 - [GB0052](gb/gb0052.html) — Excessive RestartAnalysis() calls
 - [GB0053](gb/gb0053.html) — FSDP with use_orig_params=False
+- [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB0054](gb/gb0054.html) — Failed to construct Enum variable
 - [GB0055](gb/gb0055.html) — Failed to convert args/kwargs to proxy
 - [GB0056](gb/gb0056.html) — Failed to mutate tensor data attribute
