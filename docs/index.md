@@ -69,6 +69,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0055](gb/gb0055.html) — Failed to convert args/kwargs to proxy
 - [GB0056](gb/gb0056.html) — Failed to mutate tensor data attribute
 - [GB0057](gb/gb0057.html) — Failed to raise exception
+- [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
 - [GB0058](gb/gb0058.html) — Failed to set tensor attribute
 - [GB0059](gb/gb0059.html) — Failed to trace builtin operator
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
@@ -394,6 +395,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
 - [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
+- [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
 - [GB0326](gb/gb0326.html) — torch.map: improper inputs
 - [GB0327](gb/gb0327.html) — executorch_call_delegate: kwargs not supported
