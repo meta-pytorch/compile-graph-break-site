@@ -280,6 +280,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0233](gb/gb0233.html) — Attempted to use strided NestedTensor
 - [GB0234](gb/gb0234.html) — Attempted to pop from empty torch function mode stack
 - [GB0235](gb/gb0235.html) — `torch.nn.Parameter` with non-constant Tensor attributes
+- [GB6025](gb/gb6025.html) — Failed to trace list()
 - [GB0236](gb/gb0236.html) — Invalid input type for nonstrict_trace-ed function
 - [GB0237](gb/gb0237.html) — non-constant `requires_grad` argument to `torch.nn.Parameter`
 - [GB0238](gb/gb0238.html) — Input marked with `pytree.register_constant` constructed in the `torch.compile` region
