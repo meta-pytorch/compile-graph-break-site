@@ -372,6 +372,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0307](gb/gb0307.html) — unsupported HigherOrderOperator function call
 - [GB0308](gb/gb0308.html) — torch.while_loop: unsupported cond_fn return type
 - [GB0309](gb/gb0309.html) — torch.cond: improper args/kwargs
+- [GB5526](gb/gb5526.html) — Generator
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB0310](gb/gb0310.html) — torch.cond: improper predicate
