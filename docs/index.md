@@ -57,6 +57,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0048](gb/gb0048.html) — Error getting associated real value
 - [GB0049](gb/gb0049.html) — Error when attempting to resolve op packet
 - [GB0050](gb/gb0050.html) — Exception with bad expected type
+- [GB4880](gb/gb4880.html) — missing_mp_subscript
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
 - [GB7000](gb/gb7000.html) — graph break in loop
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
@@ -167,6 +168,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0138](gb/gb0138.html) — Unsupported autograd.Function context `save_for_backward`
 - [GB0139](gb/gb0139.html) — Unsupported autograd.Function context method
 - [GB0140](gb/gb0140.html) — Unsupported autograd.Function method
+- [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
+- [GB4240](gb/gb4240.html) — unsupported __getitem__
 - [GB0141](gb/gb0141.html) — Unsupported call_id() without source
 - [GB0142](gb/gb0142.html) — Unsupported context manager
 - [GB0143](gb/gb0143.html) — Unsupported conversion for slice assignment
@@ -398,6 +401,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
 - [GB0326](gb/gb0326.html) — torch.map: improper inputs
+- [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
 - [GB0327](gb/gb0327.html) — executorch_call_delegate: kwargs not supported
 - [GB0328](gb/gb0328.html) — torch.func.functional_call capture is disabled
 - [GB0329](gb/gb0329.html) — WrapHigherOrderVariable: kwargs unexpected
