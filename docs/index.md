@@ -442,6 +442,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0358](gb/gb0358.html) — optimizer: pending mutation on parameter
 - [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
 - [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
+- [GB7286](gb/gb7286.html) — nb_float_impl not implemented
 - [GB0361](gb/gb0361.html) — triton kernel unsupported feature
 - [GB0362](gb/gb0362.html) — Attempted to access attributes/methods on an OpaqueObject
 - [GB0363](gb/gb0363.html) — An opaque object was created in the middle of the program.
