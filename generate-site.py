@@ -204,8 +204,8 @@ Below are all known graph breaks detected by Dynamo.
 
 """
 
-    # Add registry items to index.md
-    for gbid, entries in registry.items():
+    # Add registry items to index.md (sorted by GBID)
+    for gbid, entries in sorted(registry.items()):
         entry = entries[0]  # Assuming first entry is sufficient for list view
         index_md += f"- [{gbid}](gb/{gbid.lower()}.html) — {entry['Gb_type']}\n"
 

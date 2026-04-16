@@ -29,7 +29,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0023](gb/gb0023.html) — Builtin `operator.*` comparison with constant `self` failed
 - [GB0024](gb/gb0024.html) — CLEANUP_THROW with StopIteration
 - [GB0025](gb/gb0025.html) — Call to `torch._dynamo.graph_break()`
-- [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB0026](gb/gb0026.html) — Calling subclass default constructor with more than tensor argument
 - [GB0027](gb/gb0027.html) — Cannot check Tensor object identity without its fake value
 - [GB0028](gb/gb0028.html) — Caught non-Exception value
@@ -41,7 +40,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0034](gb/gb0034.html) — Data-dependent assertion failed (cannot compile partial graph)
 - [GB0035](gb/gb0035.html) — Data-dependent branching with non-constant __bool__
 - [GB0036](gb/gb0036.html) — Dynamic shape operator
-- [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB0037](gb/gb0037.html) — Dynamic shape operator (no meta kernel)
 - [GB0038](gb/gb0038.html) — Dynamic slicing with Tensor arguments
 - [GB0039](gb/gb0039.html) — Dynamo recompile limit exceeded
@@ -53,35 +51,23 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0045](gb/gb0045.html) — Encountered tensor.is_inference() during tracing
 - [GB0046](gb/gb0046.html) — Encountered torch.is_inference_mode_enabled during tracing
 - [GB0047](gb/gb0047.html) — Encountered unconverted argument when attempting to inline
-- [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB0048](gb/gb0048.html) — Error getting associated real value
 - [GB0049](gb/gb0049.html) — Error when attempting to resolve op packet
 - [GB0050](gb/gb0050.html) — Exception with bad expected type
-- [GB4880](gb/gb4880.html) — missing_mp_subscript
-- [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
-- [GB7000](gb/gb7000.html) — graph break in loop
-- [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
-- [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
 - [GB0051](gb/gb0051.html) — Exception with non-type expectation
 - [GB0052](gb/gb0052.html) — Excessive RestartAnalysis() calls
 - [GB0053](gb/gb0053.html) — FSDP with use_orig_params=False
-- [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB0054](gb/gb0054.html) — Failed to construct Enum variable
 - [GB0055](gb/gb0055.html) — Failed to convert args/kwargs to proxy
 - [GB0056](gb/gb0056.html) — Failed to mutate tensor data attribute
 - [GB0057](gb/gb0057.html) — Failed to raise exception
-- [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
 - [GB0058](gb/gb0058.html) — Failed to set tensor attribute
 - [GB0059](gb/gb0059.html) — Failed to trace builtin operator
-- [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB0060](gb/gb0060.html) — Failed to trace unittest method
-- [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB0061](gb/gb0061.html) — Failed to unpack object for BUILD_LIST_UNPACK
-- [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB0062](gb/gb0062.html) — Failed to unpack object for UNPACK_EX
 - [GB0063](gb/gb0063.html) — Failed to unpack object for UNPACK_SEQUENCE
 - [GB0064](gb/gb0064.html) — Fake tensor propagation exception
-- [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB0065](gb/gb0065.html) — Graph break in inlined function
 - [GB0066](gb/gb0066.html) — Graph break under GenericContextWrappingVariable
 - [GB0067](gb/gb0067.html) — HOP: Unsafe side effect
@@ -90,17 +76,13 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0070](gb/gb0070.html) — Indexing list with non-scalar tensor
 - [GB0071](gb/gb0071.html) — Inline attempt with __self__
 - [GB0072](gb/gb0072.html) — Inplace op on input tensor
-- [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB0073](gb/gb0073.html) — Invoking an nn.Module inside a HigherOrderOperator
 - [GB0074](gb/gb0074.html) — Invoking an nn.Module inside a higher order operator
-- [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
 - [GB0075](gb/gb0075.html) — LOAD_BUILD_CLASS bytecode not supported
 - [GB0076](gb/gb0076.html) — LOAD_FAST_CHECK on uninitialized variable
 - [GB0077](gb/gb0077.html) — Length mismatch when unpacking object for UNPACK_SEQUENCE
 - [GB0078](gb/gb0078.html) — Limitation of `nonstrict_trace
-- [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB0079](gb/gb0079.html) — Missing CALL_INTRINSIC_1 handler
-- [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
 - [GB0080](gb/gb0080.html) — Missing FakeTensor example value
 - [GB0081](gb/gb0081.html) — Missing attribute when running call_method node
 - [GB0082](gb/gb0082.html) — Missing bytecode handler
@@ -118,7 +100,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0094](gb/gb0094.html) — SEND with bad type
 - [GB0095](gb/gb0095.html) — Set Exception object `__traceback__` attribute to not-`None`
 - [GB0096](gb/gb0096.html) — Should not compile partial graph (STORE_ATTR)
-- [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB0097](gb/gb0097.html) — Side effect on existing deque with limited maxlen
 - [GB0098](gb/gb0098.html) — Skip calling `torch.compiler.disable()`d function
 - [GB0099](gb/gb0099.html) — Skip inlining `torch.compiler.disable()`d function
@@ -138,29 +119,23 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0113](gb/gb0113.html) — Unable to resolve super getattr
 - [GB0114](gb/gb0114.html) — Unexpected failure during itertools.accumulate() iteration
 - [GB0115](gb/gb0115.html) — Unexpected failure during itertools.groupby() iteration
-- [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
 - [GB0116](gb/gb0116.html) — Unexpected type in sourceless builder
 - [GB0117](gb/gb0117.html) — Unhandled args for method
-- [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB0118](gb/gb0118.html) — Unimplemented next() call
 - [GB0119](gb/gb0119.html) — Uninitialized nn.Module
 - [GB0120](gb/gb0120.html) — Unreachable sub-generator code
 - [GB0121](gb/gb0121.html) — UnspecializedNNModuleVariable missing method
 - [GB0122](gb/gb0122.html) — Unsupported SourceType
 - [GB0123](gb/gb0123.html) — Unsupported Tensor.backward() call
-- [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB0124](gb/gb0124.html) — Unsupported Tensor.item() call with capture_scalar_outputs=False
 - [GB0125](gb/gb0125.html) — Unsupported Tensor.requires_grad_() call
 - [GB0126](gb/gb0126.html) — Unsupported Tensor.resize_() call
-- [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB0127](gb/gb0127.html) — Unsupported Tensor.resize_as_() call
-- [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB0128](gb/gb0128.html) — Unsupported Tensor.set_() call
 - [GB0129](gb/gb0129.html) — Unsupported Tensor.sparse_resize_() call
 - [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
 - [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__ inline attempt
 - [GB0132](gb/gb0132.html) — Unsupported `func` in itertools.accumulate
-- [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB0133](gb/gb0133.html) — Unsupported arguments for itertools.accumulate
 - [GB0134](gb/gb0134.html) — Unsupported arguments for itertools.groupby
 - [GB0135](gb/gb0135.html) — Unsupported attribute assignment on Exception object
@@ -169,8 +144,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0138](gb/gb0138.html) — Unsupported autograd.Function context `save_for_backward`
 - [GB0139](gb/gb0139.html) — Unsupported autograd.Function context method
 - [GB0140](gb/gb0140.html) — Unsupported autograd.Function method
-- [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
-- [GB4240](gb/gb4240.html) — unsupported __getitem__
 - [GB0141](gb/gb0141.html) — Unsupported call_id() without source
 - [GB0142](gb/gb0142.html) — Unsupported context manager
 - [GB0143](gb/gb0143.html) — Unsupported conversion for slice assignment
@@ -179,7 +152,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0146](gb/gb0146.html) — Unsupported event method
 - [GB0147](gb/gb0147.html) — Unsupported function call
 - [GB0148](gb/gb0148.html) — Unsupported function call (delayed)
-- [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB0149](gb/gb0149.html) — Unsupported functorch tracing attempt
 - [GB0150](gb/gb0150.html) — Unsupported hasattr call
 - [GB0151](gb/gb0151.html) — Unsupported inspect call
@@ -194,18 +166,9 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0160](gb/gb0160.html) — Unsupported next() call
 - [GB0161](gb/gb0161.html) — Unsupported nn.Module attribute type
 - [GB0162](gb/gb0162.html) — Unsupported super().__init__() call
-- [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
-- [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
-- [GB4841](gb/gb4841.html) — Unsupported python_type() call
-- [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
-- [GB2549](gb/gb2549.html) — infinite generator detected
-- [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
-- [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB0163](gb/gb0163.html) — Unsupported tensor subclass attribute access
 - [GB0164](gb/gb0164.html) — Unsupported tensor subclass overridden attribute access
 - [GB0165](gb/gb0165.html) — Unsupported torch._C._ImperativeEngine method
-- [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
-- [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
 - [GB0166](gb/gb0166.html) — Unsupported torch._C._ImperativeEngine.queue_callback()
 - [GB0167](gb/gb0167.html) — Variadic function call with bad args/kwargs type
 - [GB0168](gb/gb0168.html) — Variadic function call with bad flags
@@ -224,7 +187,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0181](gb/gb0181.html) — dtype mismatch between tensor and its gradient
 - [GB0182](gb/gb0182.html) — failed to broadcast when attempting Tensor comparison op
 - [GB0183](gb/gb0183.html) — failed to call dict.fromkeys()
-- [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB0184](gb/gb0184.html) — failed to call str() on user defined object
 - [GB0185](gb/gb0185.html) — failed to convert numpy.ndarray to Tensor
 - [GB0186](gb/gb0186.html) — functools.partial() with non-literal keyword
@@ -233,31 +195,25 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0189](gb/gb0189.html) — getattr() on nn.Module with pending mutation
 - [GB0190](gb/gb0190.html) — getattr() with non-constant name argument
 - [GB0191](gb/gb0191.html) — id() with unsupported args
-- [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB0192](gb/gb0192.html) — input iterator to itertools.cycle has too many items
 - [GB0193](gb/gb0193.html) — invalid call to builtin op handler
 - [GB0194](gb/gb0194.html) — isinstance() called on user defined object with C extensions
 - [GB0195](gb/gb0195.html) — issubclass() with non-constant arguments
 - [GB0196](gb/gb0196.html) — key not found in dict
-- [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB0197](gb/gb0197.html) — list elements are pointing to the list itself
 - [GB0198](gb/gb0198.html) — mapping proxy affected by dictionary mutation
 - [GB0199](gb/gb0199.html) — mapping proxy cannot be reconstructed
 - [GB0200](gb/gb0200.html) — missing BUILD_SET handler
-- [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB0201](gb/gb0201.html) — namedtuple construction
 - [GB0202](gb/gb0202.html) — non-const argument in nn.Module method
 - [GB0203](gb/gb0203.html) — non-const keys in dict_keys
 - [GB0204](gb/gb0204.html) — non-const keys in mappingproxy
 - [GB0205](gb/gb0205.html) — proxy not set
-- [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB0206](gb/gb0206.html) — setattr() on Tensor.requires_grad
 - [GB0207](gb/gb0207.html) — sort with non-constant keys
 - [GB0208](gb/gb0208.html) — torch.* op returned non-Tensor
-- [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB0209](gb/gb0209.html) — torch.autograd._unsafe_preserve_version_counter escaped from compiled region
 - [GB0210](gb/gb0210.html) — torch.distributed package is not available!
-- [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB0211](gb/gb0211.html) — torch.nn.Module with a non-function custom __getattr__
 - [GB0212](gb/gb0212.html) — torch.profiler object escaped from compiled region
 - [GB0213](gb/gb0213.html) — unimplemented builtin op on tensor arguments
@@ -268,10 +224,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0218](gb/gb0218.html) — unsupported index(Tensor)
 - [GB0219](gb/gb0219.html) — Backend compiler exception
 - [GB0220](gb/gb0220.html) — Failed to mutate tensor data attribute to different dtype
-- [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
 - [GB0221](gb/gb0221.html) — non-generator contextlib.contextmanager
 - [GB0222](gb/gb0222.html) — Attempted to wrap a set with tensors
-- [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB0223](gb/gb0223.html) — torch.compile call with > 1 args
 - [GB0224](gb/gb0224.html) — Attempted to call torch in-graph function on only torch.SymInt arguments
 - [GB0225](gb/gb0225.html) — Attempted to use tensor creation function with requires_grad=True
@@ -285,7 +239,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0233](gb/gb0233.html) — Attempted to use strided NestedTensor
 - [GB0234](gb/gb0234.html) — Attempted to pop from empty torch function mode stack
 - [GB0235](gb/gb0235.html) — `torch.nn.Parameter` with non-constant Tensor attributes
-- [GB6025](gb/gb6025.html) — Failed to trace list()
 - [GB0236](gb/gb0236.html) — Invalid input type for nonstrict_trace-ed function
 - [GB0237](gb/gb0237.html) — non-constant `requires_grad` argument to `torch.nn.Parameter`
 - [GB0238](gb/gb0238.html) — Input marked with `pytree.register_constant` constructed in the `torch.compile` region
@@ -303,7 +256,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0250](gb/gb0250.html) — ndarray.astype(object)
 - [GB0251](gb/gb0251.html) — Unsupported output type for nonstrict_trace-ed function
 - [GB0252](gb/gb0252.html) — could not find name in object's mro
-- [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB0253](gb/gb0253.html) — call_method on generator
 - [GB0254](gb/gb0254.html) — non-const setattr name on user-defined object
 - [GB0255](gb/gb0255.html) — attempted to call sourceless user-defined object as a method
@@ -313,9 +265,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0259](gb/gb0259.html) — collections.deque() with bad iterable argument
 - [GB0260](gb/gb0260.html) — missing args to functools.partial
 - [GB0261](gb/gb0261.html) — User-defined object method with non-function __func__
-- [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
-- [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
-- [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB0262](gb/gb0262.html) — unsupported contextlib.* API
 - [GB0263](gb/gb0263.html) — attempted to trace contextlib.contextmanager
 - [GB0264](gb/gb0264.html) — Attempted to use `torch.nn.Parameter()` constructor with Dynamo
@@ -323,7 +272,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0266](gb/gb0266.html) — Weird method call on TorchScript object
 - [GB0267](gb/gb0267.html) — Attempted to access non-callable attribute of TorchScript object
 - [GB0268](gb/gb0268.html) — Unsupported kwargs for itertools.product
-- [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB0269](gb/gb0269.html) — Forced graph break on leaf function
 - [GB0270](gb/gb0270.html) — unimplemented builtin op vars() with no arguments
 - [GB0271](gb/gb0271.html) — Class attribute mutation when the __dict__ was already materialized
@@ -331,17 +279,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0273](gb/gb0273.html) — Keyword args passed to exception constructor
 - [GB0274](gb/gb0274.html) — Attempted to reconstruct context manager's __enter__ method
 - [GB0275](gb/gb0275.html) — torch._dynamo.step_unsupported() with empty checkpoint
-- [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB0276](gb/gb0276.html) — Failed to make weakref to User Object
 - [GB0277](gb/gb0277.html) — Attempted to wrap sparse Tensor with VariableTracker
 - [GB0278](gb/gb0278.html) — Unsupported dict type for fromkeys()
 - [GB0279](gb/gb0279.html) — torch.fx.traceback.annotate escaped from compiled region
-- [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB0280](gb/gb0280.html) — 1-arg super not implemented
-- [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
 - [GB0281](gb/gb0281.html) — Invalid or non-const argument in nn.Module __getitem__
-- [GB7685](gb/gb7685.html) — Attribute not found on opaque class
-- [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB0282](gb/gb0282.html) — Placement with custom __getattr__ not supported
 - [GB0283](gb/gb0283.html) — Failed to make weakref to graph-created external object
 - [GB0284](gb/gb0284.html) — cannot resume from torch._dynamo.step_unsupported()
@@ -351,7 +294,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0288](gb/gb0288.html) — Can't extract message from torch._check()
 - [GB0289](gb/gb0289.html) — unsupported method call on `typing` variable
 - [GB0290](gb/gb0290.html) — attempted to trace numpy.* function as a method
-- [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB0291](gb/gb0291.html) — logging.Logger method not supported for non-export cases
 - [GB0292](gb/gb0292.html) — constant-like method call with unsupported return type
 - [GB0293](gb/gb0293.html) — attempted to trace numpy function with config.trace_numpy=False
@@ -362,11 +304,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0298](gb/gb0298.html) — attempted to trace torch._numpy.random function with config.use_numpy_random_stream=True
 - [GB0299](gb/gb0299.html) — constant-like method call with non-constant args
 - [GB0300](gb/gb0300.html) — numpy function that produces a const collection type encountered non-const arguments
-- [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
-- [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
-- [GB9277](gb/gb9277.html) — unsupported function.__get__ call
-- [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
-- [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
 - [GB0301](gb/gb0301.html) — HOP: non torch.Tensor leaf
 - [GB0302](gb/gb0302.html) — HOP: non-callable variable
 - [GB0303](gb/gb0303.html) — torch.while_loop: improper args/kwargs
@@ -376,18 +313,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0307](gb/gb0307.html) — unsupported HigherOrderOperator function call
 - [GB0308](gb/gb0308.html) — torch.while_loop: unsupported cond_fn return type
 - [GB0309](gb/gb0309.html) — torch.cond: improper args/kwargs
-- [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
-- [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB0310](gb/gb0310.html) — torch.cond: improper predicate
 - [GB0311](gb/gb0311.html) — torch.cond: improper operands
 - [GB0312](gb/gb0312.html) — torch.cond: improper operands contents
 - [GB0313](gb/gb0313.html) — torch.cond: differing branch outputs
 - [GB0314](gb/gb0314.html) — HOP body output unsupported
-- [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
-- [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
-- [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB0315](gb/gb0315.html) — torch.associative_scan: improper xs
-- [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB0316](gb/gb0316.html) — torch.associative_scan: improper additional_inputs
 - [GB0317](gb/gb0317.html) — torch.associative_scan: zero-sized tensor
 - [GB0318](gb/gb0318.html) — torch.associative_scan: combine_fn improper number of leaves
@@ -395,14 +326,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0320](gb/gb0320.html) — torch.scan: improper xs
 - [GB0321](gb/gb0321.html) — torch.scan: improper init
 - [GB0322](gb/gb0322.html) — torch.scan: no init leaves
-- [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
-- [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB0323](gb/gb0323.html) — torch.scan: improper additional_inputs
 - [GB0324](gb/gb0324.html) — torch.scan: zero-sized tensor
-- [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB0325](gb/gb0325.html) — torch.map: kwargs not supported
 - [GB0326](gb/gb0326.html) — torch.map: improper inputs
-- [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
 - [GB0327](gb/gb0327.html) — executorch_call_delegate: kwargs not supported
 - [GB0328](gb/gb0328.html) — torch.func.functional_call capture is disabled
 - [GB0329](gb/gb0329.html) — WrapHigherOrderVariable: kwargs unexpected
@@ -420,14 +347,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0341](gb/gb0341.html) — torch.associative_scan: improper args
 - [GB0342](gb/gb0342.html) — torch.scan: improper combine_fn
 - [GB0343](gb/gb0343.html) — torch.scan: improper combine_fn number of returns
-- [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
-- [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
 - [GB0344](gb/gb0344.html) — wrap_with_autocast: expected constant arg
 - [GB0345](gb/gb0345.html) — strict_mode: improper args
 - [GB0346](gb/gb0346.html) — autograd.Function.apply: non-function or method forward
 - [GB0347](gb/gb0347.html) — autograd.Function.apply: _materialize_non_diff_grads mutation
 - [GB0348](gb/gb0348.html) — autograd.Function.apply: non-function or method backward
-- [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB0349](gb/gb0349.html) — cannot unwrap variable for check_meta_consistency
 - [GB0350](gb/gb0350.html) — torch.cond: unsupported branch return type (constant non-int)
 - [GB0351](gb/gb0351.html) — HOP body taking non-Tensor as input
@@ -436,20 +360,16 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0354](gb/gb0354.html) — failed to find name in frame builtins
 - [GB0355](gb/gb0355.html) — non-single Tensor return unsupported
 - [GB0356](gb/gb0356.html) — failed to handle argument for FlexAttentionBackward HOP
-- [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
 - [GB0357](gb/gb0357.html) — UnspecializedNNModuleVariable wrapped around ScriptModules unsupported
-- [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
 - [GB0358](gb/gb0358.html) — optimizer: pending mutation on parameter
 - [GB0359](gb/gb0359.html) — unsupported torch._C._SDPAParams attribute
 - [GB0360](gb/gb0360.html) — torch.fx.experimental.symbolic_shapes.guard_scalar branch not supported
-- [GB7286](gb/gb7286.html) — nb_float_impl not implemented
 - [GB0361](gb/gb0361.html) — triton kernel unsupported feature
 - [GB0362](gb/gb0362.html) — Attempted to access attributes/methods on an OpaqueObject
 - [GB0363](gb/gb0363.html) — An opaque object was created in the middle of the program.
 - [GB0364](gb/gb0364.html) — User-defined object with overridden __hash__
 - [GB0365](gb/gb0365.html) — Dynamo cannot determine whether the underlying object is hashable
 - [GB0366](gb/gb0366.html) — Dynamo cannot determine the hash of an object
-- [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0367](gb/gb0367.html) — Dynamo cannot determine the equality comparison of an object
 - [GB0368](gb/gb0368.html) — Frozen dataclass with __post_init__
 - [GB0369](gb/gb0369.html) — Frozen dataclass with missing field
@@ -458,3 +378,83 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0372](gb/gb0372.html) — autograd.grad with external grad_fn
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
+- [GB0442](gb/gb0442.html) — backward() with empty inputs
+- [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
+- [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
+- [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
+- [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
+- [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
+- [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
+- [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
+- [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
+- [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
+- [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
+- [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
+- [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
+- [GB2549](gb/gb2549.html) — infinite generator detected
+- [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
+- [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
+- [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
+- [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
+- [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
+- [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
+- [GB3775](gb/gb3775.html) — nb_int_impl not implemented
+- [GB3840](gb/gb3840.html) — leaf_function without fake_fn
+- [GB4026](gb/gb4026.html) — triton.set_allocator not supported
+- [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
+- [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
+- [GB4240](gb/gb4240.html) — unsupported __getitem__
+- [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
+- [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
+- [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
+- [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
+- [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
+- [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
+- [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
+- [GB4841](gb/gb4841.html) — Unsupported python_type() call
+- [GB4880](gb/gb4880.html) — missing_mp_subscript
+- [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
+- [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
+- [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
+- [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
+- [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
+- [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
+- [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
+- [GB6025](gb/gb6025.html) — Failed to trace list()
+- [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
+- [GB6270](gb/gb6270.html) — Unhandled tensor method
+- [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
+- [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
+- [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
+- [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
+- [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
+- [GB7000](gb/gb7000.html) — graph break in loop
+- [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
+- [GB7230](gb/gb7230.html) — iter() with no arguments
+- [GB7286](gb/gb7286.html) — nb_float_impl not implemented
+- [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
+- [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
+- [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
+- [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
+- [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
+- [GB7650](gb/gb7650.html) — torch.Generator method
+- [GB7685](gb/gb7685.html) — Attribute not found on opaque class
+- [GB7906](gb/gb7906.html) — Missing len_impl
+- [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
+- [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
+- [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
+- [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
+- [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
+- [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
+- [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
+- [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
+- [GB9277](gb/gb9277.html) — unsupported function.__get__ call
+- [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
+- [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
+- [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
+- [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
+- [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
+- [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
+- [GB9860](gb/gb9860.html) — P2POp mutation
+- [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
