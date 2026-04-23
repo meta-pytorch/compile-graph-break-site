@@ -419,6 +419,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
+- [GB5976](gb/gb5976.html) — Data pointer comparison
 - [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
