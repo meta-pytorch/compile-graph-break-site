@@ -409,6 +409,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
 - [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
+- [GB4413](gb/gb4413.html) — HOP: Non-nullified side effect
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
