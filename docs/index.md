@@ -379,6 +379,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
+- [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
