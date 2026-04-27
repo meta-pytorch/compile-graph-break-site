@@ -1,10 +1,12 @@
-import os
 import json
-import requests
+import os
 import re
 from pathlib import Path
 
-REGISTRY_URL = 'https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.json'
+import requests
+
+REGISTRY_URL = "https://raw.githubusercontent.com/pytorch/pytorch/main/torch/_dynamo/graph_break_registry.json"
+
 
 def get_registry_data():
     try:
@@ -12,50 +14,58 @@ def get_registry_data():
         response.raise_for_status()
         return json.loads(response.text)
     except Exception as error:
-        print(f'Error fetching registry data: {error}')
+        print(f"Error fetching registry data: {error}")
         exit(1)
+
 
 def extract_manual_content(file_path):
     """Extract manually added content from existing markdown file."""
     if not os.path.exists(file_path):
         return ""
 
-    with open(file_path, 'r') as f:
+    with open(file_path, "r") as f:
         content = f.read()
 
     # Look for content between additional information markers
-    match = re.search(r'<!-- ADDITIONAL INFORMATION START.*?-->(.*?)<!-- ADDITIONAL INFORMATION END', content, re.DOTALL)
+    match = re.search(
+        r"<!-- ADDITIONAL INFORMATION START.*?-->(.*?)<!-- ADDITIONAL INFORMATION END",
+        content,
+        re.DOTALL,
+    )
     if match:
         return match.group(1).strip()
 
     # Fallback to old method if no markers found
-    match = re.search(r'## Additional Information\s*(.*?)(?=\[Back to Registry\])', content, re.DOTALL)
+    match = re.search(
+        r"## Additional Information\s*(.*?)(?=\[Back to Registry\])", content, re.DOTALL
+    )
     if match:
         # Return only manually added content
         manual_content = match.group(1).strip()
         # Filter out content that came from JSON (lines starting with "- ")
-        lines = manual_content.split('\n')
-        manual_lines = [line for line in lines if not line.strip().startswith('- ')]
-        return '\n'.join(manual_lines).strip()
+        lines = manual_content.split("\n")
+        manual_lines = [line for line in lines if not line.strip().startswith("- ")]
+        return "\n".join(manual_lines).strip()
 
     return ""
+
 
 def generate_site():
     registry = get_registry_data()
 
-    output_dir = 'docs'
+    output_dir = "docs"
     Path(output_dir).mkdir(exist_ok=True)
 
     # Create custom _layouts directory
-    layouts_dir = os.path.join(output_dir, '_layouts')
+    layouts_dir = os.path.join(output_dir, "_layouts")
     Path(layouts_dir).mkdir(exist_ok=True)
 
     # Create assets directory for style.css and other assets
-    assets_dir = os.path.join(output_dir, 'assets')
+    assets_dir = os.path.join(output_dir, "assets")
     Path(assets_dir).mkdir(parents=True, exist_ok=True)
 
     # Re-create assets/css directory for pytorch-logo.png
-    css_assets_dir = os.path.join(output_dir, 'assets', 'css')
+    css_assets_dir = os.path.join(output_dir, "assets", "css")
     Path(css_assets_dir).mkdir(parents=True, exist_ok=True)
 
     # The pytorch-logo.png will remain in assets/css/ as per user request
@@ -130,12 +140,12 @@ nav a:hover {
 }
 """
 
-    with open(os.path.join(assets_dir, 'style.css'), 'w') as f:
+    with open(os.path.join(assets_dir, "style.css"), "w") as f:
         f.write(style_css_content)
-    print('Generated assets/style.css')
+    print("Generated assets/style.css")
 
     # Create minimal default.html layout
-    default_layout_content = '''\
+    default_layout_content = """\
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,10 +165,10 @@ nav a:hover {
     {{ content }}
 </body>
 </html>
-'''
-    with open(os.path.join(layouts_dir, 'default.html'), 'w') as f:
+"""
+    with open(os.path.join(layouts_dir, "default.html"), "w") as f:
         f.write(default_layout_content)
-    print('Generated _layouts/default.html')
+    print("Generated _layouts/default.html")
 
     # Generate _config.yml for Jekyll
     jekyll_config = """\
@@ -186,9 +196,9 @@ exclude:
   - .gitignore
   - .github
 """
-    with open(os.path.join(output_dir, '_config.yml'), 'w') as f:
+    with open(os.path.join(output_dir, "_config.yml"), "w") as f:
         f.write(jekyll_config)
-    print('Generated _config.yml')
+    print("Generated _config.yml")
 
     # Initialize metrics for dashboard
     graph_breaks_with_additional_info = 0
@@ -209,12 +219,12 @@ Below are all known graph breaks detected by Dynamo.
         entry = entries[0]  # Assuming first entry is sufficient for list view
         index_md += f"- [{gbid}](gb/{gbid.lower()}.html) — {entry['Gb_type']}\n"
 
-    with open(os.path.join(output_dir, 'index.md'), 'w') as f:
+    with open(os.path.join(output_dir, "index.md"), "w") as f:
         f.write(index_md)
-    print('Generated index.md')
+    print("Generated index.md")
 
     # Generate individual GBID pages
-    gb_dir = os.path.join(output_dir, 'gb')
+    gb_dir = os.path.join(output_dir, "gb")
     Path(gb_dir).mkdir(exist_ok=True)
 
     for gbid, entries in registry.items():
@@ -230,17 +240,31 @@ Below are all known graph breaks detected by Dynamo.
 
         # Check for missing content
         missing_content = False
-        if entry.get('Gb_type', '*No Gb_type provided.*') == '*No Gb_type provided.*' or \
-           entry.get('Context', '*No context provided.*') == '*No context provided.*' or \
-           entry.get('Explanation', '*No explanation provided.*') == '*No explanation provided.*' or \
-           not entry.get('Hints', []):
+        hints_dynamic = entry.get("Hints_dynamic", False)
+        if (
+            entry.get("Gb_type", "*No Gb_type provided.*") == "*No Gb_type provided.*"
+            or entry.get("Context", "*No context provided.*")
+            == "*No context provided.*"
+            or entry.get("Explanation", "*No explanation provided.*")
+            == "*No explanation provided.*"
+            or (not entry.get("Hints", []) and not hints_dynamic)
+        ):
             missing_content = True
 
         if missing_content:
             graph_breaks_with_missing_content += 1
 
-        hints = entry.get('Hints', [])
-        hints_content = '\n'.join([f"- {h}" for h in hints]) if hints else '*No hints provided.*'
+        hints = entry.get("Hints", [])
+        hints_dynamic = entry.get("Hints_dynamic", False)
+        if hints and hints_dynamic:
+            hints_content = "\n".join([f"- {h}" for h in hints])
+            hints_content += "\n\n*Note: Additional hints may be shown at runtime depending on the specific code context.*"
+        elif not hints and hints_dynamic:
+            hints_content = "*Hints for this graph break are dynamically generated at runtime based on the specific code context.*"
+        elif hints:
+            hints_content = "\n".join([f"- {h}" for h in hints])
+        else:
+            hints_content = "*No hints provided.*"
 
         # Create additional info section with manual content markers
         additional_info_section = f"""
@@ -284,9 +308,9 @@ layout: default
 [Back to Registry](../index.html)
 """
 
-        with open(file_path, 'w') as f:
+        with open(file_path, "w") as f:
             f.write(detail_md)
-        print(f'Generated {file_path}')
+        print(f"Generated {file_path}")
 
     # Generate dashboard.md
     dashboard_md = f"""\
@@ -313,12 +337,12 @@ title: Graph Break Dashboard
 </div>
 
 """
-    with open(os.path.join(output_dir, 'dashboard.md'), 'w') as f:
+    with open(os.path.join(output_dir, "dashboard.md"), "w") as f:
         f.write(dashboard_md)
-    print('Generated dashboard.md')
+    print("Generated dashboard.md")
 
-    print('Site generation complete!')
+    print("Site generation complete!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     generate_site()
