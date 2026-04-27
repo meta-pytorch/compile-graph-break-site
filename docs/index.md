@@ -451,6 +451,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
+- [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
@@ -460,5 +461,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
+- [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
 - [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
