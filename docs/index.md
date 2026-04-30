@@ -397,6 +397,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
+- [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
 - [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
 - [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
