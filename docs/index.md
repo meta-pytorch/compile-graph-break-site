@@ -387,6 +387,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
+- [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
