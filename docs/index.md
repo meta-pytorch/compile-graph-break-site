@@ -444,6 +444,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
 - [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
+- [GB7444](gb/gb7444.html) — register_hook with stride-dependent code
 - [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
 - [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
