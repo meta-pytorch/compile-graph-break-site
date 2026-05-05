@@ -456,6 +456,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
+- [GB9137](gb/gb9137.html) — non-constant typing subscript
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
