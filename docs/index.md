@@ -385,6 +385,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
+- [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
