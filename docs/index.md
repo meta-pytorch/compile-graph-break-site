@@ -379,8 +379,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
+- [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
 - [GB0811](gb/gb0811.html) — missing tp_iter
+- [GB0871](gb/gb0871.html) — Non-constant __hash__ return
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
@@ -398,6 +400,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB2861](gb/gb2861.html) — Untraceable C tp_hash
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
@@ -419,6 +422,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
+- [GB4749](gb/gb4749.html) — Hashability mismatch
 - [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
@@ -438,6 +442,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
+- [GB6890](gb/gb6890.html) — Missing hash_impl override
 - [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB7000](gb/gb7000.html) — graph break in loop
 - [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
