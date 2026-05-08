@@ -418,6 +418,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
 - [GB4347](gb/gb4347.html) — Missing tp_iternext
 - [GB4372](gb/gb4372.html) — autograd_function_kwonly_args
+- [GB4411](gb/gb4411.html) — missing sq_contains
 - [GB4413](gb/gb4413.html) — HOP: Non-nullified side effect
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
@@ -453,6 +454,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
 - [GB7444](gb/gb7444.html) — register_hook with stride-dependent code
+- [GB7489](gb/gb7489.html) — Unsupported argument type in tensor method call
 - [GB7510](gb/gb7510.html) — nb_positive_impl not implemented
 - [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
 - [GB7650](gb/gb7650.html) — torch.Generator method
