@@ -381,6 +381,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
+- [GB0808](gb/gb0808.html) — vectorcall_maybe on C method descriptor
 - [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB0871](gb/gb0871.html) — Non-constant __hash__ return
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
@@ -397,6 +398,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
+- [GB2544](gb/gb2544.html) — missing sq_inplace_concat
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
@@ -409,6 +411,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
+- [GB3934](gb/gb3934.html) — missing sq_concat
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
