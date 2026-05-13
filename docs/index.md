@@ -379,6 +379,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
+- [GB0467](gb/gb0467.html) — setattr() on unsupported type
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
 - [GB0811](gb/gb0811.html) — missing tp_iter
@@ -473,6 +474,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
+- [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
