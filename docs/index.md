@@ -396,6 +396,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
+- [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2549](gb/gb2549.html) — infinite generator detected
@@ -405,9 +406,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
+- [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
 - [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
 - [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
+- [GB3697](gb/gb3697.html) — C-level descriptor setattr on user-defined object
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
@@ -433,6 +436,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
+- [GB5849](gb/gb5849.html) — non-constant key in object __dict__
 - [GB5904](gb/gb5904.html) — unsupported __getitem__ (sq_item)
 - [GB5976](gb/gb5976.html) — Data pointer comparison
 - [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
@@ -456,8 +460,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
 - [GB7444](gb/gb7444.html) — register_hook with stride-dependent code
 - [GB7489](gb/gb7489.html) — Unsupported argument type in tensor method call
+- [GB7502](gb/gb7502.html) — Unsupported user-defined object construction during side-effect tracking
 - [GB7510](gb/gb7510.html) — nb_positive_impl not implemented
 - [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
+- [GB7637](gb/gb7637.html) — non-string key in object __dict__
 - [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
 - [GB7906](gb/gb7906.html) — Missing len_impl
