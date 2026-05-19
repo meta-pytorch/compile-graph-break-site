@@ -396,8 +396,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
+- [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
+- [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2544](gb/gb2544.html) — missing sq_inplace_concat
@@ -483,8 +485,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
+- [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
+- [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
