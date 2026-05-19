@@ -450,6 +450,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
+- [GB6297](gb/gb6297.html) — autograd.Function.apply: duplicate tensor input
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
