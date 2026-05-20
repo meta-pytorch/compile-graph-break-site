@@ -489,6 +489,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
+- [GB9548](gb/gb9548.html) — nb_absolute_impl not implemented
 - [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
