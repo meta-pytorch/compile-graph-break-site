@@ -427,6 +427,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
 - [GB4347](gb/gb4347.html) — Missing tp_iternext
 - [GB4372](gb/gb4372.html) — autograd_function_kwonly_args
+- [GB4393](gb/gb4393.html) — issubclass() with unsupported arguments
 - [GB4411](gb/gb4411.html) — missing sq_contains
 - [GB4413](gb/gb4413.html) — HOP: Non-nullified side effect
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
