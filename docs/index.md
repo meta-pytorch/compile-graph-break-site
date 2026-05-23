@@ -134,7 +134,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0128](gb/gb0128.html) — Unsupported Tensor.set_() call
 - [GB0129](gb/gb0129.html) — Unsupported Tensor.sparse_resize_() call
 - [GB0130](gb/gb0130.html) — Unsupported Tensor.sparse_resize_and_clear_() call
-- [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__ inline attempt
+- [GB0131](gb/gb0131.html) — Unsupported __setitem__/__setattr__/__delitem__/__delattr__ inline attempt
 - [GB0132](gb/gb0132.html) — Unsupported `func` in itertools.accumulate
 - [GB0133](gb/gb0133.html) — Unsupported arguments for itertools.accumulate
 - [GB0134](gb/gb0134.html) — Unsupported arguments for itertools.groupby
@@ -382,6 +382,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0467](gb/gb0467.html) — setattr() on unsupported type
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
+- [GB0781](gb/gb0781.html) — unsupported __setitem__ (sq_ass_item)
 - [GB0808](gb/gb0808.html) — vectorcall_maybe on C method descriptor
 - [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB0871](gb/gb0871.html) — Non-constant __hash__ return
@@ -473,6 +474,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7637](gb/gb7637.html) — non-string key in object __dict__
 - [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
+- [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
