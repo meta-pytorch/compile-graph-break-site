@@ -389,6 +389,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
+- [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
@@ -432,6 +433,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4411](gb/gb4411.html) — missing sq_contains
 - [GB4413](gb/gb4413.html) — HOP: Non-nullified side effect
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
+- [GB4608](gb/gb4608.html) — richcompare identity fallback undetermined
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB4749](gb/gb4749.html) — Hashability mismatch
@@ -441,6 +443,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
+- [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
@@ -450,10 +453,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
+- [GB6215](gb/gb6215.html) — Unresolved GetAttrVariable comparison
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
 - [GB6297](gb/gb6297.html) — autograd.Function.apply: duplicate tensor input
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
+- [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
@@ -489,6 +494,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
+- [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
@@ -496,6 +502,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
+- [GB9648](gb/gb9648.html) — Missing richcompare_impl override
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
