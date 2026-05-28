@@ -379,7 +379,9 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
+- [GB0459](gb/gb0459.html) — repr() on non-constant defaultdict
 - [GB0467](gb/gb0467.html) — setattr() on unsupported type
+- [GB0569](gb/gb0569.html) — repr() on tensor
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
 - [GB0781](gb/gb0781.html) — unsupported __setitem__ (sq_ass_item)
@@ -390,11 +392,13 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
+- [GB1275](gb/gb1275.html) — repr() on non-constant dict view
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
+- [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
@@ -408,6 +412,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB2852](gb/gb2852.html) — untraceable user-defined __repr__
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
@@ -442,6 +447,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
+- [GB5380](gb/gb5380.html) — repr() on non-constant set
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
@@ -452,6 +458,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
+- [GB6053](gb/gb6053.html) — repr_impl not implemented
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB6215](gb/gb6215.html) — Unresolved GetAttrVariable comparison
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
@@ -481,6 +488,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
 - [GB7906](gb/gb7906.html) — Missing len_impl
+- [GB7968](gb/gb7968.html) — repr() on non-constant list-like
+- [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
