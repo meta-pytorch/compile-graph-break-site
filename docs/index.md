@@ -402,6 +402,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
+- [GB1752](gb/gb1752.html) — Missing tp_iteritem
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
