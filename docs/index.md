@@ -407,6 +407,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
+- [GB2483](gb/gb2483.html) — str_impl not implemented
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2544](gb/gb2544.html) — missing sq_inplace_concat
