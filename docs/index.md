@@ -475,6 +475,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB7000](gb/gb7000.html) — graph break in loop
 - [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
+- [GB7072](gb/gb7072.html) — flex_gemm: improper args/kwargs
 - [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB7286](gb/gb7286.html) — nb_float_impl not implemented
 - [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
@@ -495,6 +496,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
+- [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
