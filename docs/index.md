@@ -389,6 +389,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB0871](gb/gb0871.html) — Non-constant __hash__ return
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
+- [GB1075](gb/gb1075.html) — torch.scan: combine_fn mutates init or xs
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
