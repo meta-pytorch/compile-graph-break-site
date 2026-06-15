@@ -506,6 +506,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
+- [GB9192](gb/gb9192.html) — Unsupported kwargs for itertools.zip_longest
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
