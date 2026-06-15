@@ -431,6 +431,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
+- [GB4234](gb/gb4234.html) — nb_invert_impl not implemented
 - [GB4240](gb/gb4240.html) — unsupported __getitem__
 - [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
 - [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
