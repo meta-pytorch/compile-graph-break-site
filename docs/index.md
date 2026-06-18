@@ -479,6 +479,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7000](gb/gb7000.html) — graph break in loop
 - [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB7072](gb/gb7072.html) — flex_gemm: improper args/kwargs
+- [GB7151](gb/gb7151.html) — generator function over a skipped function
 - [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB7286](gb/gb7286.html) — nb_float_impl not implemented
 - [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
