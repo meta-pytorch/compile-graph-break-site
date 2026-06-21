@@ -504,6 +504,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
+- [GB8949](gb/gb8949.html) — STORE_GLOBAL in non-module globals
 - [GB8977](gb/gb8977.html) — Invalid call to __build_class__
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
