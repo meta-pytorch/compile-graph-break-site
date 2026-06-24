@@ -450,6 +450,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB4749](gb/gb4749.html) — Hashability mismatch
 - [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
+- [GB4818](gb/gb4818.html) — call to a callable object with no traceable __call__
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
