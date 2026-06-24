@@ -404,6 +404,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
 - [GB1752](gb/gb1752.html) — Missing tp_iteritem
+- [GB1824](gb/gb1824.html) — torch.switch: unsupported branch return type
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
@@ -435,6 +436,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4240](gb/gb4240.html) — unsupported __getitem__
 - [GB4271](gb/gb4271.html) — __class__ assignment on user-defined object
 - [GB4297](gb/gb4297.html) — Call to `torch._dynamo.skip_frame()`
+- [GB4307](gb/gb4307.html) — torch.switch: empty branches
 - [GB4315](gb/gb4315.html) — RuntimeError when making fake tensor call
 - [GB4347](gb/gb4347.html) — Missing tp_iternext
 - [GB4372](gb/gb4372.html) — autograd_function_kwonly_args
@@ -459,6 +461,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
+- [GB5884](gb/gb5884.html) — torch.switch: improper branches
 - [GB5904](gb/gb5904.html) — unsupported __getitem__ (sq_item)
 - [GB5976](gb/gb5976.html) — Data pointer comparison
 - [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
@@ -494,9 +497,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7637](gb/gb7637.html) — non-string key in object __dict__
 - [GB7650](gb/gb7650.html) — torch.Generator method
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
+- [GB7694](gb/gb7694.html) — torch.switch: unsupported branch return type (constant)
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB7968](gb/gb7968.html) — repr() on non-constant list-like
+- [GB8165](gb/gb8165.html) — torch.switch: improper args/kwargs
+- [GB8206](gb/gb8206.html) — torch.switch: improper operands
 - [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
@@ -512,10 +518,12 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB9192](gb/gb9192.html) — Unsupported kwargs for itertools.zip_longest
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
+- [GB9203](gb/gb9203.html) — torch.switch: differing branch outputs
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
 - [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
+- [GB9509](gb/gb9509.html) — torch.switch: improper index
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB9548](gb/gb9548.html) — nb_absolute_impl not implemented
@@ -525,6 +533,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9648](gb/gb9648.html) — Missing richcompare_impl override
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
+- [GB9760](gb/gb9760.html) — torch.switch: improper operands contents
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
 - [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
