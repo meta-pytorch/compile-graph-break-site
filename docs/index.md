@@ -449,6 +449,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB4749](gb/gb4749.html) — Hashability mismatch
+- [GB4774](gb/gb4774.html) — torch.map: f mutates pos_args
 - [GB4778](gb/gb4778.html) — nested function with non-constructible closure in output
 - [GB4818](gb/gb4818.html) — call to a callable object with no traceable __call__
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
@@ -469,6 +470,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
 - [GB6053](gb/gb6053.html) — repr_impl not implemented
+- [GB6183](gb/gb6183.html) — torch.map: f mutates a captured tensor
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB6215](gb/gb6215.html) — Unresolved GetAttrVariable comparison
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
