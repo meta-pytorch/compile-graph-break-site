@@ -459,6 +459,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
+- [GB5491](gb/gb5491.html) — Failed to mutate tensor data attribute across devices with different shape/strides
 - [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
