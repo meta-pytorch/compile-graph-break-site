@@ -416,6 +416,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2549](gb/gb2549.html) — infinite generator detected
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB2736](gb/gb2736.html) — builtin isinstance() with custom type check on tensor
 - [GB2852](gb/gb2852.html) — untraceable user-defined __repr__
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
