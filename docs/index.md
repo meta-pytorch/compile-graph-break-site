@@ -456,6 +456,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
+- [GB5017](gb/gb5017.html) — missing tp_init
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
