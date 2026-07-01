@@ -471,6 +471,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
 - [GB6053](gb/gb6053.html) — repr_impl not implemented
+- [GB6066](gb/gb6066.html) — ContextVar.get() with non-constant default
 - [GB6183](gb/gb6183.html) — torch.map: f mutates a captured tensor
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
 - [GB6215](gb/gb6215.html) — Unresolved GetAttrVariable comparison
@@ -481,6 +482,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
+- [GB6815](gb/gb6815.html) — ContextVar mutation not supported
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
 - [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB7000](gb/gb7000.html) — graph break in loop
