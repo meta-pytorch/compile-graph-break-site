@@ -405,6 +405,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1752](gb/gb1752.html) — Missing tp_iteritem
 - [GB1824](gb/gb1824.html) — torch.switch: unsupported branch return type
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
+- [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
