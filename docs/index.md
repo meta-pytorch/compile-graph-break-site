@@ -387,7 +387,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0808](gb/gb0808.html) — vectorcall_maybe on C method descriptor
 - [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB0871](gb/gb0871.html) — Non-constant __hash__ return
-- [GB0998](gb/gb0998.html) — source-less COW tensor check
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1075](gb/gb1075.html) — torch.scan: combine_fn mutates init or xs
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
@@ -399,7 +398,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
-- [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
 - [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
@@ -460,7 +458,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5017](gb/gb5017.html) — missing tp_init
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
-- [GB5282](gb/gb5282.html) — COW tensor check after mutation
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB5491](gb/gb5491.html) — Failed to mutate tensor data attribute across devices with different shape/strides
@@ -490,7 +487,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
 - [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB7000](gb/gb7000.html) — graph break in loop
-- [GB7020](gb/gb7020.html) — COW tensor check during export
 - [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB7072](gb/gb7072.html) — flex_gemm: improper args/kwargs
 - [GB7151](gb/gb7151.html) — generator function over a skipped function
@@ -510,7 +506,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
 - [GB7694](gb/gb7694.html) — torch.switch: unsupported branch return type (constant)
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
-- [GB7905](gb/gb7905.html) — COW tensor check on FakeTensor
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB7968](gb/gb7968.html) — repr() on non-constant list-like
 - [GB8165](gb/gb8165.html) — torch.switch: improper args/kwargs
@@ -518,7 +513,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
-- [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
 - [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
