@@ -411,6 +411,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
+- [GB2473](gb/gb2473.html) — torch.cuda.use_mem_pool graph break
 - [GB2483](gb/gb2483.html) — str_impl not implemented
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
@@ -458,6 +459,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
+- [GB4996](gb/gb4996.html) — torch.cuda.use_mem_pool with non-constant device
 - [GB5017](gb/gb5017.html) — missing tp_init
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
@@ -483,6 +485,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
 - [GB6297](gb/gb6297.html) — autograd.Function.apply: duplicate tensor input
+- [GB6441](gb/gb6441.html) — unsupported torch.cuda.MemPool attribute
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
