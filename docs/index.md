@@ -377,6 +377,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0372](gb/gb0372.html) — autograd.grad with external grad_fn
 - [GB0373](gb/gb0373.html) — autograd.grad with compiled autograd
 - [GB0374](gb/gb0374.html) — Sparse tensor creation not supported
+- [GB0375](gb/gb0375.html) — Attempted to wrap a dual tensor input
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0459](gb/gb0459.html) — repr() on non-constant defaultdict
 - [GB0467](gb/gb0467.html) — setattr() on unsupported type
