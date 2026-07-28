@@ -413,7 +413,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
-- [GB2444](gb/gb2444.html) — MAKE_CELL on a free variable name
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
 - [GB2473](gb/gb2473.html) — torch.cuda.use_mem_pool graph break
 - [GB2483](gb/gb2483.html) — str_impl not implemented
