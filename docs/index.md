@@ -543,6 +543,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
 - [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
+- [GB9493](gb/gb9493.html) — C-implemented special method without VariableTracker model
 - [GB9509](gb/gb9509.html) — torch.switch: improper index
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
