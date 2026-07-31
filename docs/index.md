@@ -472,6 +472,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
 - [GB5491](gb/gb5491.html) — Failed to mutate tensor data attribute across devices with different shape/strides
 - [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
+- [GB5687](gb/gb5687.html) — min/max with non-constant key
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
