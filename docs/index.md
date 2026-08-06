@@ -561,3 +561,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
 - [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
+- [GB9899](gb/gb9899.html) — unsupported attribute of tracked type
