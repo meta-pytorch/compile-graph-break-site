@@ -396,6 +396,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
+- [GB1273](gb/gb1273.html) — Unsupported attribute assignment on traceback object
 - [GB1275](gb/gb1275.html) — repr() on non-constant dict view
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
@@ -413,6 +414,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
+- [GB2412](gb/gb2412.html) — Unsupported attribute
 - [GB2444](gb/gb2444.html) — MAKE_CELL on a free variable name
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
 - [GB2473](gb/gb2473.html) — torch.cuda.use_mem_pool graph break
