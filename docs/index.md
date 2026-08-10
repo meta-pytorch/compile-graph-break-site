@@ -418,7 +418,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2444](gb/gb2444.html) — MAKE_CELL on a free variable name
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
 - [GB2473](gb/gb2473.html) — torch.cuda.use_mem_pool graph break
-- [GB2483](gb/gb2483.html) — str_impl not implemented
+- [GB2483](gb/gb2483.html) — tp_str_impl not implemented
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2544](gb/gb2544.html) — missing sq_inplace_concat
@@ -485,7 +485,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6012](gb/gb6012.html) — Cannot trace user-defined __len__
 - [GB6017](gb/gb6017.html) — executorch_call_delegate: first arg not supported
 - [GB6025](gb/gb6025.html) — Failed to trace list()
-- [GB6053](gb/gb6053.html) — repr_impl not implemented
+- [GB6053](gb/gb6053.html) — tp_repr_impl not implemented
 - [GB6066](gb/gb6066.html) — ContextVar.get() with non-constant default
 - [GB6183](gb/gb6183.html) — torch.map: f mutates a captured tensor
 - [GB6210](gb/gb6210.html) — leaf_function: nn.Module argument without source
@@ -556,7 +556,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
-- [GB9648](gb/gb9648.html) — Missing richcompare_impl override
+- [GB9648](gb/gb9648.html) — Missing tp_richcompare_impl override
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
 - [GB9760](gb/gb9760.html) — torch.switch: improper operands contents
