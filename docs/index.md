@@ -423,6 +423,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2544](gb/gb2544.html) — missing sq_inplace_concat
 - [GB2549](gb/gb2549.html) — infinite generator detected
+- [GB2582](gb/gb2582.html) — Missing nb_bool_impl override
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
 - [GB2736](gb/gb2736.html) — builtin isinstance() with custom type check on tensor
@@ -538,6 +539,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8949](gb/gb8949.html) — STORE_GLOBAL in non-module globals
 - [GB8977](gb/gb8977.html) — Invalid call to __build_class__
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
+- [GB9118](gb/gb9118.html) — Data pointer truth value
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
