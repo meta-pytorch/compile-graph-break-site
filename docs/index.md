@@ -538,6 +538,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB8949](gb/gb8949.html) — STORE_GLOBAL in non-module globals
 - [GB8977](gb/gb8977.html) — Invalid call to __build_class__
+- [GB8982](gb/gb8982.html) — Unsupported callable in torch.autograd.Function staticmethod
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
 - [GB9118](gb/gb9118.html) — Data pointer truth value
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
@@ -566,3 +567,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9860](gb/gb9860.html) — P2POp mutation
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
 - [GB9899](gb/gb9899.html) — unsupported attribute of tracked type
+- [GB9958](gb/gb9958.html) — Missing attribute on torch.autograd.Function subclass
