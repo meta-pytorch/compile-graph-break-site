@@ -394,17 +394,20 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1075](gb/gb1075.html) — torch.scan: combine_fn mutates init or xs
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
+- [GB1157](gb/gb1157.html) — __replace__ on a namespace whose type returned a non-namespace
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
 - [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
 - [GB1273](gb/gb1273.html) — Unsupported attribute assignment on traceback object
 - [GB1275](gb/gb1275.html) — repr() on non-constant dict view
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
+- [GB1354](gb/gb1354.html) — non-constant key in SimpleNamespace()
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
 - [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
+- [GB1618](gb/gb1618.html) — str subclass key in SimpleNamespace()
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
