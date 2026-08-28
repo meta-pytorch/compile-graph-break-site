@@ -550,9 +550,11 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9192](gb/gb9192.html) — Unsupported kwargs for itertools.zip_longest
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9203](gb/gb9203.html) — torch.switch: differing branch outputs
+- [GB9211](gb/gb9211.html) — Unhinted data-dependent torch.Size element in torch._C._infer_size
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
 - [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
+- [GB9352](gb/gb9352.html) — Data-dependent uint64 torch.Size element in torch._C._infer_size
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9493](gb/gb9493.html) — C-implemented special method without VariableTracker model
 - [GB9509](gb/gb9509.html) — torch.switch: improper index
