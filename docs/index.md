@@ -497,6 +497,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6270](gb/gb6270.html) — Unhandled tensor method
 - [GB6276](gb/gb6276.html) — Comprehension analysis failed: No END_FOR
 - [GB6297](gb/gb6297.html) — autograd.Function.apply: duplicate tensor input
+- [GB6404](gb/gb6404.html) — Write to unmodeled getset/member attribute
 - [GB6441](gb/gb6441.html) — unsupported torch.cuda.MemPool attribute
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
