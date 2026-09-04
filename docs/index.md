@@ -549,6 +549,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB9192](gb/gb9192.html) — Unsupported kwargs for itertools.zip_longest
+- [GB9193](gb/gb9193.html) — Call to a time function
 - [GB9198](gb/gb9198.html) — Attempted to call repr() method implemented in C/C++
 - [GB9203](gb/gb9203.html) — torch.switch: differing branch outputs
 - [GB9211](gb/gb9211.html) — Unhinted data-dependent torch.Size element in torch._C._infer_size
