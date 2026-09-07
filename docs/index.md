@@ -511,6 +511,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7054](gb/gb7054.html) — backward() with non-leaf tensor
 - [GB7072](gb/gb7072.html) — flex_gemm: improper args/kwargs
 - [GB7151](gb/gb7151.html) — generator function over a skipped function
+- [GB7168](gb/gb7168.html) — tp_descr_get_impl not implemented
 - [GB7230](gb/gb7230.html) — iter() with no arguments
 - [GB7286](gb/gb7286.html) — nb_float_impl not implemented
 - [GB7299](gb/gb7299.html) — _autograd_grad with lost grad_fn linkage
@@ -557,6 +558,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
 - [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
 - [GB9352](gb/gb9352.html) — Data-dependent uint64 torch.Size element in torch._C._infer_size
+- [GB9368](gb/gb9368.html) — tp_descr_set_impl not implemented
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9493](gb/gb9493.html) — C-implemented special method without VariableTracker model
 - [GB9509](gb/gb9509.html) — torch.switch: improper index
