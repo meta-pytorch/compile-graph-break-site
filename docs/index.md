@@ -429,6 +429,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2582](gb/gb2582.html) — Missing nb_bool_impl override
 - [GB2669](gb/gb2669.html) — Comprehension graph break in resume function with captured variables
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
+- [GB2710](gb/gb2710.html) — Sourceless context manager without mutation support
 - [GB2736](gb/gb2736.html) — builtin isinstance() with custom type check on tensor
 - [GB2852](gb/gb2852.html) — untraceable user-defined __repr__
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
@@ -505,6 +506,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB6815](gb/gb6815.html) — ContextVar mutation not supported
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
+- [GB6956](gb/gb6956.html) — Sourceless _DecoratorContextManager method reconstruction unsupported
 - [GB6999](gb/gb6999.html) — unsupported variable type for __dict__ access
 - [GB7000](gb/gb7000.html) — graph break in loop
 - [GB7020](gb/gb7020.html) — COW tensor check during export
