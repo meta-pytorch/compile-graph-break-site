@@ -435,6 +435,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
+- [GB3003](gb/gb3003.html) — method comparison with undecidable receiver
 - [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
 - [GB3069](gb/gb3069.html) — Custom op missing fake impl during tracing
 - [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
@@ -532,6 +533,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
 - [GB7905](gb/gb7905.html) — COW tensor check on FakeTensor
 - [GB7906](gb/gb7906.html) — Missing len_impl
+- [GB7935](gb/gb7935.html) — checkpoint context_fn bound to a non-constant receiver
 - [GB7968](gb/gb7968.html) — repr() on non-constant list-like
 - [GB8165](gb/gb8165.html) — torch.switch: improper args/kwargs
 - [GB8206](gb/gb8206.html) — torch.switch: improper operands
