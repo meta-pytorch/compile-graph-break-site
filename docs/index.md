@@ -404,6 +404,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1354](gb/gb1354.html) — non-constant key in SimpleNamespace()
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
+- [GB1392](gb/gb1392.html) — Attribute mutation on a sourced but untracked user-defined object
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
 - [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
@@ -413,6 +414,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1750](gb/gb1750.html) — P2P compilation disabled for P2POp construction
 - [GB1752](gb/gb1752.html) — Missing tp_iteritem
 - [GB1824](gb/gb1824.html) — torch.switch: unsupported branch return type
+- [GB1940](gb/gb1940.html) — Attribute mutation on an untracked user-defined object
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
