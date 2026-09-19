@@ -383,6 +383,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0442](gb/gb0442.html) — backward() with empty inputs
 - [GB0459](gb/gb0459.html) — repr() on non-constant defaultdict
 - [GB0467](gb/gb0467.html) — setattr() on unsupported type
+- [GB0507](gb/gb0507.html) — length_hint with a non-constant default
 - [GB0569](gb/gb0569.html) — repr() on tensor
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
@@ -401,6 +402,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1275](gb/gb1275.html) — repr() on non-constant dict view
 - [GB1297](gb/gb1297.html) — Reconstruction failure (self-referential)
 - [GB1319](gb/gb1319.html) — Reconstruct user defined class without a source
+- [GB1350](gb/gb1350.html) — length_hint with a non-constant result
 - [GB1354](gb/gb1354.html) — non-constant key in SimpleNamespace()
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
