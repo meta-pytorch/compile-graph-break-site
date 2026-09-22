@@ -409,6 +409,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1392](gb/gb1392.html) — Attribute mutation on a sourced but untracked user-defined object
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
+- [GB1583](gb/gb1583.html) — builtin isinstance() with classinfo that does not support issubclass()
 - [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
 - [GB1618](gb/gb1618.html) — str subclass key in SimpleNamespace()
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
