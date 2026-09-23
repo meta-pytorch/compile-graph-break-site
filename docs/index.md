@@ -488,6 +488,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5687](gb/gb5687.html) — min/max with non-constant key
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
+- [GB5821](gb/gb5821.html) — register_post_accumulate_grad_hook on an intermediate tensor
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
 - [GB5884](gb/gb5884.html) — torch.switch: improper branches
 - [GB5904](gb/gb5904.html) — unsupported __getitem__ (sq_item)
