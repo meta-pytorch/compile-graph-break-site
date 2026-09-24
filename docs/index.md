@@ -480,6 +480,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5017](gb/gb5017.html) — missing tp_init
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
+- [GB5210](gb/gb5210.html) — Constant fold with a rank-relative device
 - [GB5282](gb/gb5282.html) — COW tensor check after mutation
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
