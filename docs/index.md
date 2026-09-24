@@ -507,6 +507,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6297](gb/gb6297.html) — autograd.Function.apply: duplicate tensor input
 - [GB6404](gb/gb6404.html) — Write to unmodeled getset/member attribute
 - [GB6441](gb/gb6441.html) — unsupported torch.cuda.MemPool attribute
+- [GB6602](gb/gb6602.html) — setattr() on Tensor.data with different shape
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
@@ -558,6 +559,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9118](gb/gb9118.html) — Data pointer truth value
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
+- [GB9182](gb/gb9182.html) — setattr() on Parameter.data with different shape
 - [GB9186](gb/gb9186.html) — using `torch.autograd.grad` with `torch._dynamo.config.trace_autograd_ops=False`
 - [GB9192](gb/gb9192.html) — Unsupported kwargs for itertools.zip_longest
 - [GB9193](gb/gb9193.html) — Call to a time function
