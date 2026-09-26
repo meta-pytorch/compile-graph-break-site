@@ -449,6 +449,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
 - [GB3697](gb/gb3697.html) — C-level descriptor setattr on user-defined object
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
+- [GB3780](gb/gb3780.html) — non-literal key in object __dict__
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB3934](gb/gb3934.html) — missing sq_concat
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
