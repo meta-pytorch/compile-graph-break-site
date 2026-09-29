@@ -450,6 +450,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3697](gb/gb3697.html) — C-level descriptor setattr on user-defined object
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB3780](gb/gb3780.html) — non-literal key in object __dict__
+- [GB3837](gb/gb3837.html) — bytearray constructor
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB3934](gb/gb3934.html) — missing sq_concat
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
@@ -486,6 +487,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5282](gb/gb5282.html) — COW tensor check after mutation
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
 - [GB5458](gb/gb5458.html) — Custom metaclass with __getattribute__
+- [GB5460](gb/gb5460.html) — bytearray constructor with non-constant args
 - [GB5491](gb/gb5491.html) — Failed to mutate tensor data attribute across devices with different shape/strides
 - [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
 - [GB5687](gb/gb5687.html) — min/max with non-constant key
