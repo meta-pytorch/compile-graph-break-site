@@ -407,6 +407,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1380](gb/gb1380.html) — Illegal __getitem__ invocation in strict mode
 - [GB1381](gb/gb1381.html) — autograd.grad with already consumed grad_fn
 - [GB1392](gb/gb1392.html) — Attribute mutation on a sourced but untracked user-defined object
+- [GB1472](gb/gb1472.html) — classmethod of non-Python function
 - [GB1501](gb/gb1501.html) — sparse_grad_accumulate_grad
 - [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
 - [GB1583](gb/gb1583.html) — builtin isinstance() with classinfo that does not support issubclass()
