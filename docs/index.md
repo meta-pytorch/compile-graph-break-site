@@ -591,6 +591,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9760](gb/gb9760.html) — torch.switch: improper operands contents
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
 - [GB9860](gb/gb9860.html) — P2POp mutation
+- [GB9890](gb/gb9890.html) — bytes() with non-constant arguments
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
 - [GB9899](gb/gb9899.html) — unsupported attribute of tracked type
 - [GB9958](gb/gb9958.html) — Missing attribute on torch.autograd.Function subclass
