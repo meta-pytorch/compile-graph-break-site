@@ -454,6 +454,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3837](gb/gb3837.html) — bytearray constructor
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB3934](gb/gb3934.html) — missing sq_concat
+- [GB4013](gb/gb4013.html) — autograd.Function without a generated vmap rule under vmap
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
