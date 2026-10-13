@@ -422,6 +422,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
+- [GB2315](gb/gb2315.html) — Unresolved classmethod descriptor owner
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2412](gb/gb2412.html) — Unsupported attribute
 - [GB2444](gb/gb2444.html) — MAKE_CELL on a free variable name
@@ -443,6 +444,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB3003](gb/gb3003.html) — method comparison with undecidable receiver
 - [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
+- [GB3051](gb/gb3051.html) — builtin method comparison with undecidable identity
 - [GB3069](gb/gb3069.html) — Custom op missing fake impl during tracing
 - [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
@@ -494,6 +496,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5565](gb/gb5565.html) — list_richcompare_ordering_symbolic
 - [GB5687](gb/gb5687.html) — min/max with non-constant key
 - [GB5696](gb/gb5696.html) — Comprehension graph break with extra stack values
+- [GB5716](gb/gb5716.html) — Unsupported descriptor source
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB5821](gb/gb5821.html) — register_post_accumulate_grad_hook on an intermediate tensor
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
@@ -544,6 +547,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7685](gb/gb7685.html) — Attribute not found on opaque class
 - [GB7694](gb/gb7694.html) — torch.switch: unsupported branch return type (constant)
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
+- [GB7811](gb/gb7811.html) — Bound builtin method shadowed by an override
 - [GB7905](gb/gb7905.html) — COW tensor check on FakeTensor
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB7935](gb/gb7935.html) — checkpoint context_fn bound to a non-constant receiver
@@ -592,6 +596,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB9648](gb/gb9648.html) — Missing tp_richcompare_impl override
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
+- [GB9674](gb/gb9674.html) — Bound builtin classmethod with custom metaclass
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
 - [GB9760](gb/gb9760.html) — torch.switch: improper operands contents
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
