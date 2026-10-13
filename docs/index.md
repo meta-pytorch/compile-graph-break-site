@@ -550,6 +550,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7968](gb/gb7968.html) — repr() on non-constant list-like
 - [GB8165](gb/gb8165.html) — torch.switch: improper args/kwargs
 - [GB8206](gb/gb8206.html) — torch.switch: improper operands
+- [GB8294](gb/gb8294.html) — TMA descriptor class is not importable
 - [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
@@ -584,6 +585,8 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9522](gb/gb9522.html) — hasattr() on unsupported type
 - [GB9528](gb/gb9528.html) — Attempted to reconstruct a nested function with closure which is not supported
 - [GB9548](gb/gb9548.html) — nb_absolute_impl not implemented
+- [GB9552](gb/gb9552.html) — Unsupported TMA descriptor factory call
+- [GB9553](gb/gb9553.html) — TMA descriptor reconstruction factory mismatch
 - [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
