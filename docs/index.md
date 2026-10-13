@@ -438,6 +438,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
 - [GB2710](gb/gb2710.html) — Sourceless context manager without mutation support
 - [GB2736](gb/gb2736.html) — builtin isinstance() with custom type check on tensor
+- [GB2842](gb/gb2842.html) — dynamic value in torch.fx.traceback.annotate
 - [GB2852](gb/gb2852.html) — untraceable user-defined __repr__
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
 - [GB2922](gb/gb2922.html) — RuntimeError when trying to get real value from fx.Node
@@ -537,6 +538,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7312](gb/gb7312.html) — failed to bind arguments when attempting to inline
 - [GB7324](gb/gb7324.html) — returning intermediate with requires_grad_()
 - [GB7425](gb/gb7425.html) — Comprehension with captured tensor not in local slot
+- [GB7427](gb/gb7427.html) — dict subclass in torch.fx.traceback.annotate
 - [GB7444](gb/gb7444.html) — register_hook with stride-dependent code
 - [GB7489](gb/gb7489.html) — Unsupported argument type in tensor method call
 - [GB7502](gb/gb7502.html) — Unsupported user-defined object construction during side-effect tracking
