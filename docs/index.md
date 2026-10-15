@@ -488,6 +488,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
 - [GB4996](gb/gb4996.html) — torch.cuda.use_mem_pool with non-constant device
 - [GB5017](gb/gb5017.html) — missing tp_init
+- [GB5108](gb/gb5108.html) — autograd inputs from an external mapping proxy
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
 - [GB5210](gb/gb5210.html) — Constant fold with a rank-relative device
