@@ -545,6 +545,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7427](gb/gb7427.html) — dict subclass in torch.fx.traceback.annotate
 - [GB7444](gb/gb7444.html) — register_hook with stride-dependent code
 - [GB7489](gb/gb7489.html) — Unsupported argument type in tensor method call
+- [GB7494](gb/gb7494.html) — Dynamic class creation with type
 - [GB7502](gb/gb7502.html) — Unsupported user-defined object construction during side-effect tracking
 - [GB7510](gb/gb7510.html) — nb_positive_impl not implemented
 - [GB7596](gb/gb7596.html) — Indexing torch.Size with non-scalar tensor
