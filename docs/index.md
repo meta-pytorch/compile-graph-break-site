@@ -429,6 +429,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2464](gb/gb2464.html) — autograd.Function.apply: mark_dirty input not returned
 - [GB2473](gb/gb2473.html) — torch.cuda.use_mem_pool graph break
 - [GB2483](gb/gb2483.html) — tp_str_impl not implemented
+- [GB2492](gb/gb2492.html) — autograd.Function.apply: invalid set_output_grad_dtype
 - [GB2520](gb/gb2520.html) — assume_constant_result argument conversion failed
 - [GB2533](gb/gb2533.html) — reconstructing @contextmanager object
 - [GB2544](gb/gb2544.html) — missing sq_inplace_concat
@@ -474,6 +475,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4411](gb/gb4411.html) — missing sq_contains
 - [GB4413](gb/gb4413.html) — HOP: Non-nullified side effect
 - [GB4501](gb/gb4501.html) — Reconstruction of FakeIdVariable
+- [GB4518](gb/gb4518.html) — Unsupported autograd.Function context `set_output_grad_dtype`
 - [GB4608](gb/gb4608.html) — richcompare identity fallback undetermined
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
@@ -521,6 +523,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
+- [GB6716](gb/gb6716.html) — autograd.Function.apply: set_output_grad_dtype arity mismatch
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB6815](gb/gb6815.html) — ContextVar mutation not supported
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
