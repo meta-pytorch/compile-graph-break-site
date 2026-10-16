@@ -576,6 +576,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8982](gb/gb8982.html) — Unsupported callable in torch.autograd.Function staticmethod
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
 - [GB9118](gb/gb9118.html) — Data pointer truth value
+- [GB9131](gb/gb9131.html) — Skipped function wrapper __dict__ access
 - [GB9137](gb/gb9137.html) — non-constant typing subscript
 - [GB9158](gb/gb9158.html) — Can't convert torch._check*() message closure
 - [GB9182](gb/gb9182.html) — setattr() on Parameter.data with different shape
