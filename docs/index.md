@@ -503,7 +503,6 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5716](gb/gb5716.html) — Unsupported descriptor source
 - [GB5748](gb/gb5748.html) — autograd.grad with external GradientEdge
 - [GB5821](gb/gb5821.html) — register_post_accumulate_grad_hook on an intermediate tensor
-- [GB5828](gb/gb5828.html) — repr() on object without a known value
 - [GB5849](gb/gb5849.html) — non-constant key in object __dict__
 - [GB5884](gb/gb5884.html) — torch.switch: improper branches
 - [GB5904](gb/gb5904.html) — unsupported __getitem__ (sq_item)
