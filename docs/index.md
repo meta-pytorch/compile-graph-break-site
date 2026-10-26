@@ -565,6 +565,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8294](gb/gb8294.html) — TMA descriptor class is not importable
 - [GB8315](gb/gb8315.html) — repr() on non-constant dict
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
+- [GB8395](gb/gb8395.html) — mapping proxy of class with pending attribute mutation
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
 - [GB8504](gb/gb8504.html) — Encountered mutation of an aliased input during higher order op tracing
 - [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
