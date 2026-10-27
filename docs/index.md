@@ -603,6 +603,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9553](gb/gb9553.html) — TMA descriptor reconstruction factory mismatch
 - [GB9561](gb/gb9561.html) — sq_inplace_repeat_impl not implemented
 - [GB9567](gb/gb9567.html) — Unsupported descriptor on opaque class
+- [GB9613](gb/gb9613.html) — current_stream device mismatch
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB9648](gb/gb9648.html) — Missing tp_richcompare_impl override
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
