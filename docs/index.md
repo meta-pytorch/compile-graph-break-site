@@ -574,6 +574,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB8949](gb/gb8949.html) — STORE_GLOBAL in non-module globals
+- [GB8974](gb/gb8974.html) — synchronize with no accelerator available
 - [GB8977](gb/gb8977.html) — Invalid call to __build_class__
 - [GB8982](gb/gb8982.html) — Unsupported callable in torch.autograd.Function staticmethod
 - [GB8985](gb/gb8985.html) — requires_grad_() intermediate leaked as output
