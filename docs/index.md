@@ -412,6 +412,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1576](gb/gb1576.html) — COW tensor check on Python tensor subclass
 - [GB1583](gb/gb1583.html) — builtin isinstance() with classinfo that does not support issubclass()
 - [GB1584](gb/gb1584.html) — repr() on nested function with non-constructible closure
+- [GB1586](gb/gb1586.html) — __init__ called through a builtin class
 - [GB1618](gb/gb1618.html) — str subclass key in SimpleNamespace()
 - [GB1724](gb/gb1724.html) — autograd.grad with non-constant dict key
 - [GB1739](gb/gb1739.html) — Unsupported member type on OpaqueObject
@@ -455,11 +456,13 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3697](gb/gb3697.html) — C-level descriptor setattr on user-defined object
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB3780](gb/gb3780.html) — non-literal key in object __dict__
+- [GB3832](gb/gb3832.html) — bytearray.__init__ with non-constant arguments
 - [GB3837](gb/gb3837.html) — bytearray constructor
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB3934](gb/gb3934.html) — missing sq_concat
 - [GB4013](gb/gb4013.html) — autograd.Function without a generated vmap rule under vmap
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
+- [GB4188](gb/gb4188.html) — unsupported __new__ method
 - [GB4197](gb/gb4197.html) — Unsupported Tensor.share_memory_() call
 - [GB4198](gb/gb4198.html) — Attempted to copy.deepcopy a tensor
 - [GB4234](gb/gb4234.html) — nb_invert_impl not implemented
@@ -567,6 +570,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8335](gb/gb8335.html) — Generator reconstruction with mutations
 - [GB8395](gb/gb8395.html) — mapping proxy of class with pending attribute mutation
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
+- [GB8503](gb/gb8503.html) — missing tp_new
 - [GB8504](gb/gb8504.html) — Encountered mutation of an aliased input during higher order op tracing
 - [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
 - [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
