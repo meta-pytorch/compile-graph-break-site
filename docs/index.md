@@ -530,6 +530,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
 - [GB6716](gb/gb6716.html) — autograd.Function.apply: set_output_grad_dtype arity mismatch
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
+- [GB6745](gb/gb6745.html) — Missing tp_hash_impl override
 - [GB6815](gb/gb6815.html) — ContextVar mutation not supported
 - [GB6890](gb/gb6890.html) — Missing hash_impl override
 - [GB6956](gb/gb6956.html) — Sourceless _DecoratorContextManager method reconstruction unsupported
