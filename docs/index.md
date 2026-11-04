@@ -559,6 +559,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7694](gb/gb7694.html) — torch.switch: unsupported branch return type (constant)
 - [GB7786](gb/gb7786.html) — missing_mp_ass_subscript
 - [GB7811](gb/gb7811.html) — Bound builtin method shadowed by an override
+- [GB7866](gb/gb7866.html) — hasattr on a class attribute set earlier in the frame
 - [GB7905](gb/gb7905.html) — COW tensor check on FakeTensor
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB7935](gb/gb7935.html) — checkpoint context_fn bound to a non-constant receiver
