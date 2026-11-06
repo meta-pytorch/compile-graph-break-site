@@ -481,6 +481,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4518](gb/gb4518.html) — Unsupported autograd.Function context `set_output_grad_dtype`
 - [GB4608](gb/gb4608.html) — richcompare identity fallback undetermined
 - [GB4636](gb/gb4636.html) — Call to `torch._dynamo.step_unsupported()`
+- [GB4682](gb/gb4682.html) — Delete of an unmodeled C member
 - [GB4695](gb/gb4695.html) — torch.jit.script/freeze modules unsupported
 - [GB4749](gb/gb4749.html) — Hashability mismatch
 - [GB4774](gb/gb4774.html) — torch.map: f mutates pos_args
