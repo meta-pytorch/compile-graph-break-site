@@ -578,6 +578,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
 - [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
+- [GB8811](gb/gb8811.html) — OrderedDict storage differs from linked keys
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
 - [GB8887](gb/gb8887.html) — NamedTupleVariable.__setattr__ bad args
 - [GB8949](gb/gb8949.html) — STORE_GLOBAL in non-module globals
