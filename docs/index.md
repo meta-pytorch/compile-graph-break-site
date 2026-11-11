@@ -386,6 +386,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0507](gb/gb0507.html) — length_hint with a non-constant default
 - [GB0569](gb/gb0569.html) — repr() on tensor
 - [GB0682](gb/gb0682.html) — Non-constant GetAttrVariable hash
+- [GB0705](gb/gb0705.html) — Custom metaclass metadata access
 - [GB0755](gb/gb0755.html) — nb_negative_impl not implemented
 - [GB0781](gb/gb0781.html) — unsupported __setitem__ (sq_ass_item)
 - [GB0808](gb/gb0808.html) — vectorcall_maybe on C method descriptor
