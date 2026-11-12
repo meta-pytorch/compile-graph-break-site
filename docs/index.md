@@ -604,6 +604,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9277](gb/gb9277.html) — unsupported function.__get__ call
 - [GB9300](gb/gb9300.html) — P2P compilation disabled for batch_isend_irecv
 - [GB9316](gb/gb9316.html) — Comparison on compile-time-only id or hash value
+- [GB9322](gb/gb9322.html) — bytearray.join() with unsupported item type
 - [GB9352](gb/gb9352.html) — Data-dependent uint64 torch.Size element in torch._C._infer_size
 - [GB9368](gb/gb9368.html) — tp_descr_set_impl not implemented
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
