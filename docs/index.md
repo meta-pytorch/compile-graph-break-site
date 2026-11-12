@@ -442,6 +442,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2696](gb/gb2696.html) — P2P compilation disabled for isend/irecv
 - [GB2710](gb/gb2710.html) — Sourceless context manager without mutation support
 - [GB2736](gb/gb2736.html) — builtin isinstance() with custom type check on tensor
+- [GB2806](gb/gb2806.html) — bytearray store to an existing bytearray
 - [GB2842](gb/gb2842.html) — dynamic value in torch.fx.traceback.annotate
 - [GB2852](gb/gb2852.html) — untraceable user-defined __repr__
 - [GB2861](gb/gb2861.html) — Untraceable C tp_hash
@@ -531,6 +532,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB6604](gb/gb6604.html) — Missing CALL_INTRINSIC_2 handler
 - [GB6622](gb/gb6622.html) — list_richcompare_nonconst
 - [GB6663](gb/gb6663.html) — autograd.grad with unsupported argument type
+- [GB6677](gb/gb6677.html) — bytearray store with non-constant value
 - [GB6716](gb/gb6716.html) — autograd.Function.apply: set_output_grad_dtype arity mismatch
 - [GB6735](gb/gb6735.html) — torch.library.wrap_triton call with > 1 args
 - [GB6745](gb/gb6745.html) — Missing tp_hash_impl override
