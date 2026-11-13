@@ -392,12 +392,14 @@ Below are all known graph breaks detected by Dynamo.
 - [GB0808](gb/gb0808.html) — vectorcall_maybe on C method descriptor
 - [GB0811](gb/gb0811.html) — missing tp_iter
 - [GB0871](gb/gb0871.html) — Non-constant __hash__ return
+- [GB0949](gb/gb0949.html) — Unsupported generator frame attribute
 - [GB0998](gb/gb0998.html) — source-less COW tensor check
 - [GB1042](gb/gb1042.html) — backward() with in-graph created tensor
 - [GB1075](gb/gb1075.html) — torch.scan: combine_fn mutates init or xs
 - [GB1140](gb/gb1140.html) — _autograd_grad with unsupported argument type
 - [GB1157](gb/gb1157.html) — __replace__ on a namespace whose type returned a non-namespace
 - [GB1177](gb/gb1177.html) — nn.Module mutation in HigherOrderOp
+- [GB1208](gb/gb1208.html) — Unsupported generator frame f_back
 - [GB1220](gb/gb1220.html) — Untraceable C tp_richcompare
 - [GB1273](gb/gb1273.html) — Unsupported attribute assignment on traceback object
 - [GB1275](gb/gb1275.html) — repr() on non-constant dict view
