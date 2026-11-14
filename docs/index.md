@@ -461,6 +461,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3697](gb/gb3697.html) — C-level descriptor setattr on user-defined object
 - [GB3775](gb/gb3775.html) — nb_int_impl not implemented
 - [GB3780](gb/gb3780.html) — non-literal key in object __dict__
+- [GB3826](gb/gb3826.html) — kwargs expansion after iteration slot mutation
 - [GB3832](gb/gb3832.html) — bytearray.__init__ with non-constant arguments
 - [GB3837](gb/gb3837.html) — bytearray constructor
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
@@ -622,6 +623,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9613](gb/gb9613.html) — current_stream device mismatch
 - [GB9625](gb/gb9625.html) — traceback.tb_lasti not supported
 - [GB9648](gb/gb9648.html) — Missing tp_richcompare_impl override
+- [GB9653](gb/gb9653.html) — Duplicate keyword mapping key
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9674](gb/gb9674.html) — Bound builtin classmethod with custom metaclass
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
