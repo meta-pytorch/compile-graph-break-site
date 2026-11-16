@@ -452,6 +452,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2977](gb/gb2977.html) — wrap_jit_function: missing _torchdynamo_inline
 - [GB3003](gb/gb3003.html) — method comparison with undecidable receiver
 - [GB3006](gb/gb3006.html) — tp_as_number slot not implemented
+- [GB3043](gb/gb3043.html) — Unsupported builtin dictionary storage operation
 - [GB3051](gb/gb3051.html) — builtin method comparison with undecidable identity
 - [GB3069](gb/gb3069.html) — Custom op missing fake impl during tracing
 - [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
@@ -610,6 +611,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9322](gb/gb9322.html) — bytearray.join() with unsupported item type
 - [GB9352](gb/gb9352.html) — Data-dependent uint64 torch.Size element in torch._C._infer_size
 - [GB9368](gb/gb9368.html) — tp_descr_set_impl not implemented
+- [GB9374](gb/gb9374.html) — Reordered OrderedDict input with callback-sensitive keys
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9493](gb/gb9493.html) — C-implemented special method without VariableTracker model
 - [GB9509](gb/gb9509.html) — torch.switch: improper index
@@ -634,3 +636,4 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9898](gb/gb9898.html) — Comprehension analysis failed: No matches
 - [GB9899](gb/gb9899.html) — unsupported attribute of tracked type
 - [GB9958](gb/gb9958.html) — Missing attribute on torch.autograd.Function subclass
+- [GB9996](gb/gb9996.html) — Input OrderedDict linked-order mutation
