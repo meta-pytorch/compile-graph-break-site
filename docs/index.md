@@ -456,6 +456,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3051](gb/gb3051.html) — builtin method comparison with undecidable identity
 - [GB3069](gb/gb3069.html) — Custom op missing fake impl during tracing
 - [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
+- [GB3303](gb/gb3303.html) — Unsupported unbound builtin __hash__ call
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
 - [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
 - [GB3383](gb/gb3383.html) — Pydantic dataclass constructor
