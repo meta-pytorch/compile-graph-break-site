@@ -427,6 +427,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
+- [GB2259](gb/gb2259.html) — DELETE_GLOBAL with a module namespace access
 - [GB2315](gb/gb2315.html) — Unresolved classmethod descriptor owner
 - [GB2404](gb/gb2404.html) — Unsupported object.__new__ user-defined class construction
 - [GB2412](gb/gb2412.html) — Unsupported attribute
@@ -497,6 +498,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB4818](gb/gb4818.html) — call to a callable object with no traceable __call__
 - [GB4841](gb/gb4841.html) — Unsupported python_type() call
 - [GB4880](gb/gb4880.html) — missing_mp_subscript
+- [GB4909](gb/gb4909.html) — DELETE_GLOBAL in non-module globals
 - [GB4927](gb/gb4927.html) — autograd.grad consumed returned tensor's grad_fn
 - [GB4996](gb/gb4996.html) — torch.cuda.use_mem_pool with non-constant device
 - [GB5017](gb/gb5017.html) — missing tp_init
@@ -586,6 +588,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8504](gb/gb8504.html) — Encountered mutation of an aliased input during higher order op tracing
 - [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
 - [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
+- [GB8630](gb/gb8630.html) — DELETE_GLOBAL in module with __getattr__
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB8811](gb/gb8811.html) — OrderedDict storage differs from linked keys
 - [GB8843](gb/gb8843.html) — Opaque object member with method-type USE_REAL returned a reference-type opaque object.
