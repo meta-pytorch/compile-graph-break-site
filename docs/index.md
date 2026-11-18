@@ -424,6 +424,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB1824](gb/gb1824.html) — torch.switch: unsupported branch return type
 - [GB1891](gb/gb1891.html) — Unsafe value live across comprehension graph break
 - [GB1940](gb/gb1940.html) — Attribute mutation on an untracked user-defined object
+- [GB1943](gb/gb1943.html) — Copying an OrderedDict with instance attributes
 - [GB2019](gb/gb2019.html) — Unsupported autograd.Function context `mark_dirty`
 - [GB2069](gb/gb2069.html) — Comprehension analysis failed: ambiguous result store
 - [GB2078](gb/gb2078.html) — Attempted to access unregistered member on an OpaqueObject
