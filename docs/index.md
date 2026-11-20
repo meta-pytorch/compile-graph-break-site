@@ -588,8 +588,10 @@ Below are all known graph breaks detected by Dynamo.
 - [GB8435](gb/gb8435.html) — missing_mp_subscript_impl
 - [GB8503](gb/gb8503.html) — missing tp_new
 - [GB8504](gb/gb8504.html) — Encountered mutation of an aliased input during higher order op tracing
+- [GB8553](gb/gb8553.html) — Replacing an instance dictionary with pending mutations
 - [GB8587](gb/gb8587.html) — COW tensor check after COW-state-changing op
 - [GB8593](gb/gb8593.html) — flex_gemm: unexpected kwargs
+- [GB8600](gb/gb8600.html) — Class attribute mutation on a torch-owned class
 - [GB8630](gb/gb8630.html) — DELETE_GLOBAL in module with __getattr__
 - [GB8656](gb/gb8656.html) — Opaque object with custom __getattr__ not supported
 - [GB8811](gb/gb8811.html) — OrderedDict storage differs from linked keys
