@@ -458,6 +458,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3051](gb/gb3051.html) — builtin method comparison with undecidable identity
 - [GB3069](gb/gb3069.html) — Custom op missing fake impl during tracing
 - [GB3241](gb/gb3241.html) — C-level descriptor delete on user-defined object
+- [GB3253](gb/gb3253.html) — Unbound method descriptor call with unmodeled owner
 - [GB3303](gb/gb3303.html) — Unsupported unbound builtin __hash__ call
 - [GB3326](gb/gb3326.html) — invalid ptr argument for create_tma_descriptor
 - [GB3343](gb/gb3343.html) — Cannot reconstruct P2POpVariable
@@ -617,6 +618,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9352](gb/gb9352.html) — Data-dependent uint64 torch.Size element in torch._C._infer_size
 - [GB9368](gb/gb9368.html) — tp_descr_set_impl not implemented
 - [GB9374](gb/gb9374.html) — Reordered OrderedDict input with callback-sensitive keys
+- [GB9423](gb/gb9423.html) — Identity-based __hash__ escapes to user code
 - [GB9458](gb/gb9458.html) — sq_repeat_impl not implemented
 - [GB9493](gb/gb9493.html) — C-implemented special method without VariableTracker model
 - [GB9509](gb/gb9509.html) — torch.switch: improper index
