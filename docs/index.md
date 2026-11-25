@@ -471,6 +471,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB3837](gb/gb3837.html) — bytearray constructor
 - [GB3840](gb/gb3840.html) — leaf_function without fake_fn
 - [GB3934](gb/gb3934.html) — missing sq_concat
+- [GB3976](gb/gb3976.html) — str() with non-constant arguments
 - [GB4013](gb/gb4013.html) — autograd.Function without a generated vmap rule under vmap
 - [GB4026](gb/gb4026.html) — triton.set_allocator not supported
 - [GB4188](gb/gb4188.html) — unsupported __new__ method
@@ -507,6 +508,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB5108](gb/gb5108.html) — autograd inputs from an external mapping proxy
 - [GB5173](gb/gb5173.html) — Tensor device mismatch
 - [GB5195](gb/gb5195.html) — elementwise_dtypes unsupported arg type
+- [GB5204](gb/gb5204.html) — constant_fold on non-constant arguments
 - [GB5210](gb/gb5210.html) — Constant fold with a rank-relative device
 - [GB5282](gb/gb5282.html) — COW tensor check after mutation
 - [GB5380](gb/gb5380.html) — repr() on non-constant set
@@ -579,6 +581,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB7906](gb/gb7906.html) — Missing len_impl
 - [GB7935](gb/gb7935.html) — checkpoint context_fn bound to a non-constant receiver
 - [GB7968](gb/gb7968.html) — repr() on non-constant list-like
+- [GB8114](gb/gb8114.html) — complex() with non-constant arguments
 - [GB8165](gb/gb8165.html) — torch.switch: improper args/kwargs
 - [GB8206](gb/gb8206.html) — torch.switch: improper operands
 - [GB8294](gb/gb8294.html) — TMA descriptor class is not importable
@@ -637,6 +640,7 @@ Below are all known graph breaks detected by Dynamo.
 - [GB9653](gb/gb9653.html) — Duplicate keyword mapping key
 - [GB9672](gb/gb9672.html) — unsupported type.__dict__['{attr_name}'].__get__ call
 - [GB9674](gb/gb9674.html) — Bound builtin classmethod with custom metaclass
+- [GB9684](gb/gb9684.html) — int() with a base on non-constant arguments
 - [GB9741](gb/gb9741.html) — skip frame due to being in functorh mode
 - [GB9760](gb/gb9760.html) — torch.switch: improper operands contents
 - [GB9840](gb/gb9840.html) — Can't extract message from torch._check*()
